@@ -1,0 +1,23 @@
+# Grist runtime/database
+grist/persist/
+
+# DuckDB working databases
+warehouse/*.duckdb
+warehouse/*.duckdb.wal
+
+# Trace lake
+lake/traces/
+
+# Secrets
+.env
+.env.*
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
