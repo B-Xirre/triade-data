@@ -1,0 +1,2 @@
+-- Reference tables
+-- damage types, damage groups, stats, regions, hooks, categories, etc.

@@ -7,10 +7,12 @@ warehouse/*.duckdb.wal
 
 # Trace lake
 lake/traces/
+lake/signatures/
 
 # Secrets
 .env
 .env.*
+grist/.env
 
 # Python
 .venv/

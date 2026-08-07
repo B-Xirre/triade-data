@@ -1,0 +1,11 @@
+services:
+  grist:
+    image: gristlabs/grist-oss:latest
+    container_name: triade-grist
+    ports:
+      - "8484:8484"
+    volumes:
+      - ./persist:/persist
+    environment:
+      GRIST_SESSION_SECRET: "${GRIST_SESSION_SECRET}"
+    restart: unless-stopped

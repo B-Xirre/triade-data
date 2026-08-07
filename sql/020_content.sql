@@ -1,0 +1,2 @@
+-- Typed canonical content tables
+-- equipment, chassis, damage profiles, Triade effects, stat modifiers, etc.

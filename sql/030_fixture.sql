@@ -1,0 +1,2 @@
+-- Simulation fixture tables
+-- M10 builds, loadouts, encounters and coverage.

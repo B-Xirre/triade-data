@@ -1,0 +1,5 @@
+duckdb
+jsonschema
+requests
+pyarrow
+pytest

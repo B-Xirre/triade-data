@@ -1,0 +1,2 @@
+-- Trace analytics and derived signatures
+-- residency, displacement, credit economy, transition matrices, etc.

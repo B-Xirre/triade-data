@@ -1,0 +1,2 @@
+-- Validation views and audit rules
+-- zero-sum vectors, duplicate revisions, protected items, FK checks, etc.
