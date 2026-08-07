@@ -1,0 +1,5 @@
+content/canonical/.gitkeep
+content/csv/.gitkeep
+docs/.gitkeep
+tests/fixtures/m10/expected/.gitkeep
+tests/fixtures/m10/snapshots/.gitkeep
