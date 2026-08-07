@@ -8,4 +8,13 @@ services:
       - ./persist:/persist
     environment:
       GRIST_SESSION_SECRET: "${GRIST_SESSION_SECRET}"
+
+      # Enable the built-in OIDC Provider/Server
+      - GRIST_ENABLE_OIDC_SERVER=true
+      
+      # Optional: Enable Dynamic Client Registration for external tools
+      - GRIST_ENABLE_OIDC_DCR=true
+      
+      # Optional: Restrict allowed hosts for Client ID Metadata Documents
+      - GRIST_OIDC_CIMD_ALLOWED_HOSTS=claude.ai,chatgpt.com
     restart: unless-stopped
