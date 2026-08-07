@@ -3,7 +3,7 @@ services:
     image: gristlabs/grist-oss:latest
     container_name: triade-grist
     ports:
-      - "8484:8484"
+      - "127.0.0.1:8484:8484"
     volumes:
       - ./persist:/persist
     environment:
