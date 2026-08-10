@@ -1,0 +1,17 @@
+ .gitignore                            |   4 [32m+[m
+ README.md                             |  17 [32m++[m
+ content/csv/ref_rules.csv             | 144 [32m++++++++++++++++[m
+ docs/R7_IMPLEMENTATION_PROOF.md       |  64 [32m+++++++[m
+ proof/r7/fixture_coverage_after.json  |   1 [32m+[m
+ proof/r7/fixture_coverage_before.json |   1 [32m+[m
+ proof/r7/fixture_coverage_export.csv  |   1 [32m+[m
+ proof/r7/r7_result.json               |  19 [32m+++[m
+ proof/r7/ref_rules_export.csv         | 144 [32m++++++++++++++++[m
+ proof/r7/schema_after.json            | 306 [32m++++++++++++++++++++++++++++++++++[m
+ proof/r7/schema_before.json           | 292 [32m++++++++++++++++++++++++++++++++[m
+ tests/test_r7.py                      |  88 [32m++++++++++[m
+ tools/apply_r7_grist.py               | 305 [32m+++++++++++++++++++++++++++++++++[m
+ tools/export_grist.py                 |  40 [32m++++[m[31m-[m
+ tools/generate_ref_rules.py           | 159 [32m++++++++++++++++++[m
+ tools/r7_grist.py                     | 197 [32m++++++++++++++++++++++[m
+ 16 files changed, 1781 insertions(+), 1 deletion(-)

@@ -8,4 +8,11 @@ services:
       - ./persist:/persist
     environment:
       GRIST_SESSION_SECRET: "${GRIST_SESSION_SECRET}"
+      APP_HOME_URL: "http://127.0.0.1:8484"
+      APP_HOME_INTERNAL_URL: "http://127.0.0.1:8484"
+      APP_DOC_URL: "http://127.0.0.1:8484"
+      APP_DOC_INTERNAL_URL: "http://127.0.0.1:8484"
+      GRIST_ENABLE_OIDC_SERVER: "true"
+      GRIST_ENABLE_OIDC_DCR: "true"
+      GRIST_OIDC_CIMD_ALLOWED_HOSTS: "claude.ai,chatgpt.com"
     restart: unless-stopped
