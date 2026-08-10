@@ -1,0 +1,292 @@
+{
+  "Fixture_coverage": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "fixture_coverage_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "fixture_set_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "fixture_kind",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "fixture_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "rule_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "system_feature",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "expected_assertion",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "coverage_kind",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "gap_status",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "fixture_coverage_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "fixture_set_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "fixture_kind",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "fixture_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "rule_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "system_feature",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "expected_assertion",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "coverage_kind",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "gap_status",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Ref_rules": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "rule_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "display_name",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "description",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "severity",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "source_reference",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 1,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "rule_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "display_name",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "severity",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "source_reference",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  }
+}
