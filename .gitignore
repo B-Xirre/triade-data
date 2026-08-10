@@ -19,6 +19,10 @@ grist/.env
 __pycache__/
 *.pyc
 
+# Local R7 working copies and proof scratch
+*.grist
+proof/tmp/
+
 # OS/editor
 .DS_Store
 .vscode/

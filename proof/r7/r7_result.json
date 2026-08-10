@@ -1,0 +1,19 @@
+{
+  "coverage_row_count_after": 0,
+  "coverage_row_count_before": 0,
+  "coverage_values_preserved": true,
+  "fixture_coverage_export_sha256": "8416e9352cf3ff8fd95c7e10a1f081f3e0d9ef4eae20f2ea0e02bd32977cddf4",
+  "fixture_rule_column_type": "Ref:Ref_rules",
+  "fixture_rule_visible_column": "Ref_rules.rule_id",
+  "output_grist_sha256": "2a9b7f1b9b6e8810cbbf69f9182dfe779be17e6c3046da14420ee4d26fe28a80",
+  "ref_rules_count": 143,
+  "ref_rules_export_sha256": "64777d393800814f683a4aed711aa00cf97f565996a010a1ccb8ad267d4d624c",
+  "ref_rules_unique_ids": 143,
+  "seed_sha256": "64777d393800814f683a4aed711aa00cf97f565996a010a1ccb8ad267d4d624c",
+  "severity_counts": {
+    "critical": 81,
+    "high": 48,
+    "medium": 14
+  },
+  "sqlite_integrity": "ok"
+}
