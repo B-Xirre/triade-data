@@ -1,0 +1,10 @@
+occupancy_id,equipment_revision_id,slot_id,occupancy_role,hand_group,occupancy_units,delivery_hook_id,supports_combo_source,authoring_notes,sort_order
+occupancy.weapon.maul.main,weapon.maul@1,main_hand,primary,right,1,main_hand,true,Primary delivery hand.,10
+occupancy.weapon.maul.off,weapon.maul@1,off_hand,required,left,1,none,false,Second hand is required but does not add a second delivery hook.,20
+occupancy.weapon.dagger.main,weapon.dagger@1,main_hand,primary,right,1,main_hand,true,Canonical primary-hand occupancy.,30
+occupancy.weapon.dagger.off,weapon.dagger@1,off_hand,optional,left,1,off_hand,true,Alternative off-hand occupancy for the twin-dagger fixture.,40
+occupancy.weapon.sword_1h.main,weapon.sword_1h@1,main_hand,primary,right,1,main_hand,true,Canonical Controller occupancy.,50
+occupancy.weapon.sword_1h.off,weapon.sword_1h@1,off_hand,optional,left,1,off_hand,true,Alternative one-handed occupancy.,60
+occupancy.shield.standard.off,shield.standard@1,off_hand,primary,left,1,off_hand,true,Canonical shield occupancy for the Controller fixture.,70
+occupancy.weapon.mace_1h.main,weapon.mace_1h@1,main_hand,primary,right,1,main_hand,true,Canonical War Priest occupancy.,80
+occupancy.weapon.mace_1h.off,weapon.mace_1h@1,off_hand,optional,left,1,off_hand,true,Alternative one-handed occupancy.,90

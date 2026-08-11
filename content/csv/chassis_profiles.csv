@@ -1,0 +1,6 @@
+chassis_profile_id,display_name,chassis_family,handedness,weight_class,reach_class,base_martial_profile_id,description,authoring_notes,sort_order
+chassis.maul,Maul,maul,two_handed,,,martial.maul,Two-handed Maul chassis for the M10 Striker fixture.,Source: M·2A.9; C·7.2. Weight and reach remain unresolved.,10
+chassis.dagger,Dagger,dagger,one_handed,,,martial.dagger,One-handed Dagger chassis for the M10 Technical and Trickster fixtures.,Source: M·2A.9; C·7.2. Weight and reach remain unresolved.,20
+chassis.sword_1h,1h-Sword,sword,one_handed,,,martial.sword_1h,One-handed Sword chassis for the M10 Controller fixture.,Source: M·2A.9; C·7.2. Weight and reach remain unresolved.,30
+chassis.shield_standard,Standard Shield,shield,one_handed,medium,,martial.shield_standard,Standard Shield chassis for the M10 Controller fixture.,Source: M·2A.11; C·7.2. One hand occupied; pooled shield budget applies. Reach remains unresolved.,40
+chassis.mace_1h,1h-Mace,mace,one_handed,,,martial.mace_1h,One-handed Mace chassis for the M10 War Priest fixture.,Source: M·2A.9; C·7.2. Weight and reach remain unresolved.,50

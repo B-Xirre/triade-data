@@ -1,0 +1,1841 @@
+{
+  "Construction_profiles": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "construction_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "display_name",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "construction_family_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "material_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "rigidity_parameter",
+        "displayCol": 201,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Design_parameters",
+        "visibleCol": 101,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$rigidity_parameter.parameter_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "coverage_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "brittleness_parameter",
+        "displayCol": 204,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Design_parameters",
+        "visibleCol": 101,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$brittleness_parameter.parameter_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "defence_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "type_exception_budget",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "integrity_profile",
+        "displayCol": 208,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Integrity_profiles",
+        "visibleCol": 190,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display3",
+        "displayCol": 0,
+        "formula": "$integrity_profile.integrity_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "ward_source_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "bridge2_mechanism",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"edm_damping\",\"home_well_strengthening\",\"barycentre_well\",\"none\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "encumbrance_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "visual_mesh_family_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "integrity_render_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "description",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "construction_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "display_name",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "construction_family_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "material_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "rigidity_parameter",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "coverage_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "brittleness_parameter",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "defence_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "type_exception_budget",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "integrity_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display3",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "ward_source_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "bridge2_mechanism",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "encumbrance_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "visual_mesh_family_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "integrity_render_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Damage_profile_entries": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "damage_profile_entry_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "damage_type",
+        "displayCol": 235,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_damage_types",
+        "visibleCol": 7,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$damage_type.damage_type_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "base_pips",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "pip_budget_group",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "primary_status_hook_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "secondary_status_hook_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "requirement_eligible",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "source_layer",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"chassis\",\"affix\",\"inscription\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "damage_profile_entry_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "damage_type",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "base_pips",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "pip_budget_group",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "primary_status_hook_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "secondary_status_hook_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "requirement_eligible",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "''",
+        "name": "source_layer",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Defence_profile_entries": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "defence_profile_entry_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "defence_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "scope_kind",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"group\",\"type_exception\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "damage_group",
+        "displayCol": 248,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_damage_groups",
+        "visibleCol": 13,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$damage_group.damage_group_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "damage_type",
+        "displayCol": 250,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_damage_types",
+        "visibleCol": 7,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$damage_type.damage_type_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "rating_value",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "rating_unit",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "exception_polarity",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"none\",\"strength\",\"weakness\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "condition_expression_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "narration_fragment_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "defence_profile_entry_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "defence_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "scope_kind",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "damage_group",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "damage_type",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "rating_value",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "rating_unit",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "exception_polarity",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "condition_expression_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "narration_fragment_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Equipment": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "revision_number",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_revision_id",
+        "displayCol": 0,
+        "formula": "$equipment_id + \"@\" + str($revision_number)",
+        "isFormula": 1,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "schema_version",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "content_version",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "lifecycle_status",
+        "displayCol": 165,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_lifecycle_status",
+        "visibleCol": 58,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "design_status",
+        "displayCol": 166,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_design_status",
+        "visibleCol": 63,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "category",
+        "displayCol": 167,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_categories",
+        "visibleCol": 78,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "demand_tier",
+        "displayCol": 168,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_demand_tiers",
+        "visibleCol": 53,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "display_name_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "short_name_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "description_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "flavour_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "accessibility_description_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "is_doctrinal",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"CheckBox\"}"
+      },
+      {
+        "colId": "is_transgressive",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"CheckBox\"}"
+      },
+      {
+        "colId": "is_unique",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"CheckBox\"}"
+      },
+      {
+        "colId": "is_secret",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"CheckBox\"}"
+      },
+      {
+        "colId": "is_relic",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"CheckBox\"}"
+      },
+      {
+        "colId": "introduced_in_version",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "deprecated_in_version",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "source_document_ref",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "decision_origin",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"W\",\"U\",\"BOTH\",\"NEW\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "content_hash",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "approved_by",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "approved_at",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "DateTime:Europe/Warsaw",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"dateFormat\":\"DD.MM.YYYY\",\"timeFormat\":\"HH:mm:ss\",\"isCustomDateFormat\":false,\"isCustomTimeFormat\":false,\"alignment\":\"left\"}"
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$lifecycle_status.lifecycle_status_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$design_status.design_status_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display3",
+        "displayCol": 0,
+        "formula": "$category.category_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display4",
+        "displayCol": 0,
+        "formula": "$demand_tier.demand_tier_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "chassis_profile",
+        "displayCol": 451,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Chassis_profiles",
+        "visibleCol": 179,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "construction_profile",
+        "displayCol": 453,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Construction_profiles",
+        "visibleCol": 196,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "integrity_profile",
+        "displayCol": 455,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Integrity_profiles",
+        "visibleCol": 190,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display5",
+        "displayCol": 0,
+        "formula": "$chassis_profile.chassis_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display6",
+        "displayCol": 0,
+        "formula": "$construction_profile.construction_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display7",
+        "displayCol": 0,
+        "formula": "$integrity_profile.integrity_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "equipment_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "revision_number",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "equipment_revision_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "schema_version",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "content_version",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "lifecycle_status",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "design_status",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "category",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "demand_tier",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "display_name_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "short_name_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "flavour_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "accessibility_description_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "is_doctrinal",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "0",
+        "name": "is_transgressive",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "0",
+        "name": "is_unique",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "0",
+        "name": "is_secret",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "0",
+        "name": "is_relic",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "''",
+        "name": "introduced_in_version",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "deprecated_in_version",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "source_document_ref",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "decision_origin",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "content_hash",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "approved_by",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "NULL",
+        "name": "approved_at",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display3",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display4",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "chassis_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display5",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "construction_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display6",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "integrity_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display7",
+        "primary_key": false,
+        "type": "BLOB"
+      }
+    ]
+  },
+  "Equipment_tags": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_tag_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_revision",
+        "displayCol": 175,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Equipment",
+        "visibleCol": 132,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "tag",
+        "displayCol": 176,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_tags",
+        "visibleCol": 95,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$equipment_revision.equipment_revision_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$tag.tag_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "equipment_tag_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "equipment_revision",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "tag",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Equipment_text": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_text_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_revision",
+        "displayCol": 174,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Equipment",
+        "visibleCol": 132,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "locale",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "text_key",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "text_kind",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"display_name\",\"short_name\",\"description\",\"flavour\",\"accessibility\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "text_value",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "revision",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$equipment_revision.equipment_revision_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "equipment_text_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "equipment_revision",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "locale",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "text_key",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "text_kind",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "text_value",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "revision",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      }
+    ]
+  },
+  "Slot_occupancy": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "occupancy_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "equipment_revision",
+        "displayCol": 221,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Equipment",
+        "visibleCol": 132,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "slot",
+        "displayCol": 222,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_slots",
+        "visibleCol": 83,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$equipment_revision.equipment_revision_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$slot.slot_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "occupancy_role",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"primary\",\"secondary\",\"required\",\"optional\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "hand_group",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0,
+        "widgetOptions": "{\"widget\":\"TextBox\",\"choices\":[\"left\",\"right\",\"both\",\"none\",\"body_relative\"],\"alignment\":\"left\",\"choiceOptions\":{}}"
+      },
+      {
+        "colId": "occupancy_units",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "delivery_hook",
+        "displayCol": 227,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_hooks",
+        "visibleCol": 33,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "gristHelper_Display3",
+        "displayCol": 0,
+        "formula": "$delivery_hook.hook_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "supports_combo_source",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0,
+        "widgetOptions": ""
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "occupancy_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "equipment_revision",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "slot",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "occupancy_role",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "hand_group",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "occupancy_units",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "delivery_hook",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display3",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "supports_combo_source",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  }
+}

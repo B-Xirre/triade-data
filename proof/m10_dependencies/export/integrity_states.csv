@@ -1,0 +1,4 @@
+integrity_state_row_id,integrity_profile_id,state_id,ordinal,entry_condition_id,opening_delta_modifier_q,opening_decay_modifier_q,discipline_creation_enabled,finisher_gate_eligible,render_state_id,repair_policy_id,authoring_notes,sort_order
+integrity.shield_standard.stable,integrity.shield_standard,stable,1,,,,true,false,,,Initial intact shield state.,10
+integrity.shield_standard.cracked,integrity.shield_standard,cracked,2,,,,true,false,,,Compromised shield state; numeric Opening modifiers remain blocked by ◇P3.,20
+integrity.shield_standard.broken_guard,integrity.shield_standard,broken_guard,3,,,,false,false,,,Broken Guard suppresses Discipline Opening-creation. Working shield path is authored-but-not-yet-centralised.,30
