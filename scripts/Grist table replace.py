@@ -1,9 +1,8 @@
-script = r"""
 $ErrorActionPreference = 'Stop'
 
 $gristUrl = 'http://127.0.0.1:8484'
 $activeDocId = '3TwLJyu7fythPjAj1e1424'
-$candidateDocId = 'sa9W9q3Adf28DMLbCCgZ4'
+$candidateDocId = 'w1BvHVv8dMpgjevtx5YZu9'
 
 $secureKey = Read-Host 'Grist API key' -AsSecureString
 $keyPointer = [IntPtr]::Zero
@@ -106,4 +105,3 @@ finally {
         key, secureKey, keyPointer, headers, body, rulesResponse, rules `
         -ErrorAction SilentlyContinue
 }
-"""
