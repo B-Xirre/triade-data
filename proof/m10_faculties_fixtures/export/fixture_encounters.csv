@@ -1,0 +1,6 @@
+fixture_encounter_id,fixture_set_id,display_name,zone_count,environment_id,proof_purpose,description,sort_order
+fixture.encounter.corridor,m10-v1,◈E1 Corridor,2,,Minimum legal zone count,Two-zone encounter shell.,10
+fixture.encounter.chamber,m10-v1,◇E2 Chamber,3,,Back-foot non-stacking,Three-zone encounter shell; composition awaits ◇P8.,20
+fixture.encounter.gallery,m10-v1,◇E3 Gallery,4,,Advantage source coverage,Four-zone encounter shell; composition awaits ◇P8.,30
+fixture.encounter.vault,m10-v1,◇E4 Vault,3,high_ground,Signature and high-ground coupling,Three-zone high-ground encounter shell; composition awaits ◇P8.,40
+fixture.encounter.den,m10-v1,◇E5 Den,3,,Non-humanoid and pack coverage,Three-zone encounter shell; composition awaits ◇P8.,50

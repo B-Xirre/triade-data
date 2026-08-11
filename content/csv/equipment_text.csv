@@ -1,0 +1,21 @@
+equipment_text_id,equipment_revision_id,locale,text_key,text_kind,text_value,revision,sort_order
+text.weapon.maul.display_name,weapon.maul@1,en-GB,equipment.weapon.maul.display_name,display_name,Maul,1,10
+text.weapon.maul.short_name,weapon.maul@1,en-GB,equipment.weapon.maul.short_name,short_name,Maul,1,20
+text.weapon.maul.description,weapon.maul@1,en-GB,equipment.weapon.maul.description,description,Two-handed weapon with an Impact-heavy martial profile and a Shatter contribution.,1,30
+text.weapon.maul.accessibility,weapon.maul@1,en-GB,equipment.weapon.maul.accessibility,accessibility,Two-handed weapon. Impact three; Shatter one. Occupies both hands.,1,40
+text.weapon.dagger.display_name,weapon.dagger@1,en-GB,equipment.weapon.dagger.display_name,display_name,Dagger,1,50
+text.weapon.dagger.short_name,weapon.dagger@1,en-GB,equipment.weapon.dagger.short_name,short_name,Dagger,1,60
+text.weapon.dagger.description,weapon.dagger@1,en-GB,equipment.weapon.dagger.description,description,One-handed weapon with a Pierce-heavy martial profile and a Slash contribution.,1,70
+text.weapon.dagger.accessibility,weapon.dagger@1,en-GB,equipment.weapon.dagger.accessibility,accessibility,One-handed weapon. Pierce two; Slash one.,1,80
+text.weapon.sword_1h.display_name,weapon.sword_1h@1,en-GB,equipment.weapon.sword_1h.display_name,display_name,1h-Sword,1,90
+text.weapon.sword_1h.short_name,weapon.sword_1h@1,en-GB,equipment.weapon.sword_1h.short_name,short_name,1h-Sword,1,100
+text.weapon.sword_1h.description,weapon.sword_1h@1,en-GB,equipment.weapon.sword_1h.description,description,One-handed sword with a Slash-heavy martial profile and a Pierce contribution.,1,110
+text.weapon.sword_1h.accessibility,weapon.sword_1h@1,en-GB,equipment.weapon.sword_1h.accessibility,accessibility,One-handed weapon. Slash two; Pierce one.,1,120
+text.shield.standard.display_name,shield.standard@1,en-GB,equipment.shield.standard.display_name,display_name,Standard Shield,1,130
+text.shield.standard.short_name,shield.standard@1,en-GB,equipment.shield.standard.short_name,short_name,Shield,1,140
+text.shield.standard.description,shield.standard@1,en-GB,equipment.shield.standard.description,description,One-handed shield with one Impact pip and one Physical defence pip plus an independent integrity track.,1,150
+text.shield.standard.accessibility,shield.standard@1,en-GB,equipment.shield.standard.accessibility,accessibility,One-handed shield. Impact one. Physical defence one. Uses a separate Stable to Cracked to Broken Guard integrity track.,1,160
+text.weapon.mace_1h.display_name,weapon.mace_1h@1,en-GB,equipment.weapon.mace_1h.display_name,display_name,1h-Mace,1,170
+text.weapon.mace_1h.short_name,weapon.mace_1h@1,en-GB,equipment.weapon.mace_1h.short_name,short_name,1h-Mace,1,180
+text.weapon.mace_1h.description,weapon.mace_1h@1,en-GB,equipment.weapon.mace_1h.description,description,One-handed mace with an Impact-heavy martial profile and a Shatter contribution.,1,190
+text.weapon.mace_1h.accessibility,weapon.mace_1h@1,en-GB,equipment.weapon.mace_1h.accessibility,accessibility,One-handed weapon. Impact two; Shatter one.,1,200

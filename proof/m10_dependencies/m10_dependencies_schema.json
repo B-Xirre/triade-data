@@ -1,0 +1,820 @@
+{
+  "Chassis_profiles": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "chassis_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "display_name",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "chassis_family",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "handedness",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "weight_class",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "reach_class",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "base_martial_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "description",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "chassis_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "display_name",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "chassis_family",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "handedness",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "weight_class",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "reach_class",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "base_martial_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Construction_profiles": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "construction_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "display_name",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "construction_family_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "material_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "rigidity_parameter",
+        "displayCol": 201,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Design_parameters",
+        "visibleCol": 101
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$rigidity_parameter.parameter_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0
+      },
+      {
+        "colId": "coverage_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "brittleness_parameter",
+        "displayCol": 204,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Design_parameters",
+        "visibleCol": 101
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$brittleness_parameter.parameter_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0
+      },
+      {
+        "colId": "defence_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "type_exception_budget",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      },
+      {
+        "colId": "integrity_profile",
+        "displayCol": 208,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Integrity_profiles",
+        "visibleCol": 190
+      },
+      {
+        "colId": "gristHelper_Display3",
+        "displayCol": 0,
+        "formula": "$integrity_profile.integrity_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0
+      },
+      {
+        "colId": "ward_source_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "bridge2_mechanism",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Choice",
+        "visibleCol": 0
+      },
+      {
+        "colId": "encumbrance_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "visual_mesh_family_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "integrity_render_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "description",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "construction_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "display_name",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "construction_family_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "material_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "rigidity_parameter",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "coverage_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "brittleness_parameter",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "defence_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "type_exception_budget",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "integrity_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display3",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "''",
+        "name": "ward_source_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "bridge2_mechanism",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "encumbrance_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "visual_mesh_family_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "integrity_render_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Integrity_profiles": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "integrity_profile_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "display_name",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "description",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "integrity_profile_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "display_name",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "description",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  },
+  "Integrity_states": {
+    "columns": [
+      {
+        "colId": "manualSort",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "ManualSortPos",
+        "visibleCol": 0
+      },
+      {
+        "colId": "integrity_state_row_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "integrity_profile",
+        "displayCol": 261,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Integrity_profiles",
+        "visibleCol": 190
+      },
+      {
+        "colId": "state",
+        "displayCol": 262,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Ref:Ref_integrity_states",
+        "visibleCol": 68
+      },
+      {
+        "colId": "gristHelper_Display",
+        "displayCol": 0,
+        "formula": "$integrity_profile.integrity_profile_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0
+      },
+      {
+        "colId": "gristHelper_Display2",
+        "displayCol": 0,
+        "formula": "$state.integrity_state_id",
+        "isFormula": 1,
+        "type": "Any",
+        "visibleCol": 0
+      },
+      {
+        "colId": "ordinal",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      },
+      {
+        "colId": "entry_condition_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "opening_delta_modifier_q",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      },
+      {
+        "colId": "opening_decay_modifier_q",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      },
+      {
+        "colId": "discipline_creation_enabled",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0
+      },
+      {
+        "colId": "finisher_gate_eligible",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Bool",
+        "visibleCol": 0
+      },
+      {
+        "colId": "render_state_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "repair_policy_id",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "authoring_notes",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Text",
+        "visibleCol": 0
+      },
+      {
+        "colId": "sort_order",
+        "displayCol": 0,
+        "formula": "",
+        "isFormula": 0,
+        "type": "Int",
+        "visibleCol": 0
+      }
+    ],
+    "sqlite_schema": [
+      {
+        "default": null,
+        "name": "id",
+        "primary_key": true,
+        "type": "INTEGER"
+      },
+      {
+        "default": "1e999",
+        "name": "manualSort",
+        "primary_key": false,
+        "type": "NUMERIC"
+      },
+      {
+        "default": "''",
+        "name": "integrity_state_row_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "integrity_profile",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "state",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "NULL",
+        "name": "gristHelper_Display2",
+        "primary_key": false,
+        "type": "BLOB"
+      },
+      {
+        "default": "0",
+        "name": "ordinal",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "''",
+        "name": "entry_condition_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "opening_delta_modifier_q",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "opening_decay_modifier_q",
+        "primary_key": false,
+        "type": "INTEGER"
+      },
+      {
+        "default": "0",
+        "name": "discipline_creation_enabled",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "0",
+        "name": "finisher_gate_eligible",
+        "primary_key": false,
+        "type": "BOOLEAN"
+      },
+      {
+        "default": "''",
+        "name": "render_state_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "repair_policy_id",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "''",
+        "name": "authoring_notes",
+        "primary_key": false,
+        "type": "TEXT"
+      },
+      {
+        "default": "0",
+        "name": "sort_order",
+        "primary_key": false,
+        "type": "INTEGER"
+      }
+    ]
+  }
+}

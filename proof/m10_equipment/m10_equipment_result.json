@@ -1,0 +1,83 @@
+{
+  "after_counts": {
+    "Damage_profile_entries": 9,
+    "Defence_profile_entries": 1,
+    "Equipment": 5,
+    "Equipment_tags": 0,
+    "Equipment_text": 20,
+    "Slot_occupancy": 9
+  },
+  "before_counts": {
+    "Damage_profile_entries": 0,
+    "Defence_profile_entries": 0,
+    "Equipment": 0,
+    "Equipment_tags": 0,
+    "Equipment_text": 0,
+    "Slot_occupancy": 0
+  },
+  "bridge2_choices": [
+    "edm_damping",
+    "home_well_strengthening",
+    "barycentre_well",
+    "none"
+  ],
+  "bridge2_value": "barycentre_well",
+  "dependency_counts": {
+    "Chassis_profiles": 5,
+    "Construction_profiles": 2,
+    "Integrity_profiles": 1,
+    "Integrity_states": 3
+  },
+  "equipment_tags_deferred": true,
+  "export_sha256": {
+    "damage_profile_entries.csv": "81e6ccdd9d644adca02e1fd499d5e5747331c8bca2949287e3f077ea96b004f3",
+    "defence_profile_entries.csv": "d4480e20c0b78f928544226a37ae7467eff8e49473246582e1470cb0a6f6d65b",
+    "equipment.csv": "b87acc3d2fc5ee78e570eba195edf01804ec2f28b80af258bdfae03002b911d9",
+    "equipment_tags.csv": "bdc1fda1d000789ad7a4729de5ff1628761d7fd610a39acbc0be949706e046fe",
+    "equipment_text.csv": "1cf2f0ee9abe90af84b63acfaffb6b7ee53ebfc697a6ae8a878b5628aef43aae",
+    "slot_occupancy.csv": "820935f0c3819a1fdbe0868446974f28a5b91886ddcb49bd1acbc29c2b64db17"
+  },
+  "output_document": "../../deliverables/Triade - Equipment Authoring-M10-equipment.grist",
+  "output_sha256": "c6dc5d19a95f568e135ab024a5270d4bdb5868f94d9dc4942dfd86ddf6543401",
+  "pip_totals": {
+    "martial.dagger": 3,
+    "martial.mace_1h": 3,
+    "martial.maul": 4,
+    "martial.shield_standard": 2,
+    "martial.sword_1h": 3
+  },
+  "r7_count": 143,
+  "r7_severity_split": {
+    "critical": 81,
+    "high": 48,
+    "medium": 14
+  },
+  "scalar_authoring": true,
+  "seed_export_byte_identical": true,
+  "seed_sha256": {
+    "damage_profile_entries.csv": "81e6ccdd9d644adca02e1fd499d5e5747331c8bca2949287e3f077ea96b004f3",
+    "defence_profile_entries.csv": "d4480e20c0b78f928544226a37ae7467eff8e49473246582e1470cb0a6f6d65b",
+    "equipment.csv": "b87acc3d2fc5ee78e570eba195edf01804ec2f28b80af258bdfae03002b911d9",
+    "equipment_tags.csv": "bdc1fda1d000789ad7a4729de5ff1628761d7fd610a39acbc0be949706e046fe",
+    "equipment_text.csv": "1cf2f0ee9abe90af84b63acfaffb6b7ee53ebfc697a6ae8a878b5628aef43aae",
+    "slot_occupancy.csv": "820935f0c3819a1fdbe0868446974f28a5b91886ddcb49bd1acbc29c2b64db17"
+  },
+  "shield_defence_rating_remains_null": true,
+  "source_document": "../../deliverables/Triade - Equipment Authoring-M10-dependencies.grist",
+  "source_sha256": "4c60458caf1af1e3542b31b310b929843714d40e6ebe77ebb4f2bd86501d7e27",
+  "sqlite_integrity": "ok",
+  "stable_ids_unique": true,
+  "stable_reference_readback": true,
+  "unresolved": [
+    "Standard Shield numeric defence rating and pooled-budget scale",
+    "protected Ref_tags registry is empty",
+    "canonical equipment schema version is not implemented"
+  ],
+  "verified_design_sources": [
+    "P·10.3",
+    "M·2A.6",
+    "M·2A.7",
+    "M·2A.9",
+    "M·2A.11"
+  ]
+}

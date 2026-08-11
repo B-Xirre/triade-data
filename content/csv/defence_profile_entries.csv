@@ -1,0 +1,2 @@
+defence_profile_entry_id,defence_profile_id,scope_kind,damage_group_id,damage_type_id,rating_value,rating_unit,exception_polarity,condition_expression_id,narration_fragment_id,sort_order
+defence.shield_standard.physical,defence.shield_standard,group,physical,,1,pip,none,,,10

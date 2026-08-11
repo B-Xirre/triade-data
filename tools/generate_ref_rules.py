@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-EXPECTED_COUNTS = {"critical": 81, "high": 48, "medium": 14}
+EXPECTED_COUNTS = {"critical": 86, "high": 48, "medium": 14}
 EXPECTED_TOTAL = sum(EXPECTED_COUNTS.values())
 RULE_ID_RE = re.compile(r"^[A-Z]+-([CHM])(\d+)$")
 SEVERITY_BY_LETTER = {"C": "critical", "H": "high", "M": "medium"}

@@ -1,0 +1,10 @@
+damage_profile_entry_id,profile_id,damage_type_id,base_pips,pip_budget_group,primary_status_hook_id,secondary_status_hook_id,requirement_eligible,source_layer,sort_order
+martial.maul.impact,martial.maul,impact,3,martial.maul,,,true,chassis,10
+martial.maul.shatter,martial.maul,shatter,1,martial.maul,,,true,chassis,20
+martial.dagger.pierce,martial.dagger,pierce,2,martial.dagger,,,true,chassis,30
+martial.dagger.slash,martial.dagger,slash,1,martial.dagger,,,true,chassis,40
+martial.sword_1h.slash,martial.sword_1h,slash,2,martial.sword_1h,,,true,chassis,50
+martial.sword_1h.pierce,martial.sword_1h,pierce,1,martial.sword_1h,,,true,chassis,60
+martial.shield_standard.impact,martial.shield_standard,impact,1,martial.shield_standard,,,true,chassis,70
+martial.mace_1h.impact,martial.mace_1h,impact,2,martial.mace_1h,,,true,chassis,80
+martial.mace_1h.shatter,martial.mace_1h,shatter,1,martial.mace_1h,,,true,chassis,90

@@ -1,0 +1,44 @@
+{
+  "after_counts": {
+    "Chassis_profiles": 5,
+    "Construction_profiles": 2,
+    "Integrity_profiles": 1,
+    "Integrity_states": 3
+  },
+  "authored_columns_are_data": true,
+  "authored_design_decision": "Standard Shield integrity path uses stable -> cracked -> broken_guard pending central disposition",
+  "before_counts": {
+    "Chassis_profiles": 0,
+    "Construction_profiles": 0,
+    "Integrity_profiles": 0,
+    "Integrity_states": 0
+  },
+  "export_sha256": {
+    "chassis_profiles.csv": "7b9049a5e38138eaaf84e93aa733f78fd9168170edc3090d6d7ae43edda28bdc",
+    "construction_profiles.csv": "a577a697afebac7cd699e468a60d3a4a6ef5d761ec7afeb4604bae25dbb39fda",
+    "integrity_profiles.csv": "2d01fab17892ab3bd45965b169c588153b6c4a7adceb7433e85a2c795a5c52ff",
+    "integrity_states.csv": "6d86ebb355b97d66b042ea0136e5df6b4684d48c2857b696c819a4f745033e97"
+  },
+  "output_document": "../../deliverables/Triade - Equipment Authoring-M10-dependencies.grist",
+  "output_sha256": "4c60458caf1af1e3542b31b310b929843714d40e6ebe77ebb4f2bd86501d7e27",
+  "q_fields_remain_null": true,
+  "scalar_authoring": true,
+  "seed_export_byte_identical": true,
+  "seed_files": [
+    "chassis_profiles.csv",
+    "construction_profiles.csv",
+    "integrity_profiles.csv",
+    "integrity_states.csv"
+  ],
+  "seed_sha256": {
+    "chassis_profiles.csv": "7b9049a5e38138eaaf84e93aa733f78fd9168170edc3090d6d7ae43edda28bdc",
+    "construction_profiles.csv": "a577a697afebac7cd699e468a60d3a4a6ef5d761ec7afeb4604bae25dbb39fda",
+    "integrity_profiles.csv": "2d01fab17892ab3bd45965b169c588153b6c4a7adceb7433e85a2c795a5c52ff",
+    "integrity_states.csv": "6d86ebb355b97d66b042ea0136e5df6b4684d48c2857b696c819a4f745033e97"
+  },
+  "source_document": "../../deliverables/Triade - Equipment Authoring-R7.grist",
+  "source_sha256": "2a9b7f1b9b6e8810cbbf69f9182dfe779be17e6c3046da14420ee4d26fe28a80",
+  "sqlite_integrity": "ok",
+  "stable_ids_unique": true,
+  "stable_reference_readback": true
+}

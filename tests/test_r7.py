@@ -19,16 +19,10 @@ from r7_grist import export_fixture_coverage, load_seed  # noqa: E402
 
 class R7Tests(unittest.TestCase):
     def test_governed_index_generates_byte_identical_seed(self) -> None:
-        index = Path(
-            os.environ.get(
-                "TRIADE_VALIDATION_RULES_INDEX",
-                str(
-                    Path(__file__).resolve().parents[3]
-                    / "governed"
-                    / "TRIADE-Validation_Rules_Index-0_21_0.md"
-                ),
-            )
-        )
+        configured = os.environ.get("TRIADE_VALIDATION_RULES_INDEX")
+        if not configured:
+            self.skipTest("set TRIADE_VALIDATION_RULES_INDEX to the governed 0.29.0 index")
+        index = Path(configured)
         if not index.exists():
             self.skipTest("set TRIADE_VALIDATION_RULES_INDEX to the governed 0.21.0 index")
         with tempfile.TemporaryDirectory() as directory:
@@ -40,7 +34,7 @@ class R7Tests(unittest.TestCase):
             write_seed(rules, second)
             self.assertEqual(first.read_bytes(), second.read_bytes())
             seed = load_seed(first)
-        self.assertEqual(len(seed), 143)
+        self.assertEqual(len(seed), 148)
         self.assertEqual(
             {
                 severity: sum(row["severity"] == severity for row in seed)

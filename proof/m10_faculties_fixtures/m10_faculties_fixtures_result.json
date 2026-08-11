@@ -1,0 +1,99 @@
+{
+  "after_counts": {
+    "Faculties": 5,
+    "Faculty_profiles": 0,
+    "Fixture_builds": 5,
+    "Fixture_coverage": 24,
+    "Fixture_encounters": 5,
+    "Fixture_loadouts": 7,
+    "Fixture_stat_weights": 45
+  },
+  "baseline_counts": {
+    "Chassis_profiles": 5,
+    "Construction_profiles": 2,
+    "Damage_profile_entries": 9,
+    "Defence_profile_entries": 1,
+    "Equipment": 5,
+    "Equipment_tags": 0,
+    "Equipment_text": 20,
+    "Integrity_profiles": 1,
+    "Integrity_states": 3,
+    "Ref_rules": 143,
+    "Slot_occupancy": 9
+  },
+  "before_counts": {
+    "Faculties": 0,
+    "Faculty_profiles": 0,
+    "Fixture_builds": 0,
+    "Fixture_coverage": 0,
+    "Fixture_encounters": 0,
+    "Fixture_loadouts": 0,
+    "Fixture_stat_weights": 0
+  },
+  "coverage_summary": {
+    "gap": 15,
+    "proof": 9
+  },
+  "existing_blockers": [
+    "◇P8 blocks fixture_enemies and fixture_encounter_members",
+    "◇P6 blocks canonical schema version and package validation",
+    "◇P10 leaves equipment tags unavailable",
+    "◇M12 blocks authoritative shield mitigation only"
+  ],
+  "export_sha256": {
+    "faculties.csv": "823623beda22fa7b19ea2a972d0583d7929657a1dc46380aa9f47425fc5a7f02",
+    "faculty_profiles.csv": "8e44109d235def315e2aa4f542627169726acae88e78cbc7a766b979e85e0839",
+    "fixture_builds.csv": "896c16ddc7af8c8ecabbb7e8b4c923cedd3319189a0d0e84f115c4718f80fe37",
+    "fixture_coverage.csv": "77fe23fba1784879d4a18b005042827ea6cc4c222b373fab4b9d74e461314aae",
+    "fixture_encounters.csv": "d233519961b43be7dc3142001affd10f92a2a79718b7c8d0605fd70771f605b4",
+    "fixture_loadouts.csv": "fdbea4fc4da38c3e4809dbacce4cc76819fb6e90b1e7795f2f3ab09dfdb96605",
+    "fixture_stat_weights.csv": "c6ddc35d4e8daf743ec4b962865c7460b51946d9709be7c8ab2720d587ff28a9"
+  },
+  "faculty_profiles_deferred": true,
+  "fixture_enemy_tables_deferred": true,
+  "free_hand_by_build": {
+    "fixture.build.controller": false,
+    "fixture.build.striker": false,
+    "fixture.build.technical": false,
+    "fixture.build.trickster": true,
+    "fixture.build.war_priest": true
+  },
+  "new_findings": [
+    "TS-M10F-01: authoritative concrete faculty origins, base footprints, and vocabulary rows are absent",
+    "TS-M10F-02: no normalized fixture-build to faculty-revision assignment relation exists"
+  ],
+  "output_document": "/workspace/scratch/c4a6d867b4d9/work/m11_faculties_fixtures/deliverables/Triade - Equipment Authoring-M10-faculties-fixtures.grist",
+  "output_sha256": "0bb88fbb2960080e905e7c2216a2ffeb040778aab2d9f7b6a1fab52211d4f2f5",
+  "r7_count": 143,
+  "r7_severity_split": {
+    "critical": 81,
+    "high": 48,
+    "medium": 14
+  },
+  "scalar_authoring": true,
+  "seed_export_byte_identical": true,
+  "seed_sha256": {
+    "faculties.csv": "823623beda22fa7b19ea2a972d0583d7929657a1dc46380aa9f47425fc5a7f02",
+    "faculty_profiles.csv": "8e44109d235def315e2aa4f542627169726acae88e78cbc7a766b979e85e0839",
+    "fixture_builds.csv": "896c16ddc7af8c8ecabbb7e8b4c923cedd3319189a0d0e84f115c4718f80fe37",
+    "fixture_coverage.csv": "77fe23fba1784879d4a18b005042827ea6cc4c222b373fab4b9d74e461314aae",
+    "fixture_encounters.csv": "d233519961b43be7dc3142001affd10f92a2a79718b7c8d0605fd70771f605b4",
+    "fixture_loadouts.csv": "fdbea4fc4da38c3e4809dbacce4cc76819fb6e90b1e7795f2f3ab09dfdb96605",
+    "fixture_stat_weights.csv": "c6ddc35d4e8daf743ec4b962865c7460b51946d9709be7c8ab2720d587ff28a9"
+  },
+  "source_document": "/workspace/scratch/c4a6d867b4d9/work/m11_faculties_fixtures/input/Triade - Equipment Authoring-M10-adopted.grist",
+  "source_sha256": "e3590afaae456fecc2ce7e3c9e9c127d3456f64575f4a774005d4043de2fdc0f",
+  "sqlite_integrity": "ok",
+  "stable_ids_unique": true,
+  "stable_reference_readback": true,
+  "verified_design_sources": [
+    "M·2A.10a",
+    "M·9.5",
+    "P·10.2",
+    "P·10.3",
+    "P·10.4",
+    "P·10.5",
+    "P·10.6",
+    "P·10.7"
+  ]
+}

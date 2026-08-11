@@ -1,0 +1,162 @@
+{
+  "Chassis_profiles": [
+    {
+      "authoring_notes": "Source: M·2A.9; C·7.2. Weight and reach remain unresolved.",
+      "base_martial_profile_id": "martial.maul",
+      "chassis_family": "maul",
+      "chassis_profile_id": "chassis.maul",
+      "description": "Two-handed Maul chassis for the M10 Striker fixture.",
+      "display_name": "Maul",
+      "handedness": "two_handed",
+      "reach_class": "",
+      "sort_order": 10,
+      "weight_class": ""
+    },
+    {
+      "authoring_notes": "Source: M·2A.9; C·7.2. Weight and reach remain unresolved.",
+      "base_martial_profile_id": "martial.dagger",
+      "chassis_family": "dagger",
+      "chassis_profile_id": "chassis.dagger",
+      "description": "One-handed Dagger chassis for the M10 Technical and Trickster fixtures.",
+      "display_name": "Dagger",
+      "handedness": "one_handed",
+      "reach_class": "",
+      "sort_order": 20,
+      "weight_class": ""
+    },
+    {
+      "authoring_notes": "Source: M·2A.9; C·7.2. Weight and reach remain unresolved.",
+      "base_martial_profile_id": "martial.sword_1h",
+      "chassis_family": "sword",
+      "chassis_profile_id": "chassis.sword_1h",
+      "description": "One-handed Sword chassis for the M10 Controller fixture.",
+      "display_name": "1h-Sword",
+      "handedness": "one_handed",
+      "reach_class": "",
+      "sort_order": 30,
+      "weight_class": ""
+    },
+    {
+      "authoring_notes": "Source: M·2A.11; C·7.2. One hand occupied; pooled shield budget applies. Reach remains unresolved.",
+      "base_martial_profile_id": "martial.shield_standard",
+      "chassis_family": "shield",
+      "chassis_profile_id": "chassis.shield_standard",
+      "description": "Standard Shield chassis for the M10 Controller fixture.",
+      "display_name": "Standard Shield",
+      "handedness": "one_handed",
+      "reach_class": "",
+      "sort_order": 40,
+      "weight_class": "medium"
+    },
+    {
+      "authoring_notes": "Source: M·2A.9; C·7.2. Weight and reach remain unresolved.",
+      "base_martial_profile_id": "martial.mace_1h",
+      "chassis_family": "mace",
+      "chassis_profile_id": "chassis.mace_1h",
+      "description": "One-handed Mace chassis for the M10 War Priest fixture.",
+      "display_name": "1h-Mace",
+      "handedness": "one_handed",
+      "reach_class": "",
+      "sort_order": 50,
+      "weight_class": ""
+    }
+  ],
+  "Construction_profiles": [
+    {
+      "authoring_notes": "Material, rigidity, brittleness, coverage and render semantics are not source-owned yet; blanks are deliberate.",
+      "bridge2_mechanism": "none",
+      "brittleness_parameter_id": "",
+      "construction_family_id": "",
+      "construction_profile_id": "construction.fixture_weapon_m10",
+      "coverage_profile_id": "",
+      "defence_profile_id": "",
+      "description": "Non-armour construction shell shared by the five-item M10 slice.",
+      "display_name": "M10 Weapon Construction (provisional)",
+      "encumbrance_profile_id": "",
+      "integrity_profile_id": "",
+      "integrity_render_profile_id": "",
+      "material_id": "",
+      "rigidity_parameter_id": "",
+      "sort_order": 10,
+      "type_exception_budget": null,
+      "visual_mesh_family_id": "",
+      "ward_source_profile_id": ""
+    },
+    {
+      "authoring_notes": "Source: M·2A.11. Medium shield has no locked Bridge-2 enum mapping; unresolved fields remain blank.",
+      "bridge2_mechanism": "",
+      "brittleness_parameter_id": "",
+      "construction_family_id": "shield_standard",
+      "construction_profile_id": "construction.shield_standard",
+      "coverage_profile_id": "",
+      "defence_profile_id": "defence.shield_standard",
+      "description": "Balanced Standard Shield construction profile.",
+      "display_name": "Standard Shield Construction",
+      "encumbrance_profile_id": "",
+      "integrity_profile_id": "integrity.shield_standard",
+      "integrity_render_profile_id": "",
+      "material_id": "",
+      "rigidity_parameter_id": "",
+      "sort_order": 20,
+      "type_exception_budget": null,
+      "visual_mesh_family_id": "",
+      "ward_source_profile_id": ""
+    }
+  ],
+  "Integrity_profiles": [
+    {
+      "authoring_notes": "Source: M·2A.6 and M·2A.11. Separate from body-armour integrity.",
+      "description": "Encounter-scoped visible integrity track owned by the Standard Shield.",
+      "display_name": "Standard Shield Integrity",
+      "integrity_profile_id": "integrity.shield_standard",
+      "sort_order": 10
+    }
+  ],
+  "Integrity_states": [
+    {
+      "authoring_notes": "Initial intact shield state.",
+      "discipline_creation_enabled": true,
+      "entry_condition_id": "",
+      "finisher_gate_eligible": false,
+      "integrity_profile_id": "integrity.shield_standard",
+      "integrity_state_row_id": "integrity.shield_standard.stable",
+      "opening_decay_modifier_q": null,
+      "opening_delta_modifier_q": null,
+      "ordinal": 1,
+      "render_state_id": "",
+      "repair_policy_id": "",
+      "sort_order": 10,
+      "state_id": "stable"
+    },
+    {
+      "authoring_notes": "Compromised shield state; numeric Opening modifiers remain blocked by ◇P3.",
+      "discipline_creation_enabled": true,
+      "entry_condition_id": "",
+      "finisher_gate_eligible": false,
+      "integrity_profile_id": "integrity.shield_standard",
+      "integrity_state_row_id": "integrity.shield_standard.cracked",
+      "opening_decay_modifier_q": null,
+      "opening_delta_modifier_q": null,
+      "ordinal": 2,
+      "render_state_id": "",
+      "repair_policy_id": "",
+      "sort_order": 20,
+      "state_id": "cracked"
+    },
+    {
+      "authoring_notes": "Broken Guard suppresses Discipline Opening-creation. Working shield path is authored-but-not-yet-centralised.",
+      "discipline_creation_enabled": false,
+      "entry_condition_id": "",
+      "finisher_gate_eligible": false,
+      "integrity_profile_id": "integrity.shield_standard",
+      "integrity_state_row_id": "integrity.shield_standard.broken_guard",
+      "opening_decay_modifier_q": null,
+      "opening_delta_modifier_q": null,
+      "ordinal": 3,
+      "render_state_id": "",
+      "repair_policy_id": "",
+      "sort_order": 30,
+      "state_id": "broken_guard"
+    }
+  ]
+}

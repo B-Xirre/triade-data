@@ -1,0 +1,6 @@
+fixture_build_id,fixture_set_id,display_name,floor_m,floor_f,floor_i,floor_sum,floor_valid,home_region_id,intended_fantasy,design_status_id,description,sort_order
+fixture.build.striker,m10-v1,Striker,0.25,0.15,0.05,0.45,true,pressure,Pressure striker,fixture,Deep Pressure fixture at the per-corner cap.,10
+fixture.build.controller,m10-v1,Controller,0.09,0.18,0.18,0.45,true,discipline,Discipline controller,fixture,Balanced-parent fixture for the sector-floor render.,20
+fixture.build.technical,m10-v1,Technical,0.15,0.1,0.2,0.45,true,instinct,Instinct technical,fixture,Twin-source fixture for redistribution and function denial.,30
+fixture.build.trickster,m10-v1,Trickster,0.12,0.08,0.25,0.45,true,instinct,Instinct trickster,fixture,Single-dagger fixture with an unoccupied off hand.,40
+fixture.build.war_priest,m10-v1,War Priest,0.15,0.2,0.1,0.45,true,discipline,Discipline war priest,fixture,One-handed mace fixture with an unoccupied off hand.,50

@@ -1,0 +1,8 @@
+fixture_loadout_id,fixture_set_id,fixture_build_id,equipment_revision_id,slot_id,quantity,hand_assignment,authoring_notes,sort_order
+fixture.loadout.striker.maul,m10-v1,fixture.build.striker,weapon.maul@1,main_hand,1,both,Two-handed maul occupies both hands and supplies one delivery hook.,10
+fixture.loadout.controller.sword,m10-v1,fixture.build.controller,weapon.sword_1h@1,main_hand,1,main_hand,Controller main-hand weapon.,20
+fixture.loadout.controller.shield,m10-v1,fixture.build.controller,shield.standard@1,off_hand,1,off_hand,Controller off-hand shield.,30
+fixture.loadout.technical.dagger_main,m10-v1,fixture.build.technical,weapon.dagger@1,main_hand,1,main_hand,First independent dagger footprint.,40
+fixture.loadout.technical.dagger_off,m10-v1,fixture.build.technical,weapon.dagger@1,off_hand,1,off_hand,Second independent dagger footprint.,50
+fixture.loadout.trickster.dagger,m10-v1,fixture.build.trickster,weapon.dagger@1,main_hand,1,main_hand,Off hand intentionally remains unoccupied.,60
+fixture.loadout.war_priest.mace,m10-v1,fixture.build.war_priest,weapon.mace_1h@1,main_hand,1,main_hand,Off hand intentionally remains unoccupied.,70

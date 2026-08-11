@@ -1,0 +1,25 @@
+fixture_coverage_id,fixture_set_id,fixture_kind,fixture_id,rule_id,system_feature,expected_assertion,coverage_kind,gap_status,notes,sort_order
+coverage.build.striker.floor_cap,m10-v1,build,fixture.build.striker,T-C2,floor_budget,Striker stays within the sum cap and sits exactly at the 0.25 corner cap,proof,,P·10.2,10
+coverage.build.controller.sector_render,m10-v1,build,fixture.build.controller,T-C11,sector_floor_render,Controller supplies the balanced-parent floor shape for the super-additive render,proof,,P·10.2,20
+coverage.loadout.technical.independent_footprints,m10-v1,loadout,fixture.build.technical,M-C3,independent_footprints,Twin daggers remain two independent footprints unless a legal Combo-Action joins them,proof,,P·10.2–10.3,30
+coverage.loadout.trickster.free_hand,m10-v1,loadout,fixture.build.trickster,,free_hand,Single dagger leaves the off hand unoccupied,proof,,P·10.2–10.4,40
+coverage.build.war_priest.divine_purge,m10-v1,build,fixture.build.war_priest,H-H6,divine_purge,War Priest cannot instantiate the Divine purge proof until faculty assignment is representable,gap,open,See TS-M10F-02.,50
+coverage.negative.arcana_arcana,m10-v1,negative_case,negative.arcana_arcana,T-C13,delivery_hooks,Arcana plus Arcana is rejected because one voice cannot supply two hooks,proof,,P·10.4,60
+coverage.negative.three_sources,m10-v1,negative_case,negative.three_sources,T-C13,delivery_hooks,A three-source Combo-Action is rejected,proof,,P·10.4,70
+coverage.negative.mudra_two_handed,m10-v1,negative_case,negative.mudra_two_handed,,free_hand,Mudra is rejected on the Striker two-handed loadout,proof,,P·10.4,80
+coverage.negative.mudra_free_hand,m10-v1,negative_case,negative.mudra_free_hand,,free_hand,Mudra remains legal on a one-handed loadout with an empty off hand,proof,,P·10.4,90
+coverage.enemy.trash.faculty,m10-v1,enemy,enemy.trash_goblin,E-C6,equipmentless_action,Enemy fixture row is blocked until the ◇P8 field set exists,gap,open,P·10.5; ◇P8,100
+coverage.enemy.canine.innate_slots,m10-v1,enemy,enemy.beast_canine,H-C7,body_template_slots,Canine fixture row is blocked until the ◇P8 field set exists,gap,open,P·10.5; ◇P8,110
+coverage.encounter.corridor.zone_count,m10-v1,encounter,fixture.encounter.corridor,W-H1,combat_room_zones,Corridor records the minimum legal two-zone combat room,proof,,P·10.6,120
+coverage.encounter.chamber.composition,m10-v1,encounter,fixture.encounter.chamber,K-C5,back_foot_non_stacking,Composition proof awaits fixture enemy and membership rows,gap,open,P·10.6; ◇P8,130
+coverage.encounter.gallery.composition,m10-v1,encounter,fixture.encounter.gallery,K-C4,advantage_sources,Composition proof awaits fixture enemy and membership rows,gap,open,P·10.6; ◇P8,140
+coverage.encounter.vault.high_ground,m10-v1,encounter,fixture.encounter.vault,W-H8,high_ground,Environment identity is recorded but the density gate and composition remain unresolved,gap,open,P·10.6; S-E03; ◇P8,150
+coverage.encounter.den.diversity,m10-v1,encounter,fixture.encounter.den,E-H2,encounter_diversity,Pack composition and the diversity threshold remain unresolved,gap,open,P·10.6–10.7; S-E02; ◇P8,160
+coverage.gap.mudra_mudra,m10-v1,negative_case,gap.mudra_mudra,T-C13,mudra_pair,No two-free-hand build exists in m10-v1,gap,deferred,P·10.7,170
+coverage.gap.bands_b_c,m10-v1,negative_case,gap.bands_b_c,P-C7,career_bands,Band-A fixtures do not validate Bands B and C,gap,deferred,P·10.7,180
+coverage.gap.non_humanoid_breadth,m10-v1,enemy,gap.non_humanoid_breadth,H-C7,body_template_breadth,One Canine fixture does not establish non-humanoid breadth,gap,open,P·10.7; ◇E5,190
+coverage.gap.behaviour_legality,m10-v1,enemy,gap.behaviour_legality,E-H3,behaviour_tag_legality,Contradictory-pair lint is unavailable,gap,open,P·10.7,200
+coverage.gap.diversity_threshold,m10-v1,encounter,gap.diversity_threshold,E-H2,encounter_diversity,S-E02 is unset,gap,open,P·10.7,210
+coverage.gap.faculty_definition_content,m10-v1,negative_case,gap.faculty_definition_content,T-C12,faculty_profiles,Authoritative faculty origins base footprints and vocabulary rows are not specified,gap,open,See TS-M10F-01.,220
+coverage.gap.fixture_faculty_assignment,m10-v1,loadout,gap.fixture_faculty_assignment,P-C3,fixture_faculty_membership,Current tables cannot assign faculty revisions to builds as normalized rows,gap,open,See TS-M10F-02.,230
+coverage.gap.enemy_membership_relations,m10-v1,encounter,gap.enemy_membership_relations,P-C3,enemy_membership,Fixture enemy and encounter-membership tables remain blocked on their authoritative field sets,gap,open,Existing ◇P8; no duplicate item.,240

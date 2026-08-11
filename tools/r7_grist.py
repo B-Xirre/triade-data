@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-EXPECTED_COUNTS = {"critical": 81, "high": 48, "medium": 14}
+EXPECTED_COUNTS = {"critical": 86, "high": 48, "medium": 14}
 SEED_FIELDS = (
     "rule_id",
     "display_name",
@@ -53,13 +53,13 @@ def load_seed(path: Path) -> list[dict[str, Any]]:
     duplicates = sorted(rule_id for rule_id, count in Counter(ids).items() if count > 1)
     if duplicates:
         raise R7Error(f"duplicate seed rule IDs: {', '.join(duplicates)}")
-    if len(rows) != 143 or len(set(ids)) != 143 or any(not rule_id for rule_id in ids):
-        raise R7Error("seed must contain 143 unique non-empty rule IDs")
+    if len(rows) != 148 or len(set(ids)) != 148 or any(not rule_id for rule_id in ids):
+        raise R7Error("seed must contain 148 unique non-empty rule IDs")
     counts = Counter(row["severity"] for row in rows)
     if counts != Counter(EXPECTED_COUNTS):
         raise R7Error(f"seed severity split mismatch: {dict(counts)}")
-    if [row["sort_order"] for row in rows] != list(range(1, 144)):
-        raise R7Error("seed sort_order must be the deterministic sequence 1..143")
+    if [row["sort_order"] for row in rows] != list(range(1, 149)):
+        raise R7Error("seed sort_order must be the deterministic sequence 1..148")
     if any(not row["description"] or not row["source_reference"] for row in rows):
         raise R7Error("seed descriptions and source references must be non-empty")
     return rows

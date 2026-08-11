@@ -12,133 +12,138 @@ T-C10,T-C10,Every skill anchor is reachable by its intended vocabulary owner,cri
 T-C11,T-C11,The **corner**-floor render is affine in its field; the **sector**-floor render is super-additive,critical,T · A4.4,11
 T-C12,T-C12,"Every `sources` entry resolves to a record — weapon, shield, `faculty` or environment object",critical,"T · A3.8, M · 2A.12",12
 T-C13,T-C13,A `[Combo-Action]` declares **exactly two** delivery hooks,critical,M · 2A.10,13
-H-C6,H-C6,"Every actor resolves to exactly one `[Chassis]`, and every `[Chassis]` to exactly one `BodyTemplate`",critical,H · 5.3,14
-H-C7,H-C7,"`[Innate]` slots derive from the `BodyTemplate` node groups, never authored per chassis",critical,"H · 13, M · 2A.10a",15
-E-C5,E-C5,Every chassis names exactly one `BodyTemplate`; no chassis inlines coverage weights,critical,E · 3,16
-E-C6,E-C6,Every enemy carries at least one `[Faculty]`; no enemy has zero vocabulary sources,critical,E · F.1,17
-K-C1,K-C1,No action creates an Opening **and** awards the same region's trickle,critical,K · 16,18
-K-C2,K-C2,No action reads without a valid Opening,critical,K · 16,19
-K-C3,K-C3,Edge cannot target a different Opening or combatant,critical,K · 9.1,20
-K-C4,K-C4,Loop-earned Advantage is one-shot,critical,K · 16,21
-K-C5,K-C5,`[Back-foot]` does not stack against one attacker,critical,K · 16,22
-K-C6,K-C6,Glancing outcomes award **no credit of any kind**,critical,K · 6.2,23
-K-C7,K-C7,Watch resolves exactly one branch per triggering event,critical,K · 8.2,24
-K-C8,K-C8,No corner holds more than one tempo lever,critical,K · 3.3,25
-K-C9,K-C9,Position snapshot is taken **before** the action resolves,critical,K · 5.2,26
-M-C1,M-C1,"Ordinary base weapon footprints obey the handedness budget — `1h` = 3 base pips, `2h` = 4 — and skill redistribution conserves that base total. Transgressive/Inscription effects excepted; shields governed by M-C4",critical,M · 2A.9,27
-M-C2,M-C2,"Structural effects use **integrity**, not typed mitigation",critical,M · 2A.3,28
-M-C3,M-C3,"Two-vector loadouts do not pool footprints, except via `[Combo-Action]`",critical,M · 2A.10,29
-M-C4,M-C4,Shield pips and defensive value draw from **one** pooled budget,critical,M · 2A.11,30
-M-C5,M-C5,Class starting offsets **sum to zero**,critical,T · A4.8,31
-M-C6,M-C6,"`[Secret]` and `[Relic]` are authored by mission placement only — no affix, loot table or generation pipeline may set either",critical,M · 2.7a *(new 0.12.0)*,32
-M-C7,M-C7,"No `[Secret]`-flagged item is salvageable, rerollable, sellable or discardable. **Binds the internal attribute**",critical,M · 2.7a *(new 0.12.0)*,33
-M-C8,M-C8,The same protection applies to `[Relic]` items,critical,M · 2.7a *(new 0.12.0)*,34
-H-C1,H-C1,"`Σ` of all effective-field reductions, all sources, per corner ≥ `max(Φ_safe_x, 0.5 × Φ_base_x)`",critical,H · 10.2,35
-H-C2,H-C2,"At run start, `ΣF_rendered == ΣF_baseline` *(= T-C7)*",critical,H · 9.3,36
-H-C3,H-C3,"No `RemedyDef` denominates `economy_cost` in `Location Grounding` / `[Imprint]`, or in Temper",critical,H · 8.1,37
-H-C4,H-C4,"Vital-organ lethality gated on HP below the Finisher threshold, **or** target Downed",critical,H · 9.4,38
-H-C5,H-C5,"Wound and temporary effects never alter baseline floors, thresholds or global geometry",critical,H · 13,39
-E-C1,E-C1,"Every enemy carries a position `(m,f,i)` summing to 1",critical,E · F.0,40
-E-C2,E-C2,Tag arithmetic renormalises against floor budget and per-corner cap,critical,E · F.1,41
-E-C3,E-C3,Elite and Commander reads are position-dependent exactly as the player's are,critical,"E · F.0, T · C.6",42
-E-C4,E-C4,Exactly one chassis per enemy; tag cardinality respected,critical,E · F.1,43
-W-C1,W-C1,Every mandatory lock has a reachable prerequisite key path,critical,W · 16.1,44
-W-C2,W-C2,No object blocks the only critical route after placement **or any plausible destruction state**,critical,W · 16.1,45
-W-C3,W-C3,"No temporary map effect alters baseline floors, thresholds or region geometry",critical,W · 11.4,46
-W-C4,W-C4,Same seed + same `generator_version` reproduces an identical proof digest,critical,W · 16.1,47
-W-C5,W-C5,Boss chamber contains a reachable exit,critical,W · 5.5,48
-W-C6,W-C6,"At any access depth, the Location can generate at least one at-or-above-reference dungeon",critical,W · 16.1,49
-W-C7,W-C7,**No floating point anywhere** in the simulation core or any decision affecting an output hash,critical,W · 7.2,50
-W-C8,W-C8,No float-derived heuristic — including Shannon entropy — influences any generation decision reaching the proof digest,critical,W · 16.1 *(new)*,51
-W-C9,W-C9,"Every `[Vertical Portal]` has matched authored endpoints on both decks with safe landings; traversal never inferred from `(tx,ty)` overlap",critical,W · 16.1 *(new)*,52
-W-C10,W-C10,No render- or screen-space-derived value participates in the proof digest,critical,W · 16.1 *(new)*,53
-W-C11,W-C11,Every mandatory gate declares at least one **monotonic** resolution,critical,W · 5.8a *(new)*,54
-W-C12,W-C12,Every progression site is reachable **without traversing the gate it opens**,critical,W · 13 *(new)*,55
-W-C13,W-C13,"Mandatory-path progression objects are indestructible, except a breakable seal whose declared resolution is `destroyed`",critical,W · 5.8a *(new)*,56
-W-C14,W-C14,A `[Relic]`-gated door is never on the mandatory path of the run in which it appears,critical,W · 5.9 *(new)*,57
-W-C15,W-C15,"No `[Relic]` grants Grounding, `[Modification Ceiling]`, floor budget or stats. **Binds the internal name**",critical,W · 5.9 *(new)*,58
-W-C16,W-C16,An `[Incursion]` awards no Grounding and no `[Modification Ceiling]`. **Binds the internal name**,critical,W · 5.9 *(new)*,59
-W-C17,W-C17,"An `[Incursion]` has no Stratum, checkpoint, descent unlock or Stratum lock; its record cannot express them",critical,W · 5.9 *(new)*,60
-W-C18,W-C18,`[Incursion]` item level saturates at the maximum Location-obtainable tier,critical,W · 5.9 *(new)*,61
-W-C19,W-C19,Every zone has exactly one `elevation_band`; no zone spans decks,critical,W · 12 *(new)*,62
-W-C20,W-C20,`complex_room` is written only by room-template instantiation,critical,"W · 9, 12 *(new)*",63
-V-C1,V-C1,Every walkable cell has a valid rendered surface; every exposed elevation edge has facade or intentional void,critical,V · 4.9,64
-V-C2,V-C2,"No active actor, posture telegraph or Commander wind-up fully occluded in any cutaway state",critical,V · 4.9,65
-V-C3,V-C3,Y-sort stable across tile boundaries; screen-space selection resolves to exactly one intended target,critical,V · 4.9,66
-V-C4,V-C4,"Every destruction state has matching art, collision and navigation",critical,V · 4.9,67
-TILE-C1,TILE-C1,Every socket label has ≥1 legal complement — no dead-end tile,critical,G · 6,68
-TILE-C2,TILE-C2,Every archetype declares a `projection_id` matching the locked camera matrix,critical,G · 6,69
-TILE-C3,TILE-C3,"Atlas bake is deterministic — same tile set, byte-identical layout",critical,G · 6,70
-TILE-C4,TILE-C4,"No float in socket identity, adjacency lookup or any bake hash reaching the digest",critical,G · 6,71
-P-C1,P-C1,"Canonical JSON is the source of truth; the build is one-directional, text → database",critical,P · 2.1,72
-P-C2,P-C2,"All persisted simulation and trace state uses fixed-point integers, never floats",critical,P · 3.4 *(W-C10)*,73
-P-C3,P-C3,No authored cell contains a delimited array; every repeatable value is a child row,critical,P · 2.2,74
-P-C4,P-C4,An approved revision is never edited in place,critical,P · 2.4,75
-P-C5,P-C5,Every trace event resolves to an exact content revision and `content_snapshot_hash`,critical,P · 5.2,76
-P-C6,P-C6,"Economy permissions are derived from category and protected flags, never authored",critical,P · 3.2,77
-P-C7,P-C7,"Every locked subsystem names a proving fixture, or an explicit declared gap",critical,P · 10,78
-P-C8,P-C8,Every indexed rule leads its line or first table cell in its home document,critical,P · 9,79
-P-C10,P-C10,An `AUTHORED DESIGN DECISION` is non-authoritative until disposed `authored`; technical docs mark it authored-but-not-yet-centralised,critical,P · 9,80
-P-C11,P-C11,Historical factual claims are not editable by a version sweep; notation migrations are exempt,critical,P · 9,81
-T-H1,T-H1,Every reinforcing loop has a **named brake**,high,T · I.5,82
-H-H5,H-H5,Aim never overrides the coverage cascade; `aim_weight` < `AIM_CEILING` < 1.0,high,H · 6.2a *(S-H09)*,83
-H-H6,H-H6,Divine purge consumes the state it converts — no sequence extracts more than was invested,high,H · 6.2b *(T-H1)*,84
-E-H5,E-H5,"`[Innate]` slots derive from the body template, never authored per chassis",high,E · 3,85
-E-H6,E-H6,"Enemy tier mix per band implements M·9.7's encounter budget, not a health multiplier",high,E · 3 *(◇W17/◇E11)*,86
-M-H5,M-H5,No single interaction exceeds ~20% of a band's total log-power gain unless authored unique with a named drawback,high,M · 9.6 *(T-H1)*,87
-P-H1,P-H1,The agent's query path is read-only; writes pass through record validation,high,P · 6.1,88
-P-H2,P-H2,Every signature is keyed by all seven identity fields,high,P · 5.5,89
-P-H3,P-H3,"Every `[SIM]` parameter has a row carrying basis, gate and failure path",high,P · 3,90
-P-H4,P-H4,Raw Parquet is never committed to git,high,P · 4.3,91
-P-H5,P-H5,Every intake-record item carries one type and one disposition; `authored` names a document and section,high,P · 9,92
-T-H2,T-H2,No reference build shows an unrecoverable spiral,high,T · Gate T,93
-T-H3,T-H3,Candidate entities exceed the trace-distance redundancy threshold,high,T · I.4,94
-T-H4,T-H4,Triangle coverage above target across reference builds,high,T · Gate T,95
-K-H1,K-H1,"Cooldowns used only for rare, dramatic skills",high,K · 5.1,96
-M-H1,M-H1,Per-family armour exception budget respected,high,M · 5.4,97
-M-H2,M-H2,Global matchup surface within portfolio budget (≈20),high,M · 5.4,98
-M-H3,M-H3,Item power within the band for its rarity and ilvl,high,M · 2.5,99
-M-H4,M-H4,Bridge-2 weight-class consistency,high,M · 5.4,100
-H-H1,H-H1,All wound `cdm_influence` vectors satisfy `dm+df+di = 0`,high,H · 13,101
-H-H2,H-H2,Ambient wound summary ≤ 4 items,high,H · 7.6,102
-H-H3,H-H3,Every remedy's `cure_tags` resolve to ≥1 reachable `ConditionDef`,high,H · 13,103
-H-H4,H-H4,Every `ConditionDef` treatable by ≥1 reachable `RemedyDef`,high,H · 13,104
-E-H1,E-H1,`chassis × role` matrix validated exhaustively,high,E · F.4,105
-E-H2,E-H2,Encounter generation enforces behaviour-tag diversity within a group,high,E · F.4,106
-E-H3,E-H3,No contradictory tag pairs,high,E · F.4,107
-E-H4,E-H4,Enemy traces pass the redundancy gate,high,E · F.4,108
-W-H1,W-H1,"Extracted zones per **combat room** ∈ [2,4]. `complex_room` exempts the **floor only**",high,W · 16.2,109
-W-H2,W-H2,Rooms hosting ranged enemies contain ≥1 reachable cover opportunity,high,W · 16.2,110
-W-H3,W-H3,Off-mesh climb/vault links have safe endpoints,high,W · 16.2,111
-W-H4,W-H4,Surface propagation cannot exceed active-space budget in one tick,high,W · 16.2,112
-W-H5,W-H5,Generated hazards cannot remove all safe standing tiles from a mandatory room,high,W · 16.2,113
-W-H6,W-H6,Cover density within the region's axis band,high,W · 16.2,114
-W-H7,W-H7,Zone budget consumed by vertical profile,high,W · 16.2 *(new)*,115
-W-H8,W-H8,"`high_ground` density within the balance-owned band, gated against S-E03",high,W · 16.2 *(new)*,116
-W-H9,W-H9,Progression sites respect an anti-clustering band,high,W · 16.2 *(new)*,117
-W-H10,W-H10,`[Incursion]` content borrows a region package; bespoke needs Steward approval,high,W · 16.2 *(new)*,118
-W-H11,W-H11,Generation parameters saturate at a stated depth,high,W · 16.2 *(new)*,119
-W-H12,W-H12,2-zone-floor failure resolved by furnishing → reseed → **demotion**; rejection only if mission-mandatory,high,W · 16.2 *(new)*,120
-W-H13,W-H13,≥5 mutually non-mergeable walkable components is a structural layout defect,high,W · 16.2 *(new)*,121
-W-H14,W-H14,"Every `complex_room` template passes W-C1, W-C2, W-C5, W-H2 individually",high,W · 16.2 *(new)*,122
-V-H1,V-H1,The two failure modes render distinctly on the skill bar,high,V · 4.1,123
-V-H2,V-H2,"Potency renders as a continuous ramp, never discrete steps",high,V · 4.1,124
-V-H3,V-H3,Wound render targets disjoint from integrity render targets,high,V · 4.8,125
-TILE-H1,TILE-H1,Non-edge-label-inducible tilesets explicitly flagged,high,G · 6,126
-TILE-H2,TILE-H2,Symmetry class declared; connectors marked non-rotating,high,G · 6,127
-TILE-H3,TILE-H3,"Every state variant has matching art, collision and navigation",high,G · 6,128
-TILE-H4,TILE-H4,Agent-originated archetypes carry provenance and recorded human approval,high,G · 6,129
-W-M1,W-M1,Toppleable furniture has a valid post-state footprint,medium,W · 16.3,130
-W-M2,W-M2,Cover does not exceed per-zone density cap,medium,W · 16.3,131
-W-M3,W-M3,Decorative props do not consume reserved combat-affordance sockets,medium,W · 16.3,132
-W-M4,W-M4,Chokepoint width distribution within band,medium,W · 16.3,133
-W-M6,W-M6,`[Switch]` and other indestructible progression objects contribute no cover,medium,W · 16.3 *(new)*,134
-H-M1,H-M1,Coverage weights normalise to 1.0 per body template,medium,H · 13,135
-H-M2,H-M2,Wound render targets disjoint from integrity,medium,H · 13,136
-E-M1,E-M1,Modifier space sampled rather than exhaustively simulated,medium,E · F.4,137
-L-M1,L-M1,Every locked term in any document appears in the Lexicon,medium,L,138
-L-M2,L-M2,No term shadows a locked term in another domain,medium,L,139
-TILE-M1,TILE-M1,Example-inferred adjacency does not encode incidental source detail,medium,G · 6,140
-TILE-M2,TILE-M2,Decorative props do not occupy reserved affordance sockets,medium,G · 6,141
-TILE-M3,TILE-M3,Archetype schema completeness,medium,G · 6,142
-P-M1,P-M1,`en-GB` is the explicitly labelled reference locale,medium,P · 3.1,143
+T-C14,T-C14,"A lineage `offset` is a 9-stat integer vector summing to zero, measured at the lineage's `typical` size",critical,T · A4.8a,14
+H-C6,H-C6,"Every actor resolves to exactly one `[Chassis]`, and every `[Chassis]` to exactly one `BodyTemplate`",critical,H · 5.3,15
+H-C7,H-C7,"`[Innate]` slots derive from the `BodyTemplate` node groups, never authored per chassis",critical,"H · 13, M · 2A.10a",16
+E-C5,E-C5,Every chassis names exactly one `BodyTemplate`; no chassis inlines coverage weights,critical,E · 3,17
+E-C6,E-C6,Every enemy carries at least one `[Faculty]`; no enemy has zero vocabulary sources,critical,E · F.1,18
+K-C1,K-C1,No action creates an Opening **and** awards the same region's trickle,critical,K · 16,19
+K-C2,K-C2,No action reads without a valid Opening,critical,K · 16,20
+K-C3,K-C3,Edge cannot target a different Opening or combatant,critical,K · 9.1,21
+K-C4,K-C4,Loop-earned Advantage is one-shot,critical,K · 16,22
+K-C5,K-C5,`[Back-foot]` does not stack against one attacker,critical,K · 16,23
+K-C6,K-C6,Glancing outcomes award **no credit of any kind**,critical,K · 6.2,24
+K-C7,K-C7,Watch resolves exactly one branch per triggering event,critical,K · 8.2,25
+K-C8,K-C8,No corner holds more than one tempo lever,critical,K · 3.3,26
+K-C9,K-C9,Position snapshot is taken **before** the action resolves,critical,K · 5.2,27
+M-C1,M-C1,"Ordinary base weapon footprints obey the handedness budget — `1h` = 3 base pips, `2h` = 4 — and skill redistribution conserves that base total. Transgressive/Inscription effects excepted; shields governed by M-C4",critical,M · 2A.9,28
+M-C2,M-C2,"Structural effects use **integrity**, not typed mitigation",critical,M · 2A.3,29
+M-C3,M-C3,"Two-vector loadouts do not pool footprints, except via `[Combo-Action]`",critical,M · 2A.10,30
+M-C4,M-C4,Shield pips and defensive value draw from **one** pooled budget,critical,M · 2A.11,31
+M-C9,M-C9,"Every shield draws a **2-pip pool**, split by sub-family — buckler 2/0, standard 1/1, tower 0/2 — where offensive pips + defence pips = 2",critical,M · 2A.11 *(restated 0.29.0)*,32
+M-C10,M-C10,Offence and defence in a shield pool share the **same pip unit** — one defence pip is one 2A.4 signature step in a group resolving through typed defence. **Structural is not purchasable** (M-C2),critical,M · 2A.11 *(restated 0.29.0)*,33
+M-C11,M-C11,"A one-handed weapon in the **off hand** loses one pip from its highest damage type, applied to the **base** footprint before 2A.10's requirement check",critical,M · 2A.11 *(new 0.29.0)*,34
+M-C5,M-C5,Class starting offsets **sum to zero**,critical,T · A4.8,35
+M-C6,M-C6,"`[Secret]` and `[Relic]` are authored by mission placement only — no affix, loot table or generation pipeline may set either",critical,M · 2.7a *(new 0.12.0)*,36
+M-C7,M-C7,"No `[Secret]`-flagged item is salvageable, rerollable, sellable or discardable. **Binds the internal attribute**",critical,M · 2.7a *(new 0.12.0)*,37
+M-C8,M-C8,The same protection applies to `[Relic]` items,critical,M · 2.7a *(new 0.12.0)*,38
+H-C1,H-C1,"`Σ` of all effective-field reductions, all sources, per corner ≥ `max(Φ_safe_x, 0.5 × Φ_base_x)`",critical,H · 10.2,39
+H-C2,H-C2,"At run start, `ΣF_rendered == ΣF_baseline` *(= T-C7)*",critical,H · 9.3,40
+H-C3,H-C3,"No `RemedyDef` denominates `economy_cost` in `Location Grounding` / `[Imprint]`, or in Temper",critical,H · 8.1,41
+H-C4,H-C4,"Vital-organ lethality gated on HP below the Finisher threshold, **or** target Downed",critical,H · 9.4,42
+H-C5,H-C5,"Wound and temporary effects never alter baseline floors, thresholds or global geometry",critical,H · 13,43
+E-C1,E-C1,"Every enemy carries a position `(m,f,i)` summing to 1",critical,E · F.0,44
+E-C2,E-C2,Tag arithmetic renormalises against floor budget and per-corner cap,critical,E · F.1,45
+E-C3,E-C3,Elite and Commander reads are position-dependent exactly as the player's are,critical,"E · F.0, T · C.6",46
+E-C4,E-C4,Exactly one chassis per enemy; tag cardinality respected,critical,E · F.1,47
+E-C7,E-C7,"A physique size map carries at most two additive integer pairs per size, each summing to zero; typical carries none, absent sizes are `null`",critical,E · F.1,48
+W-C1,W-C1,Every mandatory lock has a reachable prerequisite key path,critical,W · 16.1,49
+W-C2,W-C2,No object blocks the only critical route after placement **or any plausible destruction state**,critical,W · 16.1,50
+W-C3,W-C3,"No temporary map effect alters baseline floors, thresholds or region geometry",critical,W · 11.4,51
+W-C4,W-C4,Same seed + same `generator_version` reproduces an identical proof digest,critical,W · 16.1,52
+W-C5,W-C5,Boss chamber contains a reachable exit,critical,W · 5.5,53
+W-C6,W-C6,"At any access depth, the Location can generate at least one at-or-above-reference dungeon",critical,W · 16.1,54
+W-C7,W-C7,**No floating point anywhere** in the simulation core or any decision affecting an output hash,critical,W · 7.2,55
+W-C8,W-C8,No float-derived heuristic — including Shannon entropy — influences any generation decision reaching the proof digest,critical,W · 16.1 *(new)*,56
+W-C9,W-C9,"Every `[Vertical Portal]` has matched authored endpoints on both decks with safe landings; traversal never inferred from `(tx,ty)` overlap",critical,W · 16.1 *(new)*,57
+W-C10,W-C10,No render- or screen-space-derived value participates in the proof digest,critical,W · 16.1 *(new)*,58
+W-C11,W-C11,Every mandatory gate declares at least one **monotonic** resolution,critical,W · 5.8a *(new)*,59
+W-C12,W-C12,Every progression site is reachable **without traversing the gate it opens**,critical,W · 13 *(new)*,60
+W-C13,W-C13,"Mandatory-path progression objects are indestructible, except a breakable seal whose declared resolution is `destroyed`",critical,W · 5.8a *(new)*,61
+W-C14,W-C14,A `[Relic]`-gated door is never on the mandatory path of the run in which it appears,critical,W · 5.9 *(new)*,62
+W-C15,W-C15,"No `[Relic]` grants Grounding, `[Modification Ceiling]`, floor budget or stats. **Binds the internal name**",critical,W · 5.9 *(new)*,63
+W-C16,W-C16,An `[Incursion]` awards no Grounding and no `[Modification Ceiling]`. **Binds the internal name**,critical,W · 5.9 *(new)*,64
+W-C17,W-C17,"An `[Incursion]` has no Stratum, checkpoint, descent unlock or Stratum lock; its record cannot express them",critical,W · 5.9 *(new)*,65
+W-C18,W-C18,`[Incursion]` item level saturates at the maximum Location-obtainable tier,critical,W · 5.9 *(new)*,66
+W-C19,W-C19,Every zone has exactly one `elevation_band`; no zone spans decks,critical,W · 12 *(new)*,67
+W-C20,W-C20,`complex_room` is written only by room-template instantiation,critical,"W · 9, 12 *(new)*",68
+V-C1,V-C1,Every walkable cell has a valid rendered surface; every exposed elevation edge has facade or intentional void,critical,V · 4.9,69
+V-C2,V-C2,"No active actor, posture telegraph or Commander wind-up fully occluded in any cutaway state",critical,V · 4.9,70
+V-C3,V-C3,Y-sort stable across tile boundaries; screen-space selection resolves to exactly one intended target,critical,V · 4.9,71
+V-C4,V-C4,"Every destruction state has matching art, collision and navigation",critical,V · 4.9,72
+TILE-C1,TILE-C1,Every socket label has ≥1 legal complement — no dead-end tile,critical,G · 6,73
+TILE-C2,TILE-C2,Every archetype declares a `projection_id` matching the locked camera matrix,critical,G · 6,74
+TILE-C3,TILE-C3,"Atlas bake is deterministic — same tile set, byte-identical layout",critical,G · 6,75
+TILE-C4,TILE-C4,"No float in socket identity, adjacency lookup or any bake hash reaching the digest",critical,G · 6,76
+P-C1,P-C1,"Canonical JSON is the source of truth; the build is one-directional, text → database",critical,P · 2.1,77
+P-C2,P-C2,"All persisted simulation and trace state uses fixed-point integers, never floats",critical,P · 3.4 *(W-C10)*,78
+P-C3,P-C3,No authored cell contains a delimited array; every repeatable value is a child row,critical,P · 2.2,79
+P-C4,P-C4,An approved revision is never edited in place,critical,P · 2.4,80
+P-C5,P-C5,Every trace event resolves to an exact content revision and `content_snapshot_hash`,critical,P · 5.2,81
+P-C6,P-C6,"Economy permissions are derived from category and protected flags, never authored",critical,P · 3.2,82
+P-C7,P-C7,"Every locked subsystem names a proving fixture, or an explicit declared gap",critical,P · 10,83
+P-C8,P-C8,Every indexed rule leads its line or first table cell in its home document,critical,P · 9,84
+P-C10,P-C10,An `AUTHORED DESIGN DECISION` is non-authoritative until disposed `authored`; technical docs mark it authored-but-not-yet-centralised,critical,P · 9,85
+P-C11,P-C11,Historical factual claims are not editable by a version sweep; notation migrations are exempt,critical,P · 9,86
+T-H1,T-H1,Every reinforcing loop has a **named brake**,high,T · I.5,87
+H-H5,H-H5,Aim never overrides the coverage cascade; `aim_weight` < `AIM_CEILING` < 1.0,high,H · 6.2a *(S-H09)*,88
+H-H6,H-H6,Divine purge consumes the state it converts — no sequence extracts more than was invested,high,H · 6.2b *(T-H1)*,89
+E-H5,E-H5,"`[Innate]` slots derive from the body template, never authored per chassis",high,E · 3,90
+E-H6,E-H6,"Enemy tier mix per band implements M·9.7's encounter budget, not a health multiplier",high,E · 3 *(◇W17/◇E11)*,91
+M-H5,M-H5,No single interaction exceeds ~20% of a band's total log-power gain unless authored unique with a named drawback,high,M · 9.6 *(T-H1)*,92
+P-H1,P-H1,The agent's query path is read-only; writes pass through record validation,high,P · 6.1,93
+P-H2,P-H2,Every signature is keyed by all seven identity fields,high,P · 5.5,94
+P-H3,P-H3,"Every `[SIM]` parameter has a row carrying basis, gate and failure path",high,P · 3,95
+P-H4,P-H4,Raw Parquet is never committed to git,high,P · 4.3,96
+P-H5,P-H5,Every intake-record item carries one type and one disposition; `authored` names a document and section,high,P · 9,97
+T-H2,T-H2,No reference build shows an unrecoverable spiral,high,T · Gate T,98
+T-H3,T-H3,Candidate entities exceed the trace-distance redundancy threshold,high,T · I.4,99
+T-H4,T-H4,Triangle coverage above target across reference builds,high,T · Gate T,100
+K-H1,K-H1,"Cooldowns used only for rare, dramatic skills",high,K · 5.1,101
+M-H1,M-H1,Per-family armour exception budget respected,high,M · 5.4,102
+M-H2,M-H2,Global matchup surface within portfolio budget (≈20),high,M · 5.4,103
+M-H3,M-H3,Item power within the band for its rarity and ilvl,high,M · 2.5,104
+M-H4,M-H4,Bridge-2 weight-class consistency,high,M · 5.4,105
+H-H1,H-H1,All wound `cdm_influence` vectors satisfy `dm+df+di = 0`,high,H · 13,106
+H-H2,H-H2,Ambient wound summary ≤ 4 items,high,H · 7.6,107
+H-H3,H-H3,Every remedy's `cure_tags` resolve to ≥1 reachable `ConditionDef`,high,H · 13,108
+H-H4,H-H4,Every `ConditionDef` treatable by ≥1 reachable `RemedyDef`,high,H · 13,109
+E-H1,E-H1,`chassis × role` matrix validated exhaustively,high,E · F.4,110
+E-H2,E-H2,Encounter generation enforces behaviour-tag diversity within a group,high,E · F.4,111
+E-H3,E-H3,No contradictory tag pairs,high,E · F.4,112
+E-H4,E-H4,Enemy traces pass the redundancy gate,high,E · F.4,113
+W-H1,W-H1,"Extracted zones per **combat room** ∈ [2,4]. `complex_room` exempts the **floor only**",high,W · 16.2,114
+W-H2,W-H2,Rooms hosting ranged enemies contain ≥1 reachable cover opportunity,high,W · 16.2,115
+W-H3,W-H3,Off-mesh climb/vault links have safe endpoints,high,W · 16.2,116
+W-H4,W-H4,Surface propagation cannot exceed active-space budget in one tick,high,W · 16.2,117
+W-H5,W-H5,Generated hazards cannot remove all safe standing tiles from a mandatory room,high,W · 16.2,118
+W-H6,W-H6,Cover density within the region's axis band,high,W · 16.2,119
+W-H7,W-H7,Zone budget consumed by vertical profile,high,W · 16.2 *(new)*,120
+W-H8,W-H8,"`high_ground` density within the balance-owned band, gated against S-E03",high,W · 16.2 *(new)*,121
+W-H9,W-H9,Progression sites respect an anti-clustering band,high,W · 16.2 *(new)*,122
+W-H10,W-H10,`[Incursion]` content borrows a region package; bespoke needs Steward approval,high,W · 16.2 *(new)*,123
+W-H11,W-H11,Generation parameters saturate at a stated depth,high,W · 16.2 *(new)*,124
+W-H12,W-H12,2-zone-floor failure resolved by furnishing → reseed → **demotion**; rejection only if mission-mandatory,high,W · 16.2 *(new)*,125
+W-H13,W-H13,≥5 mutually non-mergeable walkable components is a structural layout defect,high,W · 16.2 *(new)*,126
+W-H14,W-H14,"Every `complex_room` template passes W-C1, W-C2, W-C5, W-H2 individually",high,W · 16.2 *(new)*,127
+V-H1,V-H1,The two failure modes render distinctly on the skill bar,high,V · 4.1,128
+V-H2,V-H2,"Potency renders as a continuous ramp, never discrete steps",high,V · 4.1,129
+V-H3,V-H3,Wound render targets disjoint from integrity render targets,high,V · 4.8,130
+TILE-H1,TILE-H1,Non-edge-label-inducible tilesets explicitly flagged,high,G · 6,131
+TILE-H2,TILE-H2,Symmetry class declared; connectors marked non-rotating,high,G · 6,132
+TILE-H3,TILE-H3,"Every state variant has matching art, collision and navigation",high,G · 6,133
+TILE-H4,TILE-H4,Agent-originated archetypes carry provenance and recorded human approval,high,G · 6,134
+W-M1,W-M1,Toppleable furniture has a valid post-state footprint,medium,W · 16.3,135
+W-M2,W-M2,Cover does not exceed per-zone density cap,medium,W · 16.3,136
+W-M3,W-M3,Decorative props do not consume reserved combat-affordance sockets,medium,W · 16.3,137
+W-M4,W-M4,Chokepoint width distribution within band,medium,W · 16.3,138
+W-M6,W-M6,`[Switch]` and other indestructible progression objects contribute no cover,medium,W · 16.3 *(new)*,139
+H-M1,H-M1,Coverage weights normalise to 1.0 per body template,medium,H · 13,140
+H-M2,H-M2,Wound render targets disjoint from integrity,medium,H · 13,141
+E-M1,E-M1,Modifier space sampled rather than exhaustively simulated,medium,E · F.4,142
+L-M1,L-M1,Every locked term in any document appears in the Lexicon,medium,L,143
+L-M2,L-M2,No term shadows a locked term in another domain,medium,L,144
+TILE-M1,TILE-M1,Example-inferred adjacency does not encode incidental source detail,medium,G · 6,145
+TILE-M2,TILE-M2,Decorative props do not occupy reserved affordance sockets,medium,G · 6,146
+TILE-M3,TILE-M3,Archetype schema completeness,medium,G · 6,147
+P-M1,P-M1,`en-GB` is the explicitly labelled reference locale,medium,P · 3.1,148
