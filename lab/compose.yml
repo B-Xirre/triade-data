@@ -1,0 +1,52 @@
+name: triade-tuning-lab
+services:
+  api:
+    image: triade-tuning-lab:1.0.0
+    build:
+      context: ..
+      dockerfile: lab/Dockerfile
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      TRIADE_LAB_DATA: /data
+      TRIADE_GRIST_URL: http://grist:8484
+      TRIADE_GRIST_DOC_ID: ${TRIADE_GRIST_DOC_ID:-3TwLJyu7fythPjAj1e1424}
+      TRIADE_GRIST_KEY_FILE: /run/secrets/grist_key
+      TRIADE_WORKER_URL: http://worker:8766
+    volumes:
+      - ${TRIADE_LAB_DATA_HOST:?set a persistent lab data directory}:/data
+    secrets:
+      - grist_key
+    networks: [lab, grist]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD","python","-c","import urllib.request; urllib.request.urlopen('http://localhost:8765/api/v1/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+  worker:
+    image: triade-tuning-lab:1.0.0
+    command: ["uvicorn","lab.worker:app","--host","0.0.0.0","--port","8766"]
+    environment:
+      TRIADE_LAB_DATA: /data
+      TRIADE_GRIST_URL: http://grist:8484
+      TRIADE_GRIST_DOC_ID: ${TRIADE_GRIST_DOC_ID:-3TwLJyu7fythPjAj1e1424}
+      TRIADE_GRIST_KEY_FILE: /run/secrets/grist_key
+    volumes:
+      - ${TRIADE_LAB_DATA_HOST:?set a persistent lab data directory}:/data
+    secrets: [grist_key]
+    networks: [lab, grist]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD","python","-c","import urllib.request; urllib.request.urlopen('http://localhost:8766/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+networks:
+  lab:
+  grist:
+    external: true
+    name: grist_default
+secrets:
+  grist_key:
+    file: ${TRIADE_GRIST_KEY_HOST:?set existing Grist credential file}

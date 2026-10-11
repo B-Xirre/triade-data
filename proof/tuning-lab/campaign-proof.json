@@ -1,0 +1,3716 @@
+{
+  "source_snapshot_hash": "b39a4a10a9ee490eb4c1a5725a62b896b133730ce6a379fbde925ecbc663e74b",
+  "baseline_revision": "experiment.497c66887d30e6b9abb250e8@1.31753a6eadcf",
+  "variant_revision": "experiment.497c66887d30e6b9abb250e8@2.2945d13169e2",
+  "runs": [
+    {
+      "run_id": "run.c0a58ab9547d405fa8ff0c805f124e30",
+      "workers": 1,
+      "counts": {
+        "blocked": "1",
+        "pass": "10061"
+      },
+      "result_hash": "4f0029ecc1fab1dfa271d2dea29da66f519eb2f2a824912cb46f8c754b94ce2f",
+      "trace_hash": "8abba747989e1c2496f964a2db5e94ca5d4fcaf1fb53f3f90258861fd978ce6c"
+    },
+    {
+      "run_id": "run.cdd666028dc14a9aadd42fee2d895c01",
+      "workers": 2,
+      "counts": {
+        "blocked": "1",
+        "pass": "10061"
+      },
+      "result_hash": "4f0029ecc1fab1dfa271d2dea29da66f519eb2f2a824912cb46f8c754b94ce2f",
+      "trace_hash": "8abba747989e1c2496f964a2db5e94ca5d4fcaf1fb53f3f90258861fd978ce6c"
+    },
+    {
+      "run_id": "run.c13b4598c71e4bdfa00a970bbf29ef0f",
+      "workers": 4,
+      "counts": {
+        "blocked": "1",
+        "pass": "10061"
+      },
+      "result_hash": "4f0029ecc1fab1dfa271d2dea29da66f519eb2f2a824912cb46f8c754b94ce2f",
+      "trace_hash": "8abba747989e1c2496f964a2db5e94ca5d4fcaf1fb53f3f90258861fd978ce6c"
+    }
+  ],
+  "identical_across_worker_counts": true,
+  "sweep_run_id": "run.af45621c5ae2428c9df4649152fc7a99",
+  "sweep_points": 12,
+  "registered_coverage": {
+    "registered": "379",
+    "rules": "251",
+    "parameters": "128",
+    "executable_contract_bindings": "60",
+    "rows": [
+      {
+        "coverage_id": "rule:T-C1",
+        "kind": "rule",
+        "source_id": "T-C1",
+        "classification": "contract_probe",
+        "adapter": "triade",
+        "blocking_reason": null,
+        "source_reference": "T · A2.4"
+      },
+      {
+        "coverage_id": "rule:T-C2",
+        "kind": "rule",
+        "source_id": "T-C2",
+        "classification": "contract_probe",
+        "adapter": "triade",
+        "blocking_reason": null,
+        "source_reference": "T · A.2"
+      },
+      {
+        "coverage_id": "rule:T-C3",
+        "kind": "rule",
+        "source_id": "T-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A4.2"
+      },
+      {
+        "coverage_id": "rule:T-C4",
+        "kind": "rule",
+        "source_id": "T-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · G.2"
+      },
+      {
+        "coverage_id": "rule:T-C5",
+        "kind": "rule",
+        "source_id": "T-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A.3, J.4"
+      },
+      {
+        "coverage_id": "rule:T-C6",
+        "kind": "rule",
+        "source_id": "T-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A4.2a"
+      },
+      {
+        "coverage_id": "rule:T-C7",
+        "kind": "rule",
+        "source_id": "T-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A4.2a *(◈W2f)*"
+      },
+      {
+        "coverage_id": "rule:T-C8",
+        "kind": "rule",
+        "source_id": "T-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · C.6"
+      },
+      {
+        "coverage_id": "rule:T-C9",
+        "kind": "rule",
+        "source_id": "T-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · H, K·3.3"
+      },
+      {
+        "coverage_id": "rule:T-C10",
+        "kind": "rule",
+        "source_id": "T-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8"
+      },
+      {
+        "coverage_id": "rule:T-C11",
+        "kind": "rule",
+        "source_id": "T-C11",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A4.4"
+      },
+      {
+        "coverage_id": "rule:T-C12",
+        "kind": "rule",
+        "source_id": "T-C12",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8, M · 2A.12 *(amended 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C13",
+        "kind": "rule",
+        "source_id": "T-C13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10"
+      },
+      {
+        "coverage_id": "rule:T-C14",
+        "kind": "rule",
+        "source_id": "T-C14",
+        "classification": "contract_probe",
+        "adapter": "content",
+        "blocking_reason": null,
+        "source_reference": "T · A4.8a"
+      },
+      {
+        "coverage_id": "rule:T-C15",
+        "kind": "rule",
+        "source_id": "T-C15",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8a *(new 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C16",
+        "kind": "rule",
+        "source_id": "T-C16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8b *(new 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C17",
+        "kind": "rule",
+        "source_id": "T-C17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8b *(new 0.39.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C18",
+        "kind": "rule",
+        "source_id": "T-C18",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8a, P · 2.3a *(amended 0.43.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C19",
+        "kind": "rule",
+        "source_id": "T-C19",
+        "classification": "contract_probe",
+        "adapter": "content",
+        "blocking_reason": null,
+        "source_reference": "T · A3.8d, P · 2.3d *(new 0.43.0)*"
+      },
+      {
+        "coverage_id": "rule:T-C20",
+        "kind": "rule",
+        "source_id": "T-C20",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A3.8e, P · 2.3e *(new 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:H-C6",
+        "kind": "rule",
+        "source_id": "H-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 5.3"
+      },
+      {
+        "coverage_id": "rule:H-C7",
+        "kind": "rule",
+        "source_id": "H-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13, M · 2A.10a"
+      },
+      {
+        "coverage_id": "rule:H-C8",
+        "kind": "rule",
+        "source_id": "H-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 7.1a *(new 0.32.0)*"
+      },
+      {
+        "coverage_id": "rule:H-C9",
+        "kind": "rule",
+        "source_id": "H-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 6.1a *(new 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:H-C10",
+        "kind": "rule",
+        "source_id": "H-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 6.2a / 11 *(new 0.39.0)*"
+      },
+      {
+        "coverage_id": "rule:E-C5",
+        "kind": "rule",
+        "source_id": "E-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · 3"
+      },
+      {
+        "coverage_id": "rule:E-C6",
+        "kind": "rule",
+        "source_id": "E-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.1 *(amended 0.40.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C1",
+        "kind": "rule",
+        "source_id": "K-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 16"
+      },
+      {
+        "coverage_id": "rule:K-C2",
+        "kind": "rule",
+        "source_id": "K-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 16"
+      },
+      {
+        "coverage_id": "rule:K-C3",
+        "kind": "rule",
+        "source_id": "K-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 9.1"
+      },
+      {
+        "coverage_id": "rule:K-C4",
+        "kind": "rule",
+        "source_id": "K-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 16"
+      },
+      {
+        "coverage_id": "rule:K-C5",
+        "kind": "rule",
+        "source_id": "K-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 16"
+      },
+      {
+        "coverage_id": "rule:K-C6",
+        "kind": "rule",
+        "source_id": "K-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 6.2"
+      },
+      {
+        "coverage_id": "rule:K-C7",
+        "kind": "rule",
+        "source_id": "K-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 8.2"
+      },
+      {
+        "coverage_id": "rule:K-C8",
+        "kind": "rule",
+        "source_id": "K-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.3"
+      },
+      {
+        "coverage_id": "rule:K-C9",
+        "kind": "rule",
+        "source_id": "K-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.2"
+      },
+      {
+        "coverage_id": "rule:K-C10",
+        "kind": "rule",
+        "source_id": "K-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 4 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C11",
+        "kind": "rule",
+        "source_id": "K-C11",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.4 *(new 0.34.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C12",
+        "kind": "rule",
+        "source_id": "K-C12",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.3 *(new 0.34.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C13",
+        "kind": "rule",
+        "source_id": "K-C13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.5 *(new 0.35.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C14",
+        "kind": "rule",
+        "source_id": "K-C14",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 8.1a *(new 0.35.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C15",
+        "kind": "rule",
+        "source_id": "K-C15",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.6 *(amended 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C16",
+        "kind": "rule",
+        "source_id": "K-C16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.2a *(amended 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C17",
+        "kind": "rule",
+        "source_id": "K-C17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.4 / 5.2a *(new 0.39.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C18",
+        "kind": "rule",
+        "source_id": "K-C18",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.1a *(new 0.43.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C19",
+        "kind": "rule",
+        "source_id": "K-C19",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.2 *(new 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:K-C20",
+        "kind": "rule",
+        "source_id": "K-C20",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.7 *(new 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C1",
+        "kind": "rule",
+        "source_id": "M-C1",
+        "classification": "contract_probe",
+        "adapter": "content",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.9"
+      },
+      {
+        "coverage_id": "rule:M-C2",
+        "kind": "rule",
+        "source_id": "M-C2",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.3"
+      },
+      {
+        "coverage_id": "rule:M-C3",
+        "kind": "rule",
+        "source_id": "M-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10"
+      },
+      {
+        "coverage_id": "rule:M-C4",
+        "kind": "rule",
+        "source_id": "M-C4",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.11"
+      },
+      {
+        "coverage_id": "rule:M-C9",
+        "kind": "rule",
+        "source_id": "M-C9",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.11 *(restated 0.29.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C10",
+        "kind": "rule",
+        "source_id": "M-C10",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.11 *(restated 0.29.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C11",
+        "kind": "rule",
+        "source_id": "M-C11",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 2A.11 *(amended 0.31.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C12",
+        "kind": "rule",
+        "source_id": "M-C12",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10a *(amended 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C13",
+        "kind": "rule",
+        "source_id": "M-C13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.11 *(new 0.37.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C14",
+        "kind": "rule",
+        "source_id": "M-C14",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.11 *(new 0.37.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C15",
+        "kind": "rule",
+        "source_id": "M-C15",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.4a *(new 0.38.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C16",
+        "kind": "rule",
+        "source_id": "M-C16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10a *(new 0.40.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C17",
+        "kind": "rule",
+        "source_id": "M-C17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10a *(new 0.41.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C18",
+        "kind": "rule",
+        "source_id": "M-C18",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2A.10a *(amended 0.42.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C5",
+        "kind": "rule",
+        "source_id": "M-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · A4.8"
+      },
+      {
+        "coverage_id": "rule:M-C6",
+        "kind": "rule",
+        "source_id": "M-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2.7a *(new 0.12.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C7",
+        "kind": "rule",
+        "source_id": "M-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2.7a *(new 0.12.0)*"
+      },
+      {
+        "coverage_id": "rule:M-C8",
+        "kind": "rule",
+        "source_id": "M-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2.7a *(new 0.12.0)*"
+      },
+      {
+        "coverage_id": "rule:H-C1",
+        "kind": "rule",
+        "source_id": "H-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 10.2"
+      },
+      {
+        "coverage_id": "rule:H-C2",
+        "kind": "rule",
+        "source_id": "H-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 9.3"
+      },
+      {
+        "coverage_id": "rule:H-C3",
+        "kind": "rule",
+        "source_id": "H-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 8.1"
+      },
+      {
+        "coverage_id": "rule:H-C4",
+        "kind": "rule",
+        "source_id": "H-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 9.4"
+      },
+      {
+        "coverage_id": "rule:H-C5",
+        "kind": "rule",
+        "source_id": "H-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:E-C1",
+        "kind": "rule",
+        "source_id": "E-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.0"
+      },
+      {
+        "coverage_id": "rule:E-C2",
+        "kind": "rule",
+        "source_id": "E-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.1"
+      },
+      {
+        "coverage_id": "rule:E-C3",
+        "kind": "rule",
+        "source_id": "E-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.0, T · C.6"
+      },
+      {
+        "coverage_id": "rule:E-C4",
+        "kind": "rule",
+        "source_id": "E-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.1"
+      },
+      {
+        "coverage_id": "rule:E-C7",
+        "kind": "rule",
+        "source_id": "E-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.1"
+      },
+      {
+        "coverage_id": "rule:E-C8",
+        "kind": "rule",
+        "source_id": "E-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.0a *(new 0.39.0)*"
+      },
+      {
+        "coverage_id": "rule:E-C9",
+        "kind": "rule",
+        "source_id": "E-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.0b *(amended 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C1",
+        "kind": "rule",
+        "source_id": "W-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1"
+      },
+      {
+        "coverage_id": "rule:W-C2",
+        "kind": "rule",
+        "source_id": "W-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1"
+      },
+      {
+        "coverage_id": "rule:W-C3",
+        "kind": "rule",
+        "source_id": "W-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 11.4"
+      },
+      {
+        "coverage_id": "rule:W-C4",
+        "kind": "rule",
+        "source_id": "W-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1"
+      },
+      {
+        "coverage_id": "rule:W-C5",
+        "kind": "rule",
+        "source_id": "W-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.5"
+      },
+      {
+        "coverage_id": "rule:W-C6",
+        "kind": "rule",
+        "source_id": "W-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1"
+      },
+      {
+        "coverage_id": "rule:W-C7",
+        "kind": "rule",
+        "source_id": "W-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 7.2"
+      },
+      {
+        "coverage_id": "rule:W-C8",
+        "kind": "rule",
+        "source_id": "W-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C9",
+        "kind": "rule",
+        "source_id": "W-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C10",
+        "kind": "rule",
+        "source_id": "W-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.1 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C11",
+        "kind": "rule",
+        "source_id": "W-C11",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.8a *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C12",
+        "kind": "rule",
+        "source_id": "W-C12",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 13 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C13",
+        "kind": "rule",
+        "source_id": "W-C13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.8a *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C14",
+        "kind": "rule",
+        "source_id": "W-C14",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.9 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C15",
+        "kind": "rule",
+        "source_id": "W-C15",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.9 · 10.0a *(generalised 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C16",
+        "kind": "rule",
+        "source_id": "W-C16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.9 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C17",
+        "kind": "rule",
+        "source_id": "W-C17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.9 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C18",
+        "kind": "rule",
+        "source_id": "W-C18",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 5.9 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C19",
+        "kind": "rule",
+        "source_id": "W-C19",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 12 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C20",
+        "kind": "rule",
+        "source_id": "W-C20",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9, 12 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-C21",
+        "kind": "rule",
+        "source_id": "W-C21",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.2 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C22",
+        "kind": "rule",
+        "source_id": "W-C22",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.1a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C23",
+        "kind": "rule",
+        "source_id": "W-C23",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.1a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C24",
+        "kind": "rule",
+        "source_id": "W-C24",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.0a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C25",
+        "kind": "rule",
+        "source_id": "W-C25",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.0a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C26",
+        "kind": "rule",
+        "source_id": "W-C26",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.0a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C27",
+        "kind": "rule",
+        "source_id": "W-C27",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C28",
+        "kind": "rule",
+        "source_id": "W-C28",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C29",
+        "kind": "rule",
+        "source_id": "W-C29",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C30",
+        "kind": "rule",
+        "source_id": "W-C30",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9b *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C31",
+        "kind": "rule",
+        "source_id": "W-C31",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9b · G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C32",
+        "kind": "rule",
+        "source_id": "W-C32",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 11 *(new 0.35.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C33",
+        "kind": "rule",
+        "source_id": "W-C33",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 11 *(new 0.36.0)*"
+      },
+      {
+        "coverage_id": "rule:W-C34",
+        "kind": "rule",
+        "source_id": "W-C34",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 11 *(new 0.36.0)*"
+      },
+      {
+        "coverage_id": "rule:V-C1",
+        "kind": "rule",
+        "source_id": "V-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.9"
+      },
+      {
+        "coverage_id": "rule:V-C2",
+        "kind": "rule",
+        "source_id": "V-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.9"
+      },
+      {
+        "coverage_id": "rule:V-C3",
+        "kind": "rule",
+        "source_id": "V-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.9"
+      },
+      {
+        "coverage_id": "rule:V-C4",
+        "kind": "rule",
+        "source_id": "V-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.9"
+      },
+      {
+        "coverage_id": "rule:TILE-C1",
+        "kind": "rule",
+        "source_id": "TILE-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-C2",
+        "kind": "rule",
+        "source_id": "TILE-C2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-C3",
+        "kind": "rule",
+        "source_id": "TILE-C3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-C4",
+        "kind": "rule",
+        "source_id": "TILE-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-C5",
+        "kind": "rule",
+        "source_id": "TILE-C5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-C6",
+        "kind": "rule",
+        "source_id": "TILE-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-C7",
+        "kind": "rule",
+        "source_id": "TILE-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 2 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-C8",
+        "kind": "rule",
+        "source_id": "TILE-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 2 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-C9",
+        "kind": "rule",
+        "source_id": "TILE-C9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-C10",
+        "kind": "rule",
+        "source_id": "TILE-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C1",
+        "kind": "rule",
+        "source_id": "P-C1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.1"
+      },
+      {
+        "coverage_id": "rule:P-C2",
+        "kind": "rule",
+        "source_id": "P-C2",
+        "classification": "contract_probe",
+        "adapter": "numeric",
+        "blocking_reason": null,
+        "source_reference": "P · 3.4 *(W-C10)*"
+      },
+      {
+        "coverage_id": "rule:P-C3",
+        "kind": "rule",
+        "source_id": "P-C3",
+        "classification": "contract_probe",
+        "adapter": "content",
+        "blocking_reason": null,
+        "source_reference": "P · 2.2"
+      },
+      {
+        "coverage_id": "rule:P-C4",
+        "kind": "rule",
+        "source_id": "P-C4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.4"
+      },
+      {
+        "coverage_id": "rule:P-C5",
+        "kind": "rule",
+        "source_id": "P-C5",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 5.2"
+      },
+      {
+        "coverage_id": "rule:P-C6",
+        "kind": "rule",
+        "source_id": "P-C6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 3.2"
+      },
+      {
+        "coverage_id": "rule:P-C7",
+        "kind": "rule",
+        "source_id": "P-C7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 10"
+      },
+      {
+        "coverage_id": "rule:P-C8",
+        "kind": "rule",
+        "source_id": "P-C8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 9"
+      },
+      {
+        "coverage_id": "rule:P-C10",
+        "kind": "rule",
+        "source_id": "P-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 9"
+      },
+      {
+        "coverage_id": "rule:P-C11",
+        "kind": "rule",
+        "source_id": "P-C11",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 9"
+      },
+      {
+        "coverage_id": "rule:P-C12",
+        "kind": "rule",
+        "source_id": "P-C12",
+        "classification": "contract_probe",
+        "adapter": "numeric",
+        "blocking_reason": null,
+        "source_reference": "P · 3 *(new 0.34.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C13",
+        "kind": "rule",
+        "source_id": "P-C13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3a *(new 0.40.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C14",
+        "kind": "rule",
+        "source_id": "P-C14",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3a *(amended 0.41.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C15",
+        "kind": "rule",
+        "source_id": "P-C15",
+        "classification": "contract_probe",
+        "adapter": "content",
+        "blocking_reason": null,
+        "source_reference": "P · 2.3b *(new 0.41.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C16",
+        "kind": "rule",
+        "source_id": "P-C16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3b *(new 0.41.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C17",
+        "kind": "rule",
+        "source_id": "P-C17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3c *(new 0.42.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C18",
+        "kind": "rule",
+        "source_id": "P-C18",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3d *(new 0.43.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C19",
+        "kind": "rule",
+        "source_id": "P-C19",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 2.3e *(new 0.44.0)*"
+      },
+      {
+        "coverage_id": "rule:P-C20",
+        "kind": "rule",
+        "source_id": "P-C20",
+        "classification": "contract_probe",
+        "adapter": "tarot",
+        "blocking_reason": null,
+        "source_reference": "P · 2.3f"
+      },
+      {
+        "coverage_id": "rule:P-C21",
+        "kind": "rule",
+        "source_id": "P-C21",
+        "classification": "contract_probe",
+        "adapter": "tarot",
+        "blocking_reason": null,
+        "source_reference": "P · 2.3g"
+      },
+      {
+        "coverage_id": "rule:P-C22",
+        "kind": "rule",
+        "source_id": "P-C22",
+        "classification": "contract_probe",
+        "adapter": "tarot",
+        "blocking_reason": null,
+        "source_reference": "P · 2.3h"
+      },
+      {
+        "coverage_id": "rule:P-C23",
+        "kind": "rule",
+        "source_id": "P-C23",
+        "classification": "contract_probe",
+        "adapter": "tarot",
+        "blocking_reason": null,
+        "source_reference": "P · 2.3i"
+      },
+      {
+        "coverage_id": "rule:K-C21",
+        "kind": "rule",
+        "source_id": "K-C21",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C22",
+        "kind": "rule",
+        "source_id": "K-C22",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C23",
+        "kind": "rule",
+        "source_id": "K-C23",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C24",
+        "kind": "rule",
+        "source_id": "K-C24",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C25",
+        "kind": "rule",
+        "source_id": "K-C25",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C26",
+        "kind": "rule",
+        "source_id": "K-C26",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C27",
+        "kind": "rule",
+        "source_id": "K-C27",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:K-C28",
+        "kind": "rule",
+        "source_id": "K-C28",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "K · 18"
+      },
+      {
+        "coverage_id": "rule:M-C19",
+        "kind": "rule",
+        "source_id": "M-C19",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:M-C20",
+        "kind": "rule",
+        "source_id": "M-C20",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:M-C21",
+        "kind": "rule",
+        "source_id": "M-C21",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:M-C22",
+        "kind": "rule",
+        "source_id": "M-C22",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:M-C23",
+        "kind": "rule",
+        "source_id": "M-C23",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:M-C24",
+        "kind": "rule",
+        "source_id": "M-C24",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "M · 10"
+      },
+      {
+        "coverage_id": "rule:H-C11",
+        "kind": "rule",
+        "source_id": "H-C11",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 19"
+      },
+      {
+        "coverage_id": "rule:H-C12",
+        "kind": "rule",
+        "source_id": "H-C12",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 19"
+      },
+      {
+        "coverage_id": "rule:H-C13",
+        "kind": "rule",
+        "source_id": "H-C13",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 19"
+      },
+      {
+        "coverage_id": "rule:H-C14",
+        "kind": "rule",
+        "source_id": "H-C14",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 19"
+      },
+      {
+        "coverage_id": "rule:H-C15",
+        "kind": "rule",
+        "source_id": "H-C15",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 19"
+      },
+      {
+        "coverage_id": "rule:P-C24",
+        "kind": "rule",
+        "source_id": "P-C24",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C25",
+        "kind": "rule",
+        "source_id": "P-C25",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C26",
+        "kind": "rule",
+        "source_id": "P-C26",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C27",
+        "kind": "rule",
+        "source_id": "P-C27",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C28",
+        "kind": "rule",
+        "source_id": "P-C28",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C29",
+        "kind": "rule",
+        "source_id": "P-C29",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:P-C30",
+        "kind": "rule",
+        "source_id": "P-C30",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 11"
+      },
+      {
+        "coverage_id": "rule:T-C21",
+        "kind": "rule",
+        "source_id": "T-C21",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · Combat mathematics integration"
+      },
+      {
+        "coverage_id": "rule:E-C10",
+        "kind": "rule",
+        "source_id": "E-C10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · 4"
+      },
+      {
+        "coverage_id": "rule:P-C31",
+        "kind": "rule",
+        "source_id": "P-C31",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:P-C32",
+        "kind": "rule",
+        "source_id": "P-C32",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:P-C33",
+        "kind": "rule",
+        "source_id": "P-C33",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:P-C34",
+        "kind": "rule",
+        "source_id": "P-C34",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:P-C35",
+        "kind": "rule",
+        "source_id": "P-C35",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:P-C36",
+        "kind": "rule",
+        "source_id": "P-C36",
+        "classification": "contract_probe",
+        "adapter": "lab",
+        "blocking_reason": null,
+        "source_reference": "P · 12"
+      },
+      {
+        "coverage_id": "rule:T-H1",
+        "kind": "rule",
+        "source_id": "T-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · I.5"
+      },
+      {
+        "coverage_id": "rule:H-H5",
+        "kind": "rule",
+        "source_id": "H-H5",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 6.2a *(S-H09)*"
+      },
+      {
+        "coverage_id": "rule:H-H6",
+        "kind": "rule",
+        "source_id": "H-H6",
+        "classification": "contract_probe",
+        "adapter": "combat",
+        "blocking_reason": null,
+        "source_reference": "H · 6.2b *(T-H1)*"
+      },
+      {
+        "coverage_id": "rule:E-H5",
+        "kind": "rule",
+        "source_id": "E-H5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · 3"
+      },
+      {
+        "coverage_id": "rule:E-H6",
+        "kind": "rule",
+        "source_id": "E-H6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · 3 *(◇W17/◇E11)*"
+      },
+      {
+        "coverage_id": "rule:M-H5",
+        "kind": "rule",
+        "source_id": "M-H5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 9.6 *(T-H1)*"
+      },
+      {
+        "coverage_id": "rule:P-H1",
+        "kind": "rule",
+        "source_id": "P-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 6.1"
+      },
+      {
+        "coverage_id": "rule:P-H2",
+        "kind": "rule",
+        "source_id": "P-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 5.5"
+      },
+      {
+        "coverage_id": "rule:P-H3",
+        "kind": "rule",
+        "source_id": "P-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 3"
+      },
+      {
+        "coverage_id": "rule:P-H4",
+        "kind": "rule",
+        "source_id": "P-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 4.3"
+      },
+      {
+        "coverage_id": "rule:P-H5",
+        "kind": "rule",
+        "source_id": "P-H5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 9"
+      },
+      {
+        "coverage_id": "rule:T-H2",
+        "kind": "rule",
+        "source_id": "T-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · Gate T"
+      },
+      {
+        "coverage_id": "rule:T-H3",
+        "kind": "rule",
+        "source_id": "T-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · I.4"
+      },
+      {
+        "coverage_id": "rule:T-H4",
+        "kind": "rule",
+        "source_id": "T-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "T · Gate T"
+      },
+      {
+        "coverage_id": "rule:K-H1",
+        "kind": "rule",
+        "source_id": "K-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.1"
+      },
+      {
+        "coverage_id": "rule:M-H1",
+        "kind": "rule",
+        "source_id": "M-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 5.4"
+      },
+      {
+        "coverage_id": "rule:M-H2",
+        "kind": "rule",
+        "source_id": "M-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 5.4"
+      },
+      {
+        "coverage_id": "rule:M-H3",
+        "kind": "rule",
+        "source_id": "M-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 2.5"
+      },
+      {
+        "coverage_id": "rule:M-H4",
+        "kind": "rule",
+        "source_id": "M-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "M · 5.4"
+      },
+      {
+        "coverage_id": "rule:H-H1",
+        "kind": "rule",
+        "source_id": "H-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:H-H2",
+        "kind": "rule",
+        "source_id": "H-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 7.6"
+      },
+      {
+        "coverage_id": "rule:H-H3",
+        "kind": "rule",
+        "source_id": "H-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:H-H4",
+        "kind": "rule",
+        "source_id": "H-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:E-H1",
+        "kind": "rule",
+        "source_id": "E-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.4"
+      },
+      {
+        "coverage_id": "rule:E-H2",
+        "kind": "rule",
+        "source_id": "E-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.4"
+      },
+      {
+        "coverage_id": "rule:E-H3",
+        "kind": "rule",
+        "source_id": "E-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.4"
+      },
+      {
+        "coverage_id": "rule:E-H4",
+        "kind": "rule",
+        "source_id": "E-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.4"
+      },
+      {
+        "coverage_id": "rule:W-H1",
+        "kind": "rule",
+        "source_id": "W-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H2",
+        "kind": "rule",
+        "source_id": "W-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H3",
+        "kind": "rule",
+        "source_id": "W-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H4",
+        "kind": "rule",
+        "source_id": "W-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H5",
+        "kind": "rule",
+        "source_id": "W-H5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H6",
+        "kind": "rule",
+        "source_id": "W-H6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2"
+      },
+      {
+        "coverage_id": "rule:W-H7",
+        "kind": "rule",
+        "source_id": "W-H7",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H8",
+        "kind": "rule",
+        "source_id": "W-H8",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H9",
+        "kind": "rule",
+        "source_id": "W-H9",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H10",
+        "kind": "rule",
+        "source_id": "W-H10",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H11",
+        "kind": "rule",
+        "source_id": "W-H11",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H12",
+        "kind": "rule",
+        "source_id": "W-H12",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H13",
+        "kind": "rule",
+        "source_id": "W-H13",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:W-H14",
+        "kind": "rule",
+        "source_id": "W-H14",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.2 *(new)*"
+      },
+      {
+        "coverage_id": "rule:V-H1",
+        "kind": "rule",
+        "source_id": "V-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.1"
+      },
+      {
+        "coverage_id": "rule:V-H2",
+        "kind": "rule",
+        "source_id": "V-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.1"
+      },
+      {
+        "coverage_id": "rule:V-H3",
+        "kind": "rule",
+        "source_id": "V-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "V · 4.8"
+      },
+      {
+        "coverage_id": "rule:TILE-H1",
+        "kind": "rule",
+        "source_id": "TILE-H1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-H2",
+        "kind": "rule",
+        "source_id": "TILE-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-H3",
+        "kind": "rule",
+        "source_id": "TILE-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-H4",
+        "kind": "rule",
+        "source_id": "TILE-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:K-H2",
+        "kind": "rule",
+        "source_id": "K-H2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.2 *(new 0.34.0)*"
+      },
+      {
+        "coverage_id": "rule:K-H3",
+        "kind": "rule",
+        "source_id": "K-H3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 3.5 *(new 0.35.0)*"
+      },
+      {
+        "coverage_id": "rule:K-H4",
+        "kind": "rule",
+        "source_id": "K-H4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "K · 5.1 *(new 0.40.0)*"
+      },
+      {
+        "coverage_id": "rule:W-H16",
+        "kind": "rule",
+        "source_id": "W-H16",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.0a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-H17",
+        "kind": "rule",
+        "source_id": "W-H17",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 9a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-H15",
+        "kind": "rule",
+        "source_id": "W-H15",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 10.1a *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-H5",
+        "kind": "rule",
+        "source_id": "TILE-H5",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 2 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:TILE-H6",
+        "kind": "rule",
+        "source_id": "TILE-H6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 5 *(new 0.33.0)*"
+      },
+      {
+        "coverage_id": "rule:W-M1",
+        "kind": "rule",
+        "source_id": "W-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.3"
+      },
+      {
+        "coverage_id": "rule:W-M2",
+        "kind": "rule",
+        "source_id": "W-M2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.3"
+      },
+      {
+        "coverage_id": "rule:W-M3",
+        "kind": "rule",
+        "source_id": "W-M3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.3"
+      },
+      {
+        "coverage_id": "rule:W-M4",
+        "kind": "rule",
+        "source_id": "W-M4",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.3"
+      },
+      {
+        "coverage_id": "rule:W-M6",
+        "kind": "rule",
+        "source_id": "W-M6",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "W · 16.3 *(new)*"
+      },
+      {
+        "coverage_id": "rule:H-M1",
+        "kind": "rule",
+        "source_id": "H-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:H-M2",
+        "kind": "rule",
+        "source_id": "H-M2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "H · 13"
+      },
+      {
+        "coverage_id": "rule:E-M1",
+        "kind": "rule",
+        "source_id": "E-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "E · F.4"
+      },
+      {
+        "coverage_id": "rule:L-M1",
+        "kind": "rule",
+        "source_id": "L-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "L"
+      },
+      {
+        "coverage_id": "rule:L-M2",
+        "kind": "rule",
+        "source_id": "L-M2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "L"
+      },
+      {
+        "coverage_id": "rule:TILE-M1",
+        "kind": "rule",
+        "source_id": "TILE-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-M2",
+        "kind": "rule",
+        "source_id": "TILE-M2",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:TILE-M3",
+        "kind": "rule",
+        "source_id": "TILE-M3",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "G · 6"
+      },
+      {
+        "coverage_id": "rule:P-M1",
+        "kind": "rule",
+        "source_id": "P-M1",
+        "classification": "capability_gap",
+        "adapter": null,
+        "blocking_reason": "Source requirement needs an unimplemented domain adapter or external evidence",
+        "source_reference": "P · 3.1"
+      },
+      {
+        "coverage_id": "parameter:S-P01",
+        "kind": "parameter",
+        "source_id": "S-P01",
+        "classification": "constant",
+        "adapter": "numeric",
+        "symbol": "scale",
+        "value_state": "locked",
+        "blocking_reason": null,
+        "source_reference": "P-C12"
+      },
+      {
+        "coverage_id": "parameter:S-K01",
+        "kind": "parameter",
+        "source_id": "S-K01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K02",
+        "kind": "parameter",
+        "source_id": "S-K02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K03",
+        "kind": "parameter",
+        "source_id": "S-K03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-T03",
+        "kind": "parameter",
+        "source_id": "S-T03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-T03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-T02",
+        "kind": "parameter",
+        "source_id": "S-T02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-T02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K04",
+        "kind": "parameter",
+        "source_id": "S-K04",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K04 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K05",
+        "kind": "parameter",
+        "source_id": "S-K05",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K05 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K06",
+        "kind": "parameter",
+        "source_id": "S-K06",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K06 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K07",
+        "kind": "parameter",
+        "source_id": "S-K07",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K07 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K08",
+        "kind": "parameter",
+        "source_id": "S-K08",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K08 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K09",
+        "kind": "parameter",
+        "source_id": "S-K09",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K09 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H01",
+        "kind": "parameter",
+        "source_id": "S-H01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H02",
+        "kind": "parameter",
+        "source_id": "S-H02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H03",
+        "kind": "parameter",
+        "source_id": "S-H03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H04",
+        "kind": "parameter",
+        "source_id": "S-H04",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H04 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H05",
+        "kind": "parameter",
+        "source_id": "S-H05",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H05 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H06",
+        "kind": "parameter",
+        "source_id": "S-H06",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H06 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H07",
+        "kind": "parameter",
+        "source_id": "S-H07",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H07 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H08",
+        "kind": "parameter",
+        "source_id": "S-H08",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H08 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H09",
+        "kind": "parameter",
+        "source_id": "S-H09",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "aim_ceiling_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-H09 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H10",
+        "kind": "parameter",
+        "source_id": "S-H10",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H10 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-E01",
+        "kind": "parameter",
+        "source_id": "S-E01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-E01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-E02",
+        "kind": "parameter",
+        "source_id": "S-E02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-E02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-E03",
+        "kind": "parameter",
+        "source_id": "S-E03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-E03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M01",
+        "kind": "parameter",
+        "source_id": "S-M01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-M01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M02",
+        "kind": "parameter",
+        "source_id": "S-M02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-M02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M03",
+        "kind": "parameter",
+        "source_id": "S-M03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-M03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M04",
+        "kind": "parameter",
+        "source_id": "S-M04",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-M04 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W01",
+        "kind": "parameter",
+        "source_id": "S-W01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W02",
+        "kind": "parameter",
+        "source_id": "S-W02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W03",
+        "kind": "parameter",
+        "source_id": "S-W03",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W04",
+        "kind": "parameter",
+        "source_id": "S-W04",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W04 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W05",
+        "kind": "parameter",
+        "source_id": "S-W05",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W05 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W06",
+        "kind": "parameter",
+        "source_id": "S-W06",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W06 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W07",
+        "kind": "parameter",
+        "source_id": "S-W07",
+        "classification": "external_performance",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W07 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W08",
+        "kind": "parameter",
+        "source_id": "S-W08",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W08 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W09",
+        "kind": "parameter",
+        "source_id": "S-W09",
+        "classification": "external_performance",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W09 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W10",
+        "kind": "parameter",
+        "source_id": "S-W10",
+        "classification": "external_performance",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W10 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W11",
+        "kind": "parameter",
+        "source_id": "S-W11",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W11 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W12",
+        "kind": "parameter",
+        "source_id": "S-W12",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W12 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W13",
+        "kind": "parameter",
+        "source_id": "S-W13",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W13 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-W14",
+        "kind": "parameter",
+        "source_id": "S-W14",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-W14 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-P02",
+        "kind": "parameter",
+        "source_id": "S-P02",
+        "classification": "external_performance",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-P02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-G01",
+        "kind": "parameter",
+        "source_id": "S-G01",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-G01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-G02",
+        "kind": "parameter",
+        "source_id": "S-G02",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-G02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-V01",
+        "kind": "parameter",
+        "source_id": "S-V01",
+        "classification": "external_usability",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-V01 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-V02",
+        "kind": "parameter",
+        "source_id": "S-V02",
+        "classification": "external_usability",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "provisional",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-V02 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-V03",
+        "kind": "parameter",
+        "source_id": "S-V03",
+        "classification": "external_usability",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-V03 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-V04",
+        "kind": "parameter",
+        "source_id": "S-V04",
+        "classification": "external_usability",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-V04 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K10",
+        "kind": "parameter",
+        "source_id": "S-K10",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K10 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K11",
+        "kind": "parameter",
+        "source_id": "S-K11",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "rating_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-K11 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K12",
+        "kind": "parameter",
+        "source_id": "S-K12",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K12 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K13",
+        "kind": "parameter",
+        "source_id": "S-K13",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "cap_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-K13 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K14",
+        "kind": "parameter",
+        "source_id": "S-K14",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K14 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K15",
+        "kind": "parameter",
+        "source_id": "S-K15",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K15 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-K16",
+        "kind": "parameter",
+        "source_id": "S-K16",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-K16 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M06",
+        "kind": "parameter",
+        "source_id": "S-M06",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "source_unit_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-M06 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M07",
+        "kind": "parameter",
+        "source_id": "S-M07",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "reinforcement_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-M07 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-M08",
+        "kind": "parameter",
+        "source_id": "S-M08",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-M08 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H11",
+        "kind": "parameter",
+        "source_id": "S-H11",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H11 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H12",
+        "kind": "parameter",
+        "source_id": "S-H12",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "divine_coefficient_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "S-H12 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:S-H13",
+        "kind": "parameter",
+        "source_id": "S-H13",
+        "classification": "compound_family",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "S-H13 owning source / Y generated projection"
+      },
+      {
+        "coverage_id": "parameter:technique.vocal_seal.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.vocal_seal.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.vocal_seal.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.vocal_seal.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.resonant_chorus.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.resonant_chorus.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.resonant_chorus.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.resonant_chorus.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.exhortation.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.exhortation.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.exhortation.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.exhortation.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.divine_purge.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.divine_purge.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.divine_purge.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.divine_purge.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.aegis_weave.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.aegis_weave.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.aegis_weave.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.aegis_weave.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.decisive_snap.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.decisive_snap.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.decisive_snap.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.decisive_snap.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.flowing_seal.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.flowing_seal.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.flowing_seal.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.flowing_seal.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.pressure_lock.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.pressure_lock.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.pressure_lock.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.pressure_lock.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.mind_thrust.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.mind_thrust.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.mind_thrust.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.mind_thrust.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.kinetic_wave.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.kinetic_wave.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.kinetic_wave.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.kinetic_wave.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.cognitive_anchor.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.cognitive_anchor.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.cognitive_anchor.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.cognitive_anchor.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.synapse_overload.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.synapse_overload.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.synapse_overload.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.synapse_overload.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.bite.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.bite.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.bite.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.bite.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.punch.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.punch.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.punch.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.punch.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.kick.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.kick.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.kick.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.kick.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.apply_venom.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.apply_venom.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.apply_venom.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.apply_venom.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.hex.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.hex.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.hex.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.hex.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.sanctified_seal.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.sanctified_seal.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.sanctified_seal.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.sanctified_seal.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.unraveling_chants.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.unraveling_chants.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.unraveling_chants.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.unraveling_chants.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.consecrated_knot.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.consecrated_knot.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.consecrated_knot.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.consecrated_knot.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.entropic_weave.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.entropic_weave.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.entropic_weave.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.entropic_weave.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.flicker_step.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.flicker_step.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.flicker_step.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.flicker_step.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.refraction_matrix.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.refraction_matrix.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.refraction_matrix.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.refraction_matrix.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.entropic_rupture.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.entropic_rupture.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.entropic_rupture.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.entropic_rupture.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.neuro_shatter.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.neuro_shatter.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.neuro_shatter.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.neuro_shatter.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.warp_pulse.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.warp_pulse.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.warp_pulse.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.warp_pulse.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.thought_bleed.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.thought_bleed.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.thought_bleed.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.thought_bleed.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.psychokinetic_blast.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.psychokinetic_blast.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.psychokinetic_blast.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.psychokinetic_blast.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.decree_of_mind.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.decree_of_mind.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.decree_of_mind.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.decree_of_mind.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.aura_of_enlightenment.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.aura_of_enlightenment.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.aura_of_enlightenment.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.aura_of_enlightenment.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.psionic_whisper.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.psionic_whisper.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.psionic_whisper.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.psionic_whisper.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:technique.subjugation_chant.base_cost",
+        "kind": "parameter",
+        "source_id": "technique.subjugation_chant.base_cost",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K14"
+      },
+      {
+        "coverage_id": "parameter:technique.subjugation_chant.adverse_tax_cap",
+        "kind": "parameter",
+        "source_id": "technique.subjugation_chant.adverse_tax_cap",
+        "classification": "unbound_coefficient",
+        "adapter": null,
+        "symbol": null,
+        "value_state": "unset",
+        "blocking_reason": "Explicit numeric binding or domain capability required",
+        "source_reference": "K·18 / S-K15"
+      },
+      {
+        "coverage_id": "parameter:combat.group_step_calibration",
+        "kind": "parameter",
+        "source_id": "combat.group_step_calibration",
+        "classification": "coefficient",
+        "adapter": "combat",
+        "symbol": "step_rating_q",
+        "value_state": "unset",
+        "blocking_reason": "Production coefficient unset; declared experiment inputs can run this mathematical probe",
+        "source_reference": "K·18 / S-K11"
+      }
+    ]
+  },
+  "production_tuning_unchanged": true
+}

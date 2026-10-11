@@ -1,0 +1,10 @@
+{
+  "design_version": "0.47.0",
+  "schema_version": "1.1.0",
+  "expected_rule_total": 251,
+  "expected_severities": {
+    "critical": 181,
+    "high": 56,
+    "medium": 14
+  }
+}
