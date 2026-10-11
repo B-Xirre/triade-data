@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "design_version": "0.46.0",
+  "purpose": "Enforce already-adopted signed 64-bit persistence bounds; no Grist data or design contract change",
+  "bounded_fields": 22,
+  "regression": {
+    "tests": 46,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "regression_exit": 0,
+  "canonical_sha256_unchanged": "2f60f6e5c3580908a9d7d57046586c8fb2c6e5537b3b5edbbaf30a617901abbc",
+  "active_tables": 108,
+  "active_rows": 768,
+  "prior_release_merge": "be9a0f220c9a1f0ee06ad00ca758af21894cc02e"
+}

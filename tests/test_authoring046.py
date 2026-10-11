@@ -28,6 +28,10 @@ class Authoring046Tests(unittest.TestCase):
         data=copy.deepcopy(self.data)
         next(r for r in data['tables']['Design_parameters'] if r['parameter_id']=='S-P01')['value_int']=10000
         with self.assertRaisesRegex(ValueError,'constant'):self.check(data)
+    def test_persisted_q_overflow_rejected(self):
+        for value in [-(1<<63)-1,1<<63]:
+            data=copy.deepcopy(self.data);data['tables']['Fixture_builds'][0]['floor_m_q']=value
+            with self.assertRaises(Exception):self.check(data)
     def test_stable_identity_collision_rejected(self):
         data=copy.deepcopy(self.data);data['tables']['Ref_rules'][1]['rule_id']=data['tables']['Ref_rules'][0]['rule_id']
         with self.assertRaisesRegex(ValueError,'duplicate'):self.check(data)

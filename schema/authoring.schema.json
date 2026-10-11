@@ -620,7 +620,9 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "unit": {
                 "type": [
@@ -1583,13 +1585,17 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "opening_decay_modifier_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "discipline_creation_enabled": {
                 "type": [
@@ -1676,25 +1682,33 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "df_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "di_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "vector_sum_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "vector_valid": {
                 "type": [
@@ -1724,7 +1738,9 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "condition_expression_id": {
                 "type": [
@@ -1742,31 +1758,41 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "dwell_modifier_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "efficiency_modifier_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "volatility_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "recovery_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "authoring_notes": {
                 "type": [
@@ -1916,13 +1942,17 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "value_max_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "value_curve_id": {
                 "type": [
@@ -2270,19 +2300,25 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "floor_f_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "floor_i_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "validation_state": {
                 "type": [
@@ -3518,7 +3554,9 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "value_int": {
                 "type": [
@@ -4916,19 +4954,25 @@
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "floor_f_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "floor_i_q": {
                 "type": [
                   "integer",
                   "null"
-                ]
+                ],
+                "minimum": -9223372036854775808,
+                "maximum": 9223372036854775807
               },
               "sort_order": {
                 "type": [
