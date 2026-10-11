@@ -6,7 +6,7 @@
   "active_doc_id": "3TwLJyu7fythPjAj1e1424",
   "backup_doc_id": "7HebVF7oP5cCXxwf4SPeps",
   "candidate_doc_id": "b7SVLsNFsTY3AwVrNt5tyg",
-  "active_promoted": false,
+  "active_promoted": true,
   "baseline_tables": 39,
   "baseline_rows": 375,
   "candidate_tables": 108,
@@ -33,5 +33,10 @@
   "runtime_package_gate": "open",
   "playable_combat_claim": false,
   "balance_validation_claim": false,
-  "rollback_exercised": false
+  "rollback_exercised": false,
+  "active_records_verified": 768,
+  "candidate_head_sha": "313d3598af3b8e0c5f48c9f6e7e0b84779864902",
+  "status_contexts": 0,
+  "check_runs": 0,
+  "workflow_runs": 0
 }
