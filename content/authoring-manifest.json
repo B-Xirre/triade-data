@@ -1,0 +1,12 @@
+{
+  "design_version": "0.46.0",
+  "schema_version": "1.0.0",
+  "expected_rule_total": 245,
+  "expected_severities": {
+    "critical": 175,
+    "high": 56,
+    "medium": 14
+  },
+  "reference_scope": "all 48 adopted authoring grains plus CR-11 and supporting combat families",
+  "runtime_ready": false
+}
