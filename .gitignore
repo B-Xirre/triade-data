@@ -18,6 +18,11 @@ grist/.env
 .venv/
 __pycache__/
 *.pyc
+.lab-data/
+.test-tmp/
+lab/web/node_modules/
+lab/web/dist/
+lab/.env*
 
 # Local R7 working copies and proof scratch
 *.grist

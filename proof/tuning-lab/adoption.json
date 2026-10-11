@@ -1,0 +1,15 @@
+{
+  "tables": 127,
+  "columns": 1126,
+  "rows": 5523,
+  "schema_and_record_tables_matching": 127,
+  "source_snapshot_hash": "b39a4a10a9ee490eb4c1a5725a62b896b133730ce6a379fbde925ecbc663e74b",
+  "active": "3TwLJyu7fythPjAj1e1424",
+  "backup": "qZh2Xe9MKnHaWJfkyfyvRr",
+  "candidate": "iHhePS1thMoUPnBq6kpZBY",
+  "acl_metadata_tables_matching": 2,
+  "candidate_head_sha": "749688f2ff992b050f3d8c04456619648de4e72d",
+  "candidate_ci_run": 38158089150,
+  "candidate_ci_conclusion": "success",
+  "promoted": true
+}

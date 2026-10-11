@@ -1,5 +1,9 @@
 # TRIADE Data Pipeline
 
+## Triade Tuning Lab
+
+The locally deployed versioned workbench and combat mathematics framework use authoring schema 1.1.0 and lab execution schema 1.0.0. See [lab deployment and usage](lab/README.md). The 0.46.0 canonical snapshot below remains the frozen regression baseline; current lab authoring is `content/canonical/authoring-1.1.0.json`.
+
 ## Authority model
 
 Grist

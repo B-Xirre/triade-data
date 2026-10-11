@@ -1,0 +1,12 @@
+.git
+grist/persist
+lake
+warehouse
+.lab-data
+.test-tmp
+**/__pycache__
+**/node_modules
+**/dist
+.env*
+**/*.grist
+proof/tmp

@@ -1,0 +1,14 @@
+{
+  "gui_run_id": "run.65dcf9b397844423bc337b7739b84b53",
+  "cancelled_runs": [
+    [
+      "run.a0a9ecc0763d4b6eace9b36c6c015847",
+      "581"
+    ]
+  ],
+  "restart_run": "run.475064c85e004d0fa56dddc086513417",
+  "restart_status": "interrupted",
+  "restart_error": "Worker restarted; partial evidence retained; resubmit exact manifest to reproduce",
+  "catalogue_rebuilt_runs": 19,
+  "gui_adoption_id": "adoption.1ad054564129a5a32993ff8b"
+}

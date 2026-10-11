@@ -1,0 +1,30 @@
+name: Tuning Lab
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Build pinned lab image and frontend tests
+        run: docker build -t triade-tuning-lab:ci -f lab/Dockerfile .
+      - name: Frozen-export and API regressions
+        run: >-
+          docker run --rm
+          --mount type=bind,source="$GITHUB_WORKSPACE",target=/workspaces/repos/triade-data,readonly
+          -w /workspaces/repos/triade-data
+          -e TRIADE_VALIDATION_RULES_INDEX=/workspaces/repos/triade-data/tests/fixtures/frozen/validation-0.29.0.md
+          triade-tuning-lab:ci python -m pytest -q -p no:cacheprovider
+      - name: Reproducible 10,000-case arithmetic campaign
+        run: >-
+          docker run --rm triade-tuning-lab:ci python -c
+          "from lab.adapters import property_case; from lab.content import digest;
+          a=[property_case(i,20261011) for i in range(10000)];
+          b=[property_case(i,20261011) for i in range(10000)];
+          assert all(c['status']=='pass' for c in a); assert digest(a)==digest(b);
+          print('10000/10000 property cases passed; repeat hash '+digest(a))"
