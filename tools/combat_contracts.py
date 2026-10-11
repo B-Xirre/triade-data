@@ -87,6 +87,10 @@ def round_away(value):
     value=Fraction(value);sign=-1 if value<0 else 1;value=abs(value)
     return sign*((2*value.numerator+value.denominator)//(2*value.denominator))
 
+def checked_int64(value):
+    if type(value) is not int or not -(1<<63)<=value<(1<<63):raise ValueError('signed_int64_overflow')
+    return value
+
 def source_budget(unit,pips):
     if unit<0 or pips<0:raise ValueError('invalid_source_budget')
     return unit*pips

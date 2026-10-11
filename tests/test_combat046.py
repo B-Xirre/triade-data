@@ -71,6 +71,11 @@ class Combat046Tests(unittest.TestCase):
         self.assertEqual(integrity_event(1,[9,9],[10,20]),1)
     def test_ties_away_from_zero(self):
         self.assertEqual([round_away(F(n,2)) for n in [-3,-1,1,3]],[-2,-1,1,2])
+    def test_checked_signed64_boundaries(self):
+        self.assertEqual(checked_int64(-(1<<63)),-(1<<63))
+        self.assertEqual(checked_int64((1<<63)-1),(1<<63)-1)
+        for value in [-(1<<63)-1,1<<63,True,F(1,2)]:
+            with self.assertRaises(ValueError):checked_int64(value)
     def test_source_calibration_once_and_redistribution_conserves(self):
         raw=source_budget(7,4);self.assertEqual(raw,28)
         self.assertEqual(sum(allocate_integer(raw,[1,2,1])),raw)
