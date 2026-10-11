@@ -1,0 +1,12 @@
+{
+  "candidate": "b7SVLsNFsTY3AwVrNt5tyg",
+  "obsolete_faculty_row_ids": [
+    1,
+    2
+  ],
+  "remaining_external_references": 0,
+  "obsolete_family_row_count": 1,
+  "active_base_faculties": 4,
+  "mapping": "Natural capacity belongs to lineage/node profiles; control belongs to Somatic. Legacy placeholders carried no assigned footprint or actor entitlement. No new lineage grant was fabricated.",
+  "evidence": "Full immutable Grist backup and grist-baseline.json retain original rows"
+}

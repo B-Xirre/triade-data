@@ -23,7 +23,36 @@ Parquet
 Git / GitHub
 → version authority
 
-## R7 rule-reference migration
+## Triade 0.46.0 authoring contracts
+
+Schema 1.0.0 covers 108 authoring tables, including combat protection scopes,
+shield partition budgets, magic attributes, Ward selection, Faculty authorization,
+fixed-point parameters and isolated fixture values. The versioned manifest pins
+245 source rules (175 Critical / 56 High / 14 Medium).
+
+```text
+python tools/run_regression.py
+python tools/authoring046.py --doc-id <candidate-id> --registry schema/authoring-registry-1.0.0.json --manifest content/authoring-manifest.json --schema schema/authoring.schema.json --output <export-directory>
+python tools/migrate_authoring046.py --candidate <candidate-id> --active <active-id> --backup <backup-id> --registry schema/authoring-registry-1.0.0.json --seed content/authoring-seed-0.46.0.json
+```
+
+The API client reads loopback Grist using environment credentials. Migration is
+candidate-only; its default mode previews schema changes and `--apply` performs
+the guarded schema and stable-ID seed migration. Reference targets must exist
+before their dependents. Access rules and stable-ID display formulas are separately
+verified release operations, rather than freely editable authoring facts.
+
+Canonical exports use stable References, conservative integers, explicit nulls for
+unset parameters and no display floats. `--profile approved-runtime` intentionally
+rejects this release: tuning coefficients and runtime integration remain open.
+The mathematical helpers and fixtures validate contracts; they do not constitute
+a playable combat implementation or encounter balance validation.
+
+The historical index test can be enabled with `TRIADE_VALIDATION_RULES_INDEX`
+pointing to its frozen 0.29.0 validation index. Historical golden datasets remain
+unchanged.
+
+## Historical R7 rule-reference migration
 
 R7 is implemented by standard-library-only tools:
 
@@ -34,8 +63,9 @@ python tools/export_grist.py <output.grist> <csv-output-directory>
 python -m unittest -v tests/test_r7.py
 ```
 
-`generate_ref_rules.py` fails unless the current index yields exactly 148 unique
-rules with the 86 Critical / 48 High / 14 Medium split. `apply_r7_grist.py` writes a
+Without a versioned manifest, `generate_ref_rules.py` retains the historical
+148-rule contract (86 Critical / 48 High / 14 Medium). Current 0.46.0 generation
+requires `--manifest content/authoring-manifest.json`. `apply_r7_grist.py` writes a
 new document copy, rejects unresolved coverage IDs, migrates the Reference
 column, and records before/after proof artifacts. `export_grist.py` is currently
 R7-scoped; it is not the complete Grist-to-CSV pipeline.

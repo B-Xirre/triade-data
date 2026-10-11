@@ -1,0 +1,32 @@
+{
+  "tables": [
+    "Ref_damage_types",
+    "Ref_damage_groups",
+    "Ref_stats",
+    "Ref_regions",
+    "Ref_hooks",
+    "Ref_triade_origins",
+    "Ref_effect_modes",
+    "Ref_demand_tiers",
+    "Ref_lifecycle_status",
+    "Ref_design_status",
+    "Ref_integrity_states",
+    "Ref_affix_groups",
+    "Ref_categories",
+    "Ref_slots",
+    "Ref_rules",
+    "Ref_tags",
+    "Ref_faculty_families",
+    "Ref_sizes",
+    "Ref_enemy_tiers",
+    "Ref_defence_scopes",
+    "Ref_attribute_families",
+    "Ref_effect_families",
+    "Ref_ward_states",
+    "Actor_faculty_entitlements",
+    "Validation_findings"
+  ],
+  "resource_count": 26,
+  "rule_count": 26,
+  "verified": 25
+}

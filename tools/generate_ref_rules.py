@@ -140,7 +140,18 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("index", type=Path, help="governed TRIADE Validation Rules Index Markdown")
     parser.add_argument("output", type=Path, help="destination ref_rules CSV")
+    parser.add_argument("--manifest", type=Path, help="pinned authoring manifest with measured source rule census")
     args = parser.parse_args(argv)
+    global EXPECTED_COUNTS, EXPECTED_TOTAL
+    if args.manifest:
+        import json
+        manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
+        EXPECTED_COUNTS = manifest["expected_severities"]
+        EXPECTED_TOTAL = manifest["expected_rule_total"]
+        if sum(EXPECTED_COUNTS.values()) != EXPECTED_TOTAL:
+            parser.error("manifest census and severity split disagree")
+    elif "0.46.0" in args.index.read_text(encoding="utf-8").split("## Changelog")[0]:
+        parser.error("current source generation requires --manifest; legacy 148-row census is historical compatibility only")
     try:
         rules = parse_index(args.index)
         write_seed(rules, args.output)

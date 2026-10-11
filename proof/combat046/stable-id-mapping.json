@@ -1,0 +1,3232 @@
+{
+  "Ref_damage_types": [
+    {
+      "row_id": 1,
+      "stable_id": "slash"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "impact"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "pierce"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "explosive"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fire"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "lightning"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "cold"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "corrosive"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "poison"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "shatter"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "tear"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "chaos"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "divine"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "psychic"
+    }
+  ],
+  "Ref_damage_groups": [
+    {
+      "row_id": 1,
+      "stable_id": "physical"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "volatile"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "corruptive"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "structural"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "occult"
+    }
+  ],
+  "Ref_stats": [
+    {
+      "row_id": 1,
+      "stable_id": "strength"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "finesse"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "stamina"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "intellect"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "will"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "spirit"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "frame"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "poise"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "constitution"
+    }
+  ],
+  "Ref_regions": [
+    {
+      "row_id": 1,
+      "stable_id": "instinct"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "pressure"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "discipline"
+    }
+  ],
+  "Ref_hooks": [
+    {
+      "row_id": 1,
+      "stable_id": "main_hand"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "off_hand"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "voice"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "none"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fingers"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "brain"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "bound_node"
+    }
+  ],
+  "Ref_triade_origins": [
+    {
+      "row_id": 1,
+      "stable_id": "adm"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "cdm"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "edm"
+    }
+  ],
+  "Ref_effect_modes": [
+    {
+      "row_id": 1,
+      "stable_id": "impulse"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "force"
+    }
+  ],
+  "Ref_demand_tiers": [
+    {
+      "row_id": 1,
+      "stable_id": "broad"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "focused"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "exacting"
+    }
+  ],
+  "Ref_lifecycle_status": [
+    {
+      "row_id": 1,
+      "stable_id": "draft"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "candidate"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "approved"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "deprecated"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "retired"
+    }
+  ],
+  "Ref_design_status": [
+    {
+      "row_id": 1,
+      "stable_id": "locked"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "sim"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "open"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "gap"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture"
+    }
+  ],
+  "Ref_integrity_states": [
+    {
+      "row_id": 1,
+      "stable_id": "stable"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "cracked"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fractured"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "broken_guard"
+    }
+  ],
+  "Ref_affix_groups": [
+    {
+      "row_id": 1,
+      "stable_id": "prefix"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "suffix"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "implicit"
+    }
+  ],
+  "Ref_categories": [
+    {
+      "row_id": 1,
+      "stable_id": "weapon"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "armour"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "shield"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "trinket"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "consumable"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "currency"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "tome"
+    }
+  ],
+  "Ref_slots": [
+    {
+      "row_id": 1,
+      "stable_id": "main_hand"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "off_hand"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "body"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "trinket"
+    }
+  ],
+  "Ref_rules": [
+    {
+      "row_id": 1,
+      "stable_id": "T-C1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "T-C2"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "T-C3"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "T-C4"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "T-C5"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "T-C6"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "T-C7"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "T-C8"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "T-C9"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "T-C10"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "T-C11"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "T-C12"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "T-C13"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "H-C6"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "H-C7"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "E-C5"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "E-C6"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "K-C1"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "K-C2"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "K-C3"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "K-C4"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "K-C5"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "K-C6"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "K-C7"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "K-C8"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "K-C9"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "M-C1"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "M-C2"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "M-C3"
+    },
+    {
+      "row_id": 30,
+      "stable_id": "M-C4"
+    },
+    {
+      "row_id": 31,
+      "stable_id": "M-C5"
+    },
+    {
+      "row_id": 32,
+      "stable_id": "M-C6"
+    },
+    {
+      "row_id": 33,
+      "stable_id": "M-C7"
+    },
+    {
+      "row_id": 34,
+      "stable_id": "M-C8"
+    },
+    {
+      "row_id": 35,
+      "stable_id": "H-C1"
+    },
+    {
+      "row_id": 36,
+      "stable_id": "H-C2"
+    },
+    {
+      "row_id": 37,
+      "stable_id": "H-C3"
+    },
+    {
+      "row_id": 38,
+      "stable_id": "H-C4"
+    },
+    {
+      "row_id": 39,
+      "stable_id": "H-C5"
+    },
+    {
+      "row_id": 40,
+      "stable_id": "E-C1"
+    },
+    {
+      "row_id": 41,
+      "stable_id": "E-C2"
+    },
+    {
+      "row_id": 42,
+      "stable_id": "E-C3"
+    },
+    {
+      "row_id": 43,
+      "stable_id": "E-C4"
+    },
+    {
+      "row_id": 44,
+      "stable_id": "W-C1"
+    },
+    {
+      "row_id": 45,
+      "stable_id": "W-C2"
+    },
+    {
+      "row_id": 46,
+      "stable_id": "W-C3"
+    },
+    {
+      "row_id": 47,
+      "stable_id": "W-C4"
+    },
+    {
+      "row_id": 48,
+      "stable_id": "W-C5"
+    },
+    {
+      "row_id": 49,
+      "stable_id": "W-C6"
+    },
+    {
+      "row_id": 50,
+      "stable_id": "W-C7"
+    },
+    {
+      "row_id": 51,
+      "stable_id": "W-C8"
+    },
+    {
+      "row_id": 52,
+      "stable_id": "W-C9"
+    },
+    {
+      "row_id": 53,
+      "stable_id": "W-C10"
+    },
+    {
+      "row_id": 54,
+      "stable_id": "W-C11"
+    },
+    {
+      "row_id": 55,
+      "stable_id": "W-C12"
+    },
+    {
+      "row_id": 56,
+      "stable_id": "W-C13"
+    },
+    {
+      "row_id": 57,
+      "stable_id": "W-C14"
+    },
+    {
+      "row_id": 58,
+      "stable_id": "W-C15"
+    },
+    {
+      "row_id": 59,
+      "stable_id": "W-C16"
+    },
+    {
+      "row_id": 60,
+      "stable_id": "W-C17"
+    },
+    {
+      "row_id": 61,
+      "stable_id": "W-C18"
+    },
+    {
+      "row_id": 62,
+      "stable_id": "W-C19"
+    },
+    {
+      "row_id": 63,
+      "stable_id": "W-C20"
+    },
+    {
+      "row_id": 64,
+      "stable_id": "V-C1"
+    },
+    {
+      "row_id": 65,
+      "stable_id": "V-C2"
+    },
+    {
+      "row_id": 66,
+      "stable_id": "V-C3"
+    },
+    {
+      "row_id": 67,
+      "stable_id": "V-C4"
+    },
+    {
+      "row_id": 68,
+      "stable_id": "TILE-C1"
+    },
+    {
+      "row_id": 69,
+      "stable_id": "TILE-C2"
+    },
+    {
+      "row_id": 70,
+      "stable_id": "TILE-C3"
+    },
+    {
+      "row_id": 71,
+      "stable_id": "TILE-C4"
+    },
+    {
+      "row_id": 72,
+      "stable_id": "P-C1"
+    },
+    {
+      "row_id": 73,
+      "stable_id": "P-C2"
+    },
+    {
+      "row_id": 74,
+      "stable_id": "P-C3"
+    },
+    {
+      "row_id": 75,
+      "stable_id": "P-C4"
+    },
+    {
+      "row_id": 76,
+      "stable_id": "P-C5"
+    },
+    {
+      "row_id": 77,
+      "stable_id": "P-C6"
+    },
+    {
+      "row_id": 78,
+      "stable_id": "P-C7"
+    },
+    {
+      "row_id": 79,
+      "stable_id": "P-C8"
+    },
+    {
+      "row_id": 80,
+      "stable_id": "P-C10"
+    },
+    {
+      "row_id": 81,
+      "stable_id": "P-C11"
+    },
+    {
+      "row_id": 82,
+      "stable_id": "T-H1"
+    },
+    {
+      "row_id": 83,
+      "stable_id": "H-H5"
+    },
+    {
+      "row_id": 84,
+      "stable_id": "H-H6"
+    },
+    {
+      "row_id": 85,
+      "stable_id": "E-H5"
+    },
+    {
+      "row_id": 86,
+      "stable_id": "E-H6"
+    },
+    {
+      "row_id": 87,
+      "stable_id": "M-H5"
+    },
+    {
+      "row_id": 88,
+      "stable_id": "P-H1"
+    },
+    {
+      "row_id": 89,
+      "stable_id": "P-H2"
+    },
+    {
+      "row_id": 90,
+      "stable_id": "P-H3"
+    },
+    {
+      "row_id": 91,
+      "stable_id": "P-H4"
+    },
+    {
+      "row_id": 92,
+      "stable_id": "P-H5"
+    },
+    {
+      "row_id": 93,
+      "stable_id": "T-H2"
+    },
+    {
+      "row_id": 94,
+      "stable_id": "T-H3"
+    },
+    {
+      "row_id": 95,
+      "stable_id": "T-H4"
+    },
+    {
+      "row_id": 96,
+      "stable_id": "K-H1"
+    },
+    {
+      "row_id": 97,
+      "stable_id": "M-H1"
+    },
+    {
+      "row_id": 98,
+      "stable_id": "M-H2"
+    },
+    {
+      "row_id": 99,
+      "stable_id": "M-H3"
+    },
+    {
+      "row_id": 100,
+      "stable_id": "M-H4"
+    },
+    {
+      "row_id": 101,
+      "stable_id": "H-H1"
+    },
+    {
+      "row_id": 102,
+      "stable_id": "H-H2"
+    },
+    {
+      "row_id": 103,
+      "stable_id": "H-H3"
+    },
+    {
+      "row_id": 104,
+      "stable_id": "H-H4"
+    },
+    {
+      "row_id": 105,
+      "stable_id": "E-H1"
+    },
+    {
+      "row_id": 106,
+      "stable_id": "E-H2"
+    },
+    {
+      "row_id": 107,
+      "stable_id": "E-H3"
+    },
+    {
+      "row_id": 108,
+      "stable_id": "E-H4"
+    },
+    {
+      "row_id": 109,
+      "stable_id": "W-H1"
+    },
+    {
+      "row_id": 110,
+      "stable_id": "W-H2"
+    },
+    {
+      "row_id": 111,
+      "stable_id": "W-H3"
+    },
+    {
+      "row_id": 112,
+      "stable_id": "W-H4"
+    },
+    {
+      "row_id": 113,
+      "stable_id": "W-H5"
+    },
+    {
+      "row_id": 114,
+      "stable_id": "W-H6"
+    },
+    {
+      "row_id": 115,
+      "stable_id": "W-H7"
+    },
+    {
+      "row_id": 116,
+      "stable_id": "W-H8"
+    },
+    {
+      "row_id": 117,
+      "stable_id": "W-H9"
+    },
+    {
+      "row_id": 118,
+      "stable_id": "W-H10"
+    },
+    {
+      "row_id": 119,
+      "stable_id": "W-H11"
+    },
+    {
+      "row_id": 120,
+      "stable_id": "W-H12"
+    },
+    {
+      "row_id": 121,
+      "stable_id": "W-H13"
+    },
+    {
+      "row_id": 122,
+      "stable_id": "W-H14"
+    },
+    {
+      "row_id": 123,
+      "stable_id": "V-H1"
+    },
+    {
+      "row_id": 124,
+      "stable_id": "V-H2"
+    },
+    {
+      "row_id": 125,
+      "stable_id": "V-H3"
+    },
+    {
+      "row_id": 126,
+      "stable_id": "TILE-H1"
+    },
+    {
+      "row_id": 127,
+      "stable_id": "TILE-H2"
+    },
+    {
+      "row_id": 128,
+      "stable_id": "TILE-H3"
+    },
+    {
+      "row_id": 129,
+      "stable_id": "TILE-H4"
+    },
+    {
+      "row_id": 130,
+      "stable_id": "W-M1"
+    },
+    {
+      "row_id": 131,
+      "stable_id": "W-M2"
+    },
+    {
+      "row_id": 132,
+      "stable_id": "W-M3"
+    },
+    {
+      "row_id": 133,
+      "stable_id": "W-M4"
+    },
+    {
+      "row_id": 134,
+      "stable_id": "W-M6"
+    },
+    {
+      "row_id": 135,
+      "stable_id": "H-M1"
+    },
+    {
+      "row_id": 136,
+      "stable_id": "H-M2"
+    },
+    {
+      "row_id": 137,
+      "stable_id": "E-M1"
+    },
+    {
+      "row_id": 138,
+      "stable_id": "L-M1"
+    },
+    {
+      "row_id": 139,
+      "stable_id": "L-M2"
+    },
+    {
+      "row_id": 140,
+      "stable_id": "TILE-M1"
+    },
+    {
+      "row_id": 141,
+      "stable_id": "TILE-M2"
+    },
+    {
+      "row_id": 142,
+      "stable_id": "TILE-M3"
+    },
+    {
+      "row_id": 143,
+      "stable_id": "P-M1"
+    },
+    {
+      "row_id": 144,
+      "stable_id": "T-C14"
+    },
+    {
+      "row_id": 145,
+      "stable_id": "M-C9"
+    },
+    {
+      "row_id": 146,
+      "stable_id": "M-C10"
+    },
+    {
+      "row_id": 147,
+      "stable_id": "M-C11"
+    },
+    {
+      "row_id": 148,
+      "stable_id": "E-C7"
+    },
+    {
+      "row_id": 149,
+      "stable_id": "T-C15"
+    },
+    {
+      "row_id": 150,
+      "stable_id": "T-C16"
+    },
+    {
+      "row_id": 151,
+      "stable_id": "T-C17"
+    },
+    {
+      "row_id": 152,
+      "stable_id": "T-C18"
+    },
+    {
+      "row_id": 153,
+      "stable_id": "T-C19"
+    },
+    {
+      "row_id": 154,
+      "stable_id": "T-C20"
+    },
+    {
+      "row_id": 155,
+      "stable_id": "H-C8"
+    },
+    {
+      "row_id": 156,
+      "stable_id": "H-C9"
+    },
+    {
+      "row_id": 157,
+      "stable_id": "H-C10"
+    },
+    {
+      "row_id": 158,
+      "stable_id": "K-C10"
+    },
+    {
+      "row_id": 159,
+      "stable_id": "K-C11"
+    },
+    {
+      "row_id": 160,
+      "stable_id": "K-C12"
+    },
+    {
+      "row_id": 161,
+      "stable_id": "K-C13"
+    },
+    {
+      "row_id": 162,
+      "stable_id": "K-C14"
+    },
+    {
+      "row_id": 163,
+      "stable_id": "K-C15"
+    },
+    {
+      "row_id": 164,
+      "stable_id": "K-C16"
+    },
+    {
+      "row_id": 165,
+      "stable_id": "K-C17"
+    },
+    {
+      "row_id": 166,
+      "stable_id": "K-C18"
+    },
+    {
+      "row_id": 167,
+      "stable_id": "K-C19"
+    },
+    {
+      "row_id": 168,
+      "stable_id": "K-C20"
+    },
+    {
+      "row_id": 169,
+      "stable_id": "M-C12"
+    },
+    {
+      "row_id": 170,
+      "stable_id": "M-C13"
+    },
+    {
+      "row_id": 171,
+      "stable_id": "M-C14"
+    },
+    {
+      "row_id": 172,
+      "stable_id": "M-C15"
+    },
+    {
+      "row_id": 173,
+      "stable_id": "M-C16"
+    },
+    {
+      "row_id": 174,
+      "stable_id": "M-C17"
+    },
+    {
+      "row_id": 175,
+      "stable_id": "M-C18"
+    },
+    {
+      "row_id": 176,
+      "stable_id": "E-C8"
+    },
+    {
+      "row_id": 177,
+      "stable_id": "E-C9"
+    },
+    {
+      "row_id": 178,
+      "stable_id": "W-C21"
+    },
+    {
+      "row_id": 179,
+      "stable_id": "W-C22"
+    },
+    {
+      "row_id": 180,
+      "stable_id": "W-C23"
+    },
+    {
+      "row_id": 181,
+      "stable_id": "W-C24"
+    },
+    {
+      "row_id": 182,
+      "stable_id": "W-C25"
+    },
+    {
+      "row_id": 183,
+      "stable_id": "W-C26"
+    },
+    {
+      "row_id": 184,
+      "stable_id": "W-C27"
+    },
+    {
+      "row_id": 185,
+      "stable_id": "W-C28"
+    },
+    {
+      "row_id": 186,
+      "stable_id": "W-C29"
+    },
+    {
+      "row_id": 187,
+      "stable_id": "W-C30"
+    },
+    {
+      "row_id": 188,
+      "stable_id": "W-C31"
+    },
+    {
+      "row_id": 189,
+      "stable_id": "W-C32"
+    },
+    {
+      "row_id": 190,
+      "stable_id": "W-C33"
+    },
+    {
+      "row_id": 191,
+      "stable_id": "W-C34"
+    },
+    {
+      "row_id": 192,
+      "stable_id": "TILE-C5"
+    },
+    {
+      "row_id": 193,
+      "stable_id": "TILE-C6"
+    },
+    {
+      "row_id": 194,
+      "stable_id": "TILE-C7"
+    },
+    {
+      "row_id": 195,
+      "stable_id": "TILE-C8"
+    },
+    {
+      "row_id": 196,
+      "stable_id": "TILE-C9"
+    },
+    {
+      "row_id": 197,
+      "stable_id": "TILE-C10"
+    },
+    {
+      "row_id": 198,
+      "stable_id": "P-C12"
+    },
+    {
+      "row_id": 199,
+      "stable_id": "P-C13"
+    },
+    {
+      "row_id": 200,
+      "stable_id": "P-C14"
+    },
+    {
+      "row_id": 201,
+      "stable_id": "P-C15"
+    },
+    {
+      "row_id": 202,
+      "stable_id": "P-C16"
+    },
+    {
+      "row_id": 203,
+      "stable_id": "P-C17"
+    },
+    {
+      "row_id": 204,
+      "stable_id": "P-C18"
+    },
+    {
+      "row_id": 205,
+      "stable_id": "P-C19"
+    },
+    {
+      "row_id": 206,
+      "stable_id": "P-C20"
+    },
+    {
+      "row_id": 207,
+      "stable_id": "P-C21"
+    },
+    {
+      "row_id": 208,
+      "stable_id": "P-C22"
+    },
+    {
+      "row_id": 209,
+      "stable_id": "P-C23"
+    },
+    {
+      "row_id": 210,
+      "stable_id": "K-C21"
+    },
+    {
+      "row_id": 211,
+      "stable_id": "K-C22"
+    },
+    {
+      "row_id": 212,
+      "stable_id": "K-C23"
+    },
+    {
+      "row_id": 213,
+      "stable_id": "K-C24"
+    },
+    {
+      "row_id": 214,
+      "stable_id": "K-C25"
+    },
+    {
+      "row_id": 215,
+      "stable_id": "K-C26"
+    },
+    {
+      "row_id": 216,
+      "stable_id": "K-C27"
+    },
+    {
+      "row_id": 217,
+      "stable_id": "K-C28"
+    },
+    {
+      "row_id": 218,
+      "stable_id": "M-C19"
+    },
+    {
+      "row_id": 219,
+      "stable_id": "M-C20"
+    },
+    {
+      "row_id": 220,
+      "stable_id": "M-C21"
+    },
+    {
+      "row_id": 221,
+      "stable_id": "M-C22"
+    },
+    {
+      "row_id": 222,
+      "stable_id": "M-C23"
+    },
+    {
+      "row_id": 223,
+      "stable_id": "M-C24"
+    },
+    {
+      "row_id": 224,
+      "stable_id": "H-C11"
+    },
+    {
+      "row_id": 225,
+      "stable_id": "H-C12"
+    },
+    {
+      "row_id": 226,
+      "stable_id": "H-C13"
+    },
+    {
+      "row_id": 227,
+      "stable_id": "H-C14"
+    },
+    {
+      "row_id": 228,
+      "stable_id": "H-C15"
+    },
+    {
+      "row_id": 229,
+      "stable_id": "P-C24"
+    },
+    {
+      "row_id": 230,
+      "stable_id": "P-C25"
+    },
+    {
+      "row_id": 231,
+      "stable_id": "P-C26"
+    },
+    {
+      "row_id": 232,
+      "stable_id": "P-C27"
+    },
+    {
+      "row_id": 233,
+      "stable_id": "P-C28"
+    },
+    {
+      "row_id": 234,
+      "stable_id": "P-C29"
+    },
+    {
+      "row_id": 235,
+      "stable_id": "P-C30"
+    },
+    {
+      "row_id": 236,
+      "stable_id": "T-C21"
+    },
+    {
+      "row_id": 237,
+      "stable_id": "E-C10"
+    },
+    {
+      "row_id": 238,
+      "stable_id": "K-H2"
+    },
+    {
+      "row_id": 239,
+      "stable_id": "K-H3"
+    },
+    {
+      "row_id": 240,
+      "stable_id": "K-H4"
+    },
+    {
+      "row_id": 241,
+      "stable_id": "W-H16"
+    },
+    {
+      "row_id": 242,
+      "stable_id": "W-H17"
+    },
+    {
+      "row_id": 243,
+      "stable_id": "W-H15"
+    },
+    {
+      "row_id": 244,
+      "stable_id": "TILE-H5"
+    },
+    {
+      "row_id": 245,
+      "stable_id": "TILE-H6"
+    }
+  ],
+  "Ref_tags": [],
+  "Design_parameters": [
+    {
+      "row_id": 1,
+      "stable_id": "S-P01"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "S-K01"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "S-K02"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "S-K03"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "S-T03"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "S-T02"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "S-K04"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "S-K05"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "S-K06"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "S-K07"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "S-K08"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "S-K09"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "S-H01"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "S-H02"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "S-H03"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "S-H04"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "S-H05"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "S-H06"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "S-H07"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "S-H08"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "S-H09"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "S-H10"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "S-E01"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "S-E02"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "S-E03"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "S-M01"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "S-M02"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "S-M03"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "S-M04"
+    },
+    {
+      "row_id": 30,
+      "stable_id": "S-W01"
+    },
+    {
+      "row_id": 31,
+      "stable_id": "S-W02"
+    },
+    {
+      "row_id": 32,
+      "stable_id": "S-W03"
+    },
+    {
+      "row_id": 33,
+      "stable_id": "S-W04"
+    },
+    {
+      "row_id": 34,
+      "stable_id": "S-W05"
+    },
+    {
+      "row_id": 35,
+      "stable_id": "S-W06"
+    },
+    {
+      "row_id": 36,
+      "stable_id": "S-W07"
+    },
+    {
+      "row_id": 37,
+      "stable_id": "S-W08"
+    },
+    {
+      "row_id": 38,
+      "stable_id": "S-W09"
+    },
+    {
+      "row_id": 39,
+      "stable_id": "S-W10"
+    },
+    {
+      "row_id": 40,
+      "stable_id": "S-W11"
+    },
+    {
+      "row_id": 41,
+      "stable_id": "S-W12"
+    },
+    {
+      "row_id": 42,
+      "stable_id": "S-W13"
+    },
+    {
+      "row_id": 43,
+      "stable_id": "S-W14"
+    },
+    {
+      "row_id": 44,
+      "stable_id": "S-P02"
+    },
+    {
+      "row_id": 45,
+      "stable_id": "S-G01"
+    },
+    {
+      "row_id": 46,
+      "stable_id": "S-G02"
+    },
+    {
+      "row_id": 47,
+      "stable_id": "S-V01"
+    },
+    {
+      "row_id": 48,
+      "stable_id": "S-V02"
+    },
+    {
+      "row_id": 49,
+      "stable_id": "S-V03"
+    },
+    {
+      "row_id": 50,
+      "stable_id": "S-V04"
+    },
+    {
+      "row_id": 51,
+      "stable_id": "S-K10"
+    },
+    {
+      "row_id": 52,
+      "stable_id": "S-K11"
+    },
+    {
+      "row_id": 53,
+      "stable_id": "S-K12"
+    },
+    {
+      "row_id": 54,
+      "stable_id": "S-K13"
+    },
+    {
+      "row_id": 55,
+      "stable_id": "S-K14"
+    },
+    {
+      "row_id": 56,
+      "stable_id": "S-K15"
+    },
+    {
+      "row_id": 57,
+      "stable_id": "S-K16"
+    },
+    {
+      "row_id": 58,
+      "stable_id": "S-M06"
+    },
+    {
+      "row_id": 59,
+      "stable_id": "S-M07"
+    },
+    {
+      "row_id": 60,
+      "stable_id": "S-M08"
+    },
+    {
+      "row_id": 61,
+      "stable_id": "S-H11"
+    },
+    {
+      "row_id": 62,
+      "stable_id": "S-H12"
+    },
+    {
+      "row_id": 63,
+      "stable_id": "S-H13"
+    },
+    {
+      "row_id": 64,
+      "stable_id": "technique.vocal_seal.base_cost"
+    },
+    {
+      "row_id": 65,
+      "stable_id": "technique.vocal_seal.adverse_tax_cap"
+    },
+    {
+      "row_id": 66,
+      "stable_id": "technique.resonant_chorus.base_cost"
+    },
+    {
+      "row_id": 67,
+      "stable_id": "technique.resonant_chorus.adverse_tax_cap"
+    },
+    {
+      "row_id": 68,
+      "stable_id": "technique.exhortation.base_cost"
+    },
+    {
+      "row_id": 69,
+      "stable_id": "technique.exhortation.adverse_tax_cap"
+    },
+    {
+      "row_id": 70,
+      "stable_id": "technique.divine_purge.base_cost"
+    },
+    {
+      "row_id": 71,
+      "stable_id": "technique.divine_purge.adverse_tax_cap"
+    },
+    {
+      "row_id": 72,
+      "stable_id": "technique.aegis_weave.base_cost"
+    },
+    {
+      "row_id": 73,
+      "stable_id": "technique.aegis_weave.adverse_tax_cap"
+    },
+    {
+      "row_id": 74,
+      "stable_id": "technique.decisive_snap.base_cost"
+    },
+    {
+      "row_id": 75,
+      "stable_id": "technique.decisive_snap.adverse_tax_cap"
+    },
+    {
+      "row_id": 76,
+      "stable_id": "technique.flowing_seal.base_cost"
+    },
+    {
+      "row_id": 77,
+      "stable_id": "technique.flowing_seal.adverse_tax_cap"
+    },
+    {
+      "row_id": 78,
+      "stable_id": "technique.pressure_lock.base_cost"
+    },
+    {
+      "row_id": 79,
+      "stable_id": "technique.pressure_lock.adverse_tax_cap"
+    },
+    {
+      "row_id": 80,
+      "stable_id": "technique.mind_thrust.base_cost"
+    },
+    {
+      "row_id": 81,
+      "stable_id": "technique.mind_thrust.adverse_tax_cap"
+    },
+    {
+      "row_id": 82,
+      "stable_id": "technique.kinetic_wave.base_cost"
+    },
+    {
+      "row_id": 83,
+      "stable_id": "technique.kinetic_wave.adverse_tax_cap"
+    },
+    {
+      "row_id": 84,
+      "stable_id": "technique.cognitive_anchor.base_cost"
+    },
+    {
+      "row_id": 85,
+      "stable_id": "technique.cognitive_anchor.adverse_tax_cap"
+    },
+    {
+      "row_id": 86,
+      "stable_id": "technique.synapse_overload.base_cost"
+    },
+    {
+      "row_id": 87,
+      "stable_id": "technique.synapse_overload.adverse_tax_cap"
+    },
+    {
+      "row_id": 88,
+      "stable_id": "technique.bite.base_cost"
+    },
+    {
+      "row_id": 89,
+      "stable_id": "technique.bite.adverse_tax_cap"
+    },
+    {
+      "row_id": 90,
+      "stable_id": "technique.punch.base_cost"
+    },
+    {
+      "row_id": 91,
+      "stable_id": "technique.punch.adverse_tax_cap"
+    },
+    {
+      "row_id": 92,
+      "stable_id": "technique.kick.base_cost"
+    },
+    {
+      "row_id": 93,
+      "stable_id": "technique.kick.adverse_tax_cap"
+    },
+    {
+      "row_id": 94,
+      "stable_id": "technique.apply_venom.base_cost"
+    },
+    {
+      "row_id": 95,
+      "stable_id": "technique.apply_venom.adverse_tax_cap"
+    },
+    {
+      "row_id": 96,
+      "stable_id": "technique.hex.base_cost"
+    },
+    {
+      "row_id": 97,
+      "stable_id": "technique.hex.adverse_tax_cap"
+    },
+    {
+      "row_id": 98,
+      "stable_id": "technique.sanctified_seal.base_cost"
+    },
+    {
+      "row_id": 99,
+      "stable_id": "technique.sanctified_seal.adverse_tax_cap"
+    },
+    {
+      "row_id": 100,
+      "stable_id": "technique.unraveling_chants.base_cost"
+    },
+    {
+      "row_id": 101,
+      "stable_id": "technique.unraveling_chants.adverse_tax_cap"
+    },
+    {
+      "row_id": 102,
+      "stable_id": "technique.consecrated_knot.base_cost"
+    },
+    {
+      "row_id": 103,
+      "stable_id": "technique.consecrated_knot.adverse_tax_cap"
+    },
+    {
+      "row_id": 104,
+      "stable_id": "technique.entropic_weave.base_cost"
+    },
+    {
+      "row_id": 105,
+      "stable_id": "technique.entropic_weave.adverse_tax_cap"
+    },
+    {
+      "row_id": 106,
+      "stable_id": "technique.flicker_step.base_cost"
+    },
+    {
+      "row_id": 107,
+      "stable_id": "technique.flicker_step.adverse_tax_cap"
+    },
+    {
+      "row_id": 108,
+      "stable_id": "technique.refraction_matrix.base_cost"
+    },
+    {
+      "row_id": 109,
+      "stable_id": "technique.refraction_matrix.adverse_tax_cap"
+    },
+    {
+      "row_id": 110,
+      "stable_id": "technique.entropic_rupture.base_cost"
+    },
+    {
+      "row_id": 111,
+      "stable_id": "technique.entropic_rupture.adverse_tax_cap"
+    },
+    {
+      "row_id": 112,
+      "stable_id": "technique.neuro_shatter.base_cost"
+    },
+    {
+      "row_id": 113,
+      "stable_id": "technique.neuro_shatter.adverse_tax_cap"
+    },
+    {
+      "row_id": 114,
+      "stable_id": "technique.warp_pulse.base_cost"
+    },
+    {
+      "row_id": 115,
+      "stable_id": "technique.warp_pulse.adverse_tax_cap"
+    },
+    {
+      "row_id": 116,
+      "stable_id": "technique.thought_bleed.base_cost"
+    },
+    {
+      "row_id": 117,
+      "stable_id": "technique.thought_bleed.adverse_tax_cap"
+    },
+    {
+      "row_id": 118,
+      "stable_id": "technique.psychokinetic_blast.base_cost"
+    },
+    {
+      "row_id": 119,
+      "stable_id": "technique.psychokinetic_blast.adverse_tax_cap"
+    },
+    {
+      "row_id": 120,
+      "stable_id": "technique.decree_of_mind.base_cost"
+    },
+    {
+      "row_id": 121,
+      "stable_id": "technique.decree_of_mind.adverse_tax_cap"
+    },
+    {
+      "row_id": 122,
+      "stable_id": "technique.aura_of_enlightenment.base_cost"
+    },
+    {
+      "row_id": 123,
+      "stable_id": "technique.aura_of_enlightenment.adverse_tax_cap"
+    },
+    {
+      "row_id": 124,
+      "stable_id": "technique.psionic_whisper.base_cost"
+    },
+    {
+      "row_id": 125,
+      "stable_id": "technique.psionic_whisper.adverse_tax_cap"
+    },
+    {
+      "row_id": 126,
+      "stable_id": "technique.subjugation_chant.base_cost"
+    },
+    {
+      "row_id": 127,
+      "stable_id": "technique.subjugation_chant.adverse_tax_cap"
+    },
+    {
+      "row_id": 128,
+      "stable_id": "combat.group_step_calibration"
+    }
+  ],
+  "Provenance": [],
+  "Equipment": [
+    {
+      "row_id": 1,
+      "stable_id": "weapon.maul@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "weapon.dagger@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "weapon.sword_1h@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "shield.standard@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "weapon.mace_1h@1"
+    }
+  ],
+  "Equipment_text": [
+    {
+      "row_id": 1,
+      "stable_id": "text.weapon.maul.display_name"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "text.weapon.maul.short_name"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "text.weapon.maul.description"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "text.weapon.maul.accessibility"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "text.weapon.dagger.display_name"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "text.weapon.dagger.short_name"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "text.weapon.dagger.description"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "text.weapon.dagger.accessibility"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "text.weapon.sword_1h.display_name"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "text.weapon.sword_1h.short_name"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "text.weapon.sword_1h.description"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "text.weapon.sword_1h.accessibility"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "text.shield.standard.display_name"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "text.shield.standard.short_name"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "text.shield.standard.description"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "text.shield.standard.accessibility"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "text.weapon.mace_1h.display_name"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "text.weapon.mace_1h.short_name"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "text.weapon.mace_1h.description"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "text.weapon.mace_1h.accessibility"
+    }
+  ],
+  "Equipment_tags": [],
+  "Chassis_profiles": [
+    {
+      "row_id": 1,
+      "stable_id": "chassis.maul"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "chassis.dagger"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "chassis.sword_1h"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "chassis.shield_standard"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "chassis.mace_1h"
+    }
+  ],
+  "Integrity_profiles": [
+    {
+      "row_id": 1,
+      "stable_id": "integrity.shield_standard"
+    }
+  ],
+  "Construction_profiles": [
+    {
+      "row_id": 1,
+      "stable_id": "construction.fixture_weapon_m10"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "construction.shield_standard"
+    }
+  ],
+  "Slot_occupancy": [
+    {
+      "row_id": 1,
+      "stable_id": "occupancy.weapon.maul.main"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "occupancy.weapon.maul.off"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "occupancy.weapon.dagger.main"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "occupancy.weapon.dagger.off"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "occupancy.weapon.sword_1h.main"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "occupancy.weapon.sword_1h.off"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "occupancy.shield.standard.off"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "occupancy.weapon.mace_1h.main"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "occupancy.weapon.mace_1h.off"
+    }
+  ],
+  "Damage_profile_entries": [
+    {
+      "row_id": 1,
+      "stable_id": "martial.maul.impact"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "martial.maul.shatter"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "martial.dagger.pierce"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "martial.dagger.slash"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "martial.sword_1h.slash"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "martial.sword_1h.pierce"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "martial.shield_standard.impact"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "martial.mace_1h.impact"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "martial.mace_1h.shatter"
+    }
+  ],
+  "Defence_profile_entries": [
+    {
+      "row_id": 1,
+      "stable_id": "defence.shield_standard.physical"
+    }
+  ],
+  "Integrity_states": [
+    {
+      "row_id": 1,
+      "stable_id": "integrity.shield_standard.stable"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "integrity.shield_standard.cracked"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "integrity.shield_standard.broken_guard"
+    }
+  ],
+  "Triade_effects": [],
+  "Vocabulary_links": [],
+  "Stat_modifiers": [],
+  "Faculties": [
+    {
+      "row_id": 3,
+      "stable_id": "faculty.arcana@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty.mudra@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty.psyche@1"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "faculty.somatic@1"
+    }
+  ],
+  "Ref_faculty_families": [
+    {
+      "row_id": 2,
+      "stable_id": "arcana"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "mudra"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "psyche"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "somatic"
+    }
+  ],
+  "Faculty_profiles": [
+    {
+      "row_id": 1,
+      "stable_id": "faculty_profile.arcana@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "faculty_profile.mudra@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "faculty_profile.psyche@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty_profile.somatic@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty_profile.arcana_mudra@1"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "faculty_profile.mudra_mudra@1"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "faculty_profile.psyche_mudra@1"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "faculty_profile.arcana_psyche@1"
+    }
+  ],
+  "Fixture_builds": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.build.striker"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.build.controller"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture.build.technical"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture.build.trickster"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture.build.war_priest"
+    }
+  ],
+  "Fixture_stat_weights": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.weight.striker.strength"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.weight.striker.finesse"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture.weight.striker.stamina"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture.weight.striker.intellect"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture.weight.striker.will"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "fixture.weight.striker.spirit"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "fixture.weight.striker.frame"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "fixture.weight.striker.poise"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "fixture.weight.striker.constitution"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "fixture.weight.controller.strength"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "fixture.weight.controller.finesse"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "fixture.weight.controller.stamina"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "fixture.weight.controller.intellect"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "fixture.weight.controller.will"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "fixture.weight.controller.spirit"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "fixture.weight.controller.frame"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "fixture.weight.controller.poise"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "fixture.weight.controller.constitution"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "fixture.weight.technical.strength"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "fixture.weight.technical.finesse"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "fixture.weight.technical.stamina"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "fixture.weight.technical.intellect"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "fixture.weight.technical.will"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "fixture.weight.technical.spirit"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "fixture.weight.technical.frame"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "fixture.weight.technical.poise"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "fixture.weight.technical.constitution"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "fixture.weight.trickster.strength"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "fixture.weight.trickster.finesse"
+    },
+    {
+      "row_id": 30,
+      "stable_id": "fixture.weight.trickster.stamina"
+    },
+    {
+      "row_id": 31,
+      "stable_id": "fixture.weight.trickster.intellect"
+    },
+    {
+      "row_id": 32,
+      "stable_id": "fixture.weight.trickster.will"
+    },
+    {
+      "row_id": 33,
+      "stable_id": "fixture.weight.trickster.spirit"
+    },
+    {
+      "row_id": 34,
+      "stable_id": "fixture.weight.trickster.frame"
+    },
+    {
+      "row_id": 35,
+      "stable_id": "fixture.weight.trickster.poise"
+    },
+    {
+      "row_id": 36,
+      "stable_id": "fixture.weight.trickster.constitution"
+    },
+    {
+      "row_id": 37,
+      "stable_id": "fixture.weight.war_priest.strength"
+    },
+    {
+      "row_id": 38,
+      "stable_id": "fixture.weight.war_priest.finesse"
+    },
+    {
+      "row_id": 39,
+      "stable_id": "fixture.weight.war_priest.stamina"
+    },
+    {
+      "row_id": 40,
+      "stable_id": "fixture.weight.war_priest.intellect"
+    },
+    {
+      "row_id": 41,
+      "stable_id": "fixture.weight.war_priest.will"
+    },
+    {
+      "row_id": 42,
+      "stable_id": "fixture.weight.war_priest.spirit"
+    },
+    {
+      "row_id": 43,
+      "stable_id": "fixture.weight.war_priest.frame"
+    },
+    {
+      "row_id": 44,
+      "stable_id": "fixture.weight.war_priest.poise"
+    },
+    {
+      "row_id": 45,
+      "stable_id": "fixture.weight.war_priest.constitution"
+    }
+  ],
+  "Fixture_loadouts": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.loadout.striker.maul"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.loadout.controller.sword"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture.loadout.controller.shield"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture.loadout.technical.dagger_main"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture.loadout.technical.dagger_off"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "fixture.loadout.trickster.dagger"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "fixture.loadout.war_priest.mace"
+    }
+  ],
+  "Fixture_encounters": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.encounter.corridor"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.encounter.chamber"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture.encounter.gallery"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture.encounter.vault"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture.encounter.den"
+    }
+  ],
+  "Fixture_coverage": [
+    {
+      "row_id": 1,
+      "stable_id": "coverage.build.striker.floor_cap"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "coverage.build.controller.sector_render"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "coverage.loadout.technical.independent_footprints"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "coverage.loadout.trickster.free_hand"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "coverage.build.war_priest.divine_purge"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "coverage.negative.arcana_arcana"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "coverage.negative.three_sources"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "coverage.negative.mudra_two_handed"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "coverage.negative.mudra_free_hand"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "coverage.enemy.trash.faculty"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "coverage.enemy.canine.innate_slots"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "coverage.encounter.corridor.zone_count"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "coverage.encounter.chamber.composition"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "coverage.encounter.gallery.composition"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "coverage.encounter.vault.high_ground"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "coverage.encounter.den.diversity"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "coverage.gap.mudra_mudra"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "coverage.gap.bands_b_c"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "coverage.gap.non_humanoid_breadth"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "coverage.gap.behaviour_legality"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "coverage.gap.diversity_threshold"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "coverage.gap.faculty_definition_content"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "coverage.gap.fixture_faculty_assignment"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "coverage.gap.enemy_membership_relations"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "coverage.loadout.controller.shield_pool"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "coverage.loadout.controller.shield_unit"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "coverage.loadout.technical.off_hand_transform"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "coverage.gap.lineage_authoring"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "coverage.gap.physique_authoring"
+    }
+  ],
+  "Ref_sizes": [
+    {
+      "row_id": 1,
+      "stable_id": "small"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "average"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "large"
+    }
+  ],
+  "Ref_enemy_tiers": [
+    {
+      "row_id": 1,
+      "stable_id": "trash"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "standard"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "elite"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "commander"
+    }
+  ],
+  "Ref_defence_scopes": [
+    {
+      "row_id": 1,
+      "stable_id": "contact_layer"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "covered_node"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "recipient_domain"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "active_response"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "item_state"
+    }
+  ],
+  "Ref_attribute_families": [
+    {
+      "row_id": 1,
+      "stable_id": "volatile_resistance"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "corruptive_resistance"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "occult_resistance"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "type_affinity"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "arcane_deflection"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "affliction_resistance"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "ward_profile"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "integrity_reinforcement"
+    }
+  ],
+  "Ref_effect_families": [
+    {
+      "row_id": 1,
+      "stable_id": "burning"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "chill"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "shock"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "toxin"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "corrosion"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "corruption"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "cognition"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "focus"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "displacement"
+    }
+  ],
+  "Ref_ward_states": [
+    {
+      "row_id": 1,
+      "stable_id": "intact"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "scored"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "broken"
+    }
+  ],
+  "Protection_profiles": [
+    {
+      "row_id": 1,
+      "stable_id": "protection.shield_standard.physical@1"
+    }
+  ],
+  "Protection_contributions": [],
+  "Active_defence_profiles": [],
+  "Active_defence_compatibility": [],
+  "Ward_profiles": [],
+  "Ward_transformations": [],
+  "Integrity_thresholds": [],
+  "Combat_equations": [
+    {
+      "row_id": 1,
+      "stable_id": "equation.group_transmission@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "equation.active_deflection@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "equation.shield_partition@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "equation.affliction_field@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "equation.integrity_threshold@1"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "equation.divine_conversion@1"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "equation.aim_weight@1"
+    }
+  ],
+  "Combat_equation_parameters": [],
+  "Fixture_parameters": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.combat_math_046.S-K11"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.combat_math_046.S-K13"
+    }
+  ],
+  "Body_templates": [
+    {
+      "row_id": 1,
+      "stable_id": "body_template.humanoid_full@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "body_template.humanoid_5@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "body_template.quadruped@1"
+    }
+  ],
+  "Body_node_archetypes": [],
+  "Body_template_nodes": [],
+  "Body_node_functions": [],
+  "Techniques": [
+    {
+      "row_id": 1,
+      "stable_id": "technique.vocal_seal@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "technique.resonant_chorus@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "technique.exhortation@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "technique.divine_purge@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "technique.aegis_weave@1"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "technique.decisive_snap@1"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "technique.flowing_seal@1"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "technique.pressure_lock@1"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "technique.mind_thrust@1"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "technique.kinetic_wave@1"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "technique.cognitive_anchor@1"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "technique.synapse_overload@1"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "technique.bite@1"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "technique.punch@1"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "technique.kick@1"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "technique.apply_venom@1"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "technique.hex@1"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "technique.sanctified_seal@1"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "technique.unraveling_chants@1"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "technique.consecrated_knot@1"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "technique.entropic_weave@1"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "technique.flicker_step@1"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "technique.refraction_matrix@1"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "technique.entropic_rupture@1"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "technique.neuro_shatter@1"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "technique.warp_pulse@1"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "technique.thought_bleed@1"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "technique.psychokinetic_blast@1"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "technique.decree_of_mind@1"
+    },
+    {
+      "row_id": 30,
+      "stable_id": "technique.aura_of_enlightenment@1"
+    },
+    {
+      "row_id": 31,
+      "stable_id": "technique.psionic_whisper@1"
+    },
+    {
+      "row_id": 32,
+      "stable_id": "technique.subjugation_chant@1"
+    }
+  ],
+  "Technique_levels": [],
+  "Technique_sources": [],
+  "Payloads": [],
+  "Technique_payloads": [],
+  "Condition_expressions": [],
+  "Faculty_profile_members": [
+    {
+      "row_id": 1,
+      "stable_id": "faculty_profile.arcana.member.1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "faculty_profile.mudra.member.1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "faculty_profile.psyche.member.1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty_profile.somatic.member.1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty_profile.arcana_mudra.member.1"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "faculty_profile.arcana_mudra.member.2"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "faculty_profile.mudra_mudra.member.1"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "faculty_profile.mudra_mudra.member.2"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "faculty_profile.psyche_mudra.member.1"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "faculty_profile.psyche_mudra.member.2"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "faculty_profile.arcana_psyche.member.1"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "faculty_profile.arcana_psyche.member.2"
+    }
+  ],
+  "Faculty_profile_damage_entries": [
+    {
+      "row_id": 1,
+      "stable_id": "faculty_profile.arcana.divine"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "faculty_profile.arcana.psychic"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "faculty_profile.mudra.chaos"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty_profile.mudra.divine"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty_profile.psyche.psychic"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "faculty_profile.psyche.chaos"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "faculty_profile.arcana_mudra.chaos"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "faculty_profile.arcana_mudra.divine"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "faculty_profile.mudra_mudra.chaos"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "faculty_profile.mudra_mudra.divine"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "faculty_profile.psyche_mudra.chaos"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "faculty_profile.psyche_mudra.psychic"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "faculty_profile.arcana_psyche.divine"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "faculty_profile.arcana_psyche.psychic"
+    }
+  ],
+  "Faculty_profile_hook_requirements": [
+    {
+      "row_id": 1,
+      "stable_id": "faculty_profile.arcana.hook.1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "faculty_profile.mudra.hook.1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "faculty_profile.psyche.hook.1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty_profile.arcana_mudra.hook.1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty_profile.arcana_mudra.hook.2"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "faculty_profile.mudra_mudra.hook.1"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "faculty_profile.mudra_mudra.hook.2"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "faculty_profile.psyche_mudra.hook.1"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "faculty_profile.psyche_mudra.hook.2"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "faculty_profile.arcana_psyche.hook.1"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "faculty_profile.arcana_psyche.hook.2"
+    }
+  ],
+  "Faculty_technique_authorizations": [
+    {
+      "row_id": 1,
+      "stable_id": "faculty_profile.arcana.authorizes.vocal_seal"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "faculty_profile.arcana.authorizes.resonant_chorus"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "faculty_profile.arcana.authorizes.exhortation"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "faculty_profile.arcana.authorizes.divine_purge"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "faculty_profile.mudra.authorizes.aegis_weave"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "faculty_profile.mudra.authorizes.decisive_snap"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "faculty_profile.mudra.authorizes.flowing_seal"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "faculty_profile.mudra.authorizes.pressure_lock"
+    },
+    {
+      "row_id": 9,
+      "stable_id": "faculty_profile.psyche.authorizes.mind_thrust"
+    },
+    {
+      "row_id": 10,
+      "stable_id": "faculty_profile.psyche.authorizes.kinetic_wave"
+    },
+    {
+      "row_id": 11,
+      "stable_id": "faculty_profile.psyche.authorizes.cognitive_anchor"
+    },
+    {
+      "row_id": 12,
+      "stable_id": "faculty_profile.psyche.authorizes.synapse_overload"
+    },
+    {
+      "row_id": 13,
+      "stable_id": "faculty_profile.somatic.authorizes.bite"
+    },
+    {
+      "row_id": 14,
+      "stable_id": "faculty_profile.somatic.authorizes.punch"
+    },
+    {
+      "row_id": 15,
+      "stable_id": "faculty_profile.somatic.authorizes.kick"
+    },
+    {
+      "row_id": 16,
+      "stable_id": "faculty_profile.somatic.authorizes.apply_venom"
+    },
+    {
+      "row_id": 17,
+      "stable_id": "faculty_profile.arcana_mudra.authorizes.hex"
+    },
+    {
+      "row_id": 18,
+      "stable_id": "faculty_profile.arcana_mudra.authorizes.sanctified_seal"
+    },
+    {
+      "row_id": 19,
+      "stable_id": "faculty_profile.arcana_mudra.authorizes.unraveling_chants"
+    },
+    {
+      "row_id": 20,
+      "stable_id": "faculty_profile.arcana_mudra.authorizes.consecrated_knot"
+    },
+    {
+      "row_id": 21,
+      "stable_id": "faculty_profile.mudra_mudra.authorizes.entropic_weave"
+    },
+    {
+      "row_id": 22,
+      "stable_id": "faculty_profile.mudra_mudra.authorizes.flicker_step"
+    },
+    {
+      "row_id": 23,
+      "stable_id": "faculty_profile.mudra_mudra.authorizes.refraction_matrix"
+    },
+    {
+      "row_id": 24,
+      "stable_id": "faculty_profile.mudra_mudra.authorizes.entropic_rupture"
+    },
+    {
+      "row_id": 25,
+      "stable_id": "faculty_profile.psyche_mudra.authorizes.neuro_shatter"
+    },
+    {
+      "row_id": 26,
+      "stable_id": "faculty_profile.psyche_mudra.authorizes.warp_pulse"
+    },
+    {
+      "row_id": 27,
+      "stable_id": "faculty_profile.psyche_mudra.authorizes.thought_bleed"
+    },
+    {
+      "row_id": 28,
+      "stable_id": "faculty_profile.psyche_mudra.authorizes.psychokinetic_blast"
+    },
+    {
+      "row_id": 29,
+      "stable_id": "faculty_profile.arcana_psyche.authorizes.decree_of_mind"
+    },
+    {
+      "row_id": 30,
+      "stable_id": "faculty_profile.arcana_psyche.authorizes.aura_of_enlightenment"
+    },
+    {
+      "row_id": 31,
+      "stable_id": "faculty_profile.arcana_psyche.authorizes.psionic_whisper"
+    },
+    {
+      "row_id": 32,
+      "stable_id": "faculty_profile.arcana_psyche.authorizes.subjugation_chant"
+    }
+  ],
+  "Build_faculty_instructions": [],
+  "Actor_faculty_acquisitions": [],
+  "Actor_faculty_entitlements": [],
+  "Lineages": [],
+  "Lineage_sizes": [],
+  "Lineage_stat_offsets": [],
+  "Lineage_physique_pairs": [],
+  "Lineage_node_profiles": [],
+  "Lineage_node_profile_entries": [],
+  "Lineage_enemy_floor_profiles": [],
+  "Lineage_innate_grants": [],
+  "Lineage_grant_technique_bindings": [],
+  "Lineage_binding_source_nodes": [],
+  "Lineage_binding_payloads": [],
+  "Lineage_binding_payload_support_nodes": [],
+  "Fixture_enemies": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture_enemy.goblin_trash@1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture_enemy.goblin_standard@1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture_enemy.goblin_elite@1"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture_enemy.ogre_commander@1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture_enemy.canine@1"
+    }
+  ],
+  "Fixture_encounter_members": [
+    {
+      "row_id": 1,
+      "stable_id": "fixture.encounter.corridor.member.1"
+    },
+    {
+      "row_id": 2,
+      "stable_id": "fixture.encounter.chamber.member.1"
+    },
+    {
+      "row_id": 3,
+      "stable_id": "fixture.encounter.chamber.member.2"
+    },
+    {
+      "row_id": 4,
+      "stable_id": "fixture.encounter.gallery.member.1"
+    },
+    {
+      "row_id": 5,
+      "stable_id": "fixture.encounter.gallery.member.2"
+    },
+    {
+      "row_id": 6,
+      "stable_id": "fixture.encounter.vault.member.1"
+    },
+    {
+      "row_id": 7,
+      "stable_id": "fixture.encounter.vault.member.2"
+    },
+    {
+      "row_id": 8,
+      "stable_id": "fixture.encounter.den.member.1"
+    }
+  ],
+  "Fixture_enemy_tags": [],
+  "Fixture_enemy_equipment": [],
+  "Affixes": [],
+  "Affix_effects": [],
+  "Inscriptions": [],
+  "Generation_policies": [],
+  "Loot_tables": [],
+  "Loot_entries": [],
+  "Substance_profiles": [],
+  "Material_profiles": [],
+  "Reaction_definitions": [],
+  "Reaction_inputs": [],
+  "Reaction_outputs": [],
+  "Timeline_node_kinds": [],
+  "Action_timing": [],
+  "Action_milestones": [],
+  "Tarot_cards": [],
+  "Tarot_contribution_contracts": [],
+  "Tarot_contribution_fields": [],
+  "Combo_authorizations": [],
+  "Combo_transfer_fields": [],
+  "Validation_findings": []
+}

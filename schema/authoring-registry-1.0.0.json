@@ -1,0 +1,5326 @@
+{
+  "schema_version": "1.0.0",
+  "design_version": "0.46.0",
+  "fixed_point_scale": 12000,
+  "tables": {
+    "Ref_damage_types": {
+      "damage_type_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_group": {
+        "type": "Ref:Ref_damage_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_damage_groups": {
+      "damage_group_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_stats": {
+      "stat_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "corner": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "role": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_regions": {
+      "region_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "parent_corner_a": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "parent_corner_b": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_hooks": {
+      "hook_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_triade_origins": {
+      "origin_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_effect_modes": {
+      "effect_mode_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_demand_tiers": {
+      "demand_tier_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_lifecycle_status": {
+      "lifecycle_status_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_design_status": {
+      "design_status_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_integrity_states": {
+      "integrity_state_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_affix_groups": {
+      "affix_group_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_categories": {
+      "category_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_slots": {
+      "slot_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_rules": {
+      "rule_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "severity": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_reference": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_tags": {
+      "tag_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "tag_family": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Design_parameters": {
+      "parameter_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_text": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "unit": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "basis": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_reference": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "validation_gate": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "failure_path": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_state": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_int": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "blocking_reason": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Provenance": {
+      "provenance_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "subject_kind": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "subject_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "agent_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "charter_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "model": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "prompt_hash": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "input_schema_hash": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "seed": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "validation_results": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "human_verdict": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Equipment": {
+      "equipment_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision_id": {
+        "type": "Text",
+        "formula": "$equipment_id + \"@\" + str($revision_number)",
+        "isFormula": true
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "category": {
+        "type": "Ref:Ref_categories",
+        "formula": "",
+        "isFormula": false
+      },
+      "demand_tier": {
+        "type": "Ref:Ref_demand_tiers",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "short_name_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "flavour_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "accessibility_description_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "is_doctrinal": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "is_transgressive": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "is_unique": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "is_secret": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "is_relic": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "introduced_in_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "deprecated_in_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "decision_origin": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_hash": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "approved_by": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "approved_at": {
+        "type": "DateTime:Europe/Warsaw",
+        "formula": "",
+        "isFormula": false
+      },
+      "chassis_profile": {
+        "type": "Ref:Chassis_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "construction_profile": {
+        "type": "Ref:Construction_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "integrity_profile": {
+        "type": "Ref:Integrity_profiles",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Equipment_text": {
+      "equipment_text_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "locale": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "text_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "text_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "text_value": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Equipment_tags": {
+      "equipment_tag_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "tag": {
+        "type": "Ref:Ref_tags",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Chassis_profiles": {
+      "chassis_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "chassis_family": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "handedness": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "weight_class": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "reach_class": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_martial_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Integrity_profiles": {
+      "integrity_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Construction_profiles": {
+      "construction_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "construction_family_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "material_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "rigidity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "coverage_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "brittleness_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "defence_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "type_exception_budget": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "integrity_profile": {
+        "type": "Ref:Integrity_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "ward_source_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "bridge2_mechanism": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "encumbrance_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "visual_mesh_family_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "integrity_render_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Slot_occupancy": {
+      "occupancy_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "slot": {
+        "type": "Ref:Ref_slots",
+        "formula": "",
+        "isFormula": false
+      },
+      "occupancy_role": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "hand_group": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "occupancy_units": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "delivery_hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "supports_combo_source": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Damage_profile_entries": {
+      "damage_profile_entry_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_pips": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "pip_budget_group": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "primary_status_hook_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "secondary_status_hook_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "requirement_eligible": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_layer": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Defence_profile_entries": {
+      "defence_profile_entry_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "defence_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "scope_kind": {
+        "type": "Choice",
+        "formula": "$entry_kind",
+        "isFormula": true
+      },
+      "damage_group": {
+        "type": "Ref:Ref_damage_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "rating_value": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "rating_unit": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "exception_polarity": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "narration_fragment_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "entry_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "protection_scope": {
+        "type": "Ref:Ref_defence_scopes",
+        "formula": "",
+        "isFormula": false
+      },
+      "protection_profile": {
+        "type": "Ref:Protection_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "rating_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "affinity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "contribution_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "consuming_stage": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Integrity_states": {
+      "integrity_state_row_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "integrity_profile": {
+        "type": "Ref:Integrity_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "state": {
+        "type": "Ref:Ref_integrity_states",
+        "formula": "",
+        "isFormula": false
+      },
+      "ordinal": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "entry_condition_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "opening_delta_modifier_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "opening_decay_modifier_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "discipline_creation_enabled": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "finisher_gate_eligible": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "render_state_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "repair_policy_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Triade_effects": {
+      "effect_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "origin": {
+        "type": "Ref:Ref_triade_origins",
+        "formula": "",
+        "isFormula": false
+      },
+      "mode": {
+        "type": "Ref:Ref_effect_modes",
+        "formula": "",
+        "isFormula": false
+      },
+      "dm_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "df_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "di_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "vector_sum_q": {
+        "type": "Int",
+        "formula": "$dm_q + $df_q + $di_q",
+        "isFormula": true
+      },
+      "vector_valid": {
+        "type": "Bool",
+        "formula": "$vector_sum_q == 0",
+        "isFormula": true
+      },
+      "vector_scale_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "duration_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "duration_value": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "dynamics_value_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "region": {
+        "type": "Ref:Ref_regions",
+        "formula": "",
+        "isFormula": false
+      },
+      "threshold_delta_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "dwell_modifier_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "efficiency_modifier_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "volatility_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "recovery_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Vocabulary_links": {
+      "vocabulary_link_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "skill_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "scope_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "region": {
+        "type": "Ref:Ref_regions",
+        "formula": "",
+        "isFormula": false
+      },
+      "grant_mode": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_integrity_state": {
+        "type": "Ref:Ref_integrity_states",
+        "formula": "",
+        "isFormula": false
+      },
+      "requires_free_hand": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_skill_level": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Stat_modifiers": {
+      "stat_modifier_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "stat": {
+        "type": "Ref:Ref_stats",
+        "formula": "",
+        "isFormula": false
+      },
+      "stat_bucket": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "operation": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_min_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_max_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_curve_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "stacking_rule_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "stacking_group_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "rounding_rule_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "permanence_tier": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_format_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculties": {
+      "faculty_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty_revision_id": {
+        "type": "Text",
+        "formula": "$faculty_id + \"@\" + str($revision_number)",
+        "isFormula": true
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty_family": {
+        "type": "Ref:Ref_faculty_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty_origin": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "display_name_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description_key": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_damage_profile_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "delivery_hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "gate_node_group_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "decision_origin": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_hash": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "approved_by": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "approved_at": {
+        "type": "DateTime:Europe/Warsaw",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_mode": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "hook_contract": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "deprecated": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_faculty_families": {
+      "faculty_family_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculty_profiles": {
+      "faculty_profile_entry_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "faculty_revision": {
+        "type": "Ref:Faculties",
+        "formula": "None",
+        "isFormula": true
+      },
+      "entry_kind": {
+        "type": "Choice",
+        "formula": "None",
+        "isFormula": true
+      },
+      "profile_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "None",
+        "isFormula": true
+      },
+      "base_pips": {
+        "type": "Int",
+        "formula": "None",
+        "isFormula": true
+      },
+      "skill_revision_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "scope_kind": {
+        "type": "Choice",
+        "formula": "None",
+        "isFormula": true
+      },
+      "region": {
+        "type": "Ref:Ref_regions",
+        "formula": "None",
+        "isFormula": true
+      },
+      "grant_mode": {
+        "type": "Choice",
+        "formula": "None",
+        "isFormula": true
+      },
+      "source_hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "None",
+        "isFormula": true
+      },
+      "gate_node_group_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "requirement_eligible": {
+        "type": "Bool",
+        "formula": "None",
+        "isFormula": true
+      },
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "None",
+        "isFormula": true
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "pull_dm": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "pull_df": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "pull_di": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "has_pull": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_builds": {
+      "fixture_build_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_m": {
+        "type": "Numeric",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_f": {
+        "type": "Numeric",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_i": {
+        "type": "Numeric",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_sum": {
+        "type": "Numeric",
+        "formula": "$floor_m + $floor_f + $floor_i",
+        "isFormula": true
+      },
+      "floor_valid": {
+        "type": "Bool",
+        "formula": "($floor_sum <= 0.45) and max($floor_m, $floor_f, $floor_i) <= 0.25",
+        "isFormula": true
+      },
+      "home_region": {
+        "type": "Ref:Ref_regions",
+        "formula": "",
+        "isFormula": false
+      },
+      "intended_fantasy": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_m_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_f_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_i_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "validation_state": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "blocking_reason": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_stat_weights": {
+      "fixture_stat_weight_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "build": {
+        "type": "Ref:Fixture_builds",
+        "formula": "",
+        "isFormula": false
+      },
+      "stat": {
+        "type": "Ref:Ref_stats",
+        "formula": "",
+        "isFormula": false
+      },
+      "relative_weight": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "normalisation_group": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_loadouts": {
+      "fixture_loadout_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "build": {
+        "type": "Ref:Fixture_builds",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment_revision": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "slot": {
+        "type": "Ref:Ref_slots",
+        "formula": "",
+        "isFormula": false
+      },
+      "quantity": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "hand_assignment": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "authoring_notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_pip_total": {
+        "type": "Int",
+        "formula": "profile_id = $equipment_revision.chassis_profile.base_martial_profile_id\nentries = Damage_profile_entries.lookupRecords(profile_id=profile_id)\nreturn sum(int(entry.base_pips or 0) for entry in entries)",
+        "isFormula": true
+      },
+      "m_c11_state": {
+        "type": "Choice",
+        "formula": "if not $equipment_revision or $hand_assignment != 'off_hand':\n  return 'unaffected'\nif $equipment_revision.category.category_id != 'weapon' or $equipment_revision.chassis_profile.handedness != 'one_handed':\n  return 'unaffected'\nentries = Damage_profile_entries.lookupRecords(profile_id=$equipment_revision.chassis_profile.base_martial_profile_id)\nreturn 'applied' if entries else 'missing_profile'",
+        "isFormula": true
+      },
+      "effective_pip_total": {
+        "type": "Int",
+        "formula": "if $m_c11_state == 'missing_profile':\n  return None\nreturn $base_pip_total - (1 if $m_c11_state == 'applied' else 0)",
+        "isFormula": true
+      },
+      "effective_damage_preview": {
+        "type": "Text",
+        "formula": "profile_id = $equipment_revision.chassis_profile.base_martial_profile_id\nentries = list(Damage_profile_entries.lookupRecords(profile_id=profile_id))\nentries.sort(key=lambda e: (int(e.sort_order or 0), e.id))\nif not entries:\n  return 'MISSING PROFILE'\ntop = max(int(e.base_pips or 0) for e in entries)\nchosen = max(i for i,e in enumerate(entries) if int(e.base_pips or 0) == top)\nparts = []\nfor i,e in enumerate(entries):\n  pips = int(e.base_pips or 0) - (1 if $m_c11_state == 'applied' and i == chosen else 0)\n  if pips > 0:\n    parts.append('%s %s' % (e.damage_type.damage_type_id, '+' * pips))\nreturn ', '.join(parts)",
+        "isFormula": true
+      }
+    },
+    "Fixture_encounters": {
+      "fixture_encounter_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "zone_count": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "environment_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "proof_purpose": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_coverage": {
+      "fixture_coverage_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "rule_id": {
+        "type": "Ref:Ref_rules",
+        "formula": "",
+        "isFormula": false
+      },
+      "system_feature": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "expected_assertion": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "coverage_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "gap_status": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "notes": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_sizes": {
+      "size_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_enemy_tiers": {
+      "enemy_tier_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_defence_scopes": {
+      "defence_scope_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_attribute_families": {
+      "attribute_family_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_effect_families": {
+      "effect_family_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ref_ward_states": {
+      "ward_state_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "description": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Protection_profiles": {
+      "protection_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "protection_scope": {
+        "type": "Ref:Ref_defence_scopes",
+        "formula": "",
+        "isFormula": false
+      },
+      "recipient_domain": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "priority": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "allocation_group": {
+        "type": "Ref:Ref_damage_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "allocation_steps": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "functional_state_required": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Protection_contributions": {
+      "protection_contribution_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Protection_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "attribute_family": {
+        "type": "Ref:Ref_attribute_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_group": {
+        "type": "Ref:Ref_damage_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_family": {
+        "type": "Ref:Ref_effect_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_field": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "operation": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "stacking_group": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "consuming_stage": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "sample_at": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Active_defence_profiles": {
+      "active_defence_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "response_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "cap_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "calibration_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "posture_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "margin_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "expires_at": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "reaction_cost": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "maintenance_permitted": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Active_defence_compatibility": {
+      "active_defence_compatibility_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Active_defence_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "delivery_route": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "recipient_domain": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ward_profiles": {
+      "ward_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "priority": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "recipient_domain": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "stability_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Ward_transformations": {
+      "ward_transformation_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Ward_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "state": {
+        "type": "Ref:Ref_ward_states",
+        "formula": "",
+        "isFormula": false
+      },
+      "input_effect_kind": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "output_effect_kind": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "output_technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Integrity_thresholds": {
+      "integrity_threshold_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "integrity_profile": {
+        "type": "Ref:Integrity_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "state": {
+        "type": "Ref:Ref_integrity_states",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "reinforcement_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "susceptibility_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "transmission_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Combat_equations": {
+      "combat_equation_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_document": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equation_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "expression": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "rounding": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "unit": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Combat_equation_parameters": {
+      "combat_equation_parameter_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "equation": {
+        "type": "Ref:Combat_equations",
+        "formula": "",
+        "isFormula": false
+      },
+      "symbol": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "required": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_parameters": {
+      "fixture_parameter_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_int": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_reference": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Body_templates": {
+      "body_template_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "anatomy_depth": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Body_node_archetypes": {
+      "body_node_archetype_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "capacity_class": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "coverage_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "hp_transfer_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "systemic_weight_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Body_template_nodes": {
+      "body_template_node_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "template": {
+        "type": "Ref:Body_templates",
+        "formula": "",
+        "isFormula": false
+      },
+      "archetype": {
+        "type": "Ref:Body_node_archetypes",
+        "formula": "",
+        "isFormula": false
+      },
+      "parent_node_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "instance_count": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "pair_weight": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Body_node_functions": {
+      "body_node_function_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "archetype": {
+        "type": "Ref:Body_node_archetypes",
+        "formula": "",
+        "isFormula": false
+      },
+      "function_tag": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Techniques": {
+      "technique_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "anchor_region": {
+        "type": "Ref:Ref_regions",
+        "formula": "",
+        "isFormula": false
+      },
+      "anchor_ring": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "check_equation": {
+        "type": "Ref:Combat_equations",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_equation": {
+        "type": "Ref:Combat_equations",
+        "formula": "",
+        "isFormula": false
+      },
+      "aim_capability": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "selection_origin": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "selection_shape": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "reach_source": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "visibility_requirement": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "delivery_route": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "plannable": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "requires_advantage": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "base_cost_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "adverse_tax_cap_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "aim_cost_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_pips": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "redistribution_target": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Technique_levels": {
+      "technique_level_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "tier": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "reach_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "level_requirement_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Technique_sources": {
+      "technique_source_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty_profile": {
+        "type": "Ref:Faculty_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "weapon_type": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_pips": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression": {
+        "type": "Ref:Condition_expressions",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Payloads": {
+      "payload_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "carrier_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "required_layer": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_family": {
+        "type": "Ref:Ref_effect_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_equation": {
+        "type": "Ref:Combat_equations",
+        "formula": "",
+        "isFormula": false
+      },
+      "susceptibility_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Technique_payloads": {
+      "technique_payload_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "payload": {
+        "type": "Ref:Payloads",
+        "formula": "",
+        "isFormula": false
+      },
+      "exceptional_multi": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "carrier_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "required_route": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Condition_expressions": {
+      "condition_expression_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "expression": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "expression_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculty_profile_members": {
+      "faculty_profile_member_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Faculty_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty": {
+        "type": "Ref:Faculties",
+        "formula": "",
+        "isFormula": false
+      },
+      "occurrence": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculty_profile_damage_entries": {
+      "faculty_profile_damage_entry_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Faculty_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "pips": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculty_profile_hook_requirements": {
+      "faculty_profile_hook_requirement_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Faculty_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "occurrence": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "requires_distinct_hand": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "gate_function": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Faculty_technique_authorizations": {
+      "faculty_technique_authorization_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Faculty_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Build_faculty_instructions": {
+      "build_faculty_instruction_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "build": {
+        "type": "Ref:Fixture_builds",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty": {
+        "type": "Ref:Faculties",
+        "formula": "",
+        "isFormula": false
+      },
+      "instruction": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "condition_expression": {
+        "type": "Ref:Condition_expressions",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Actor_faculty_acquisitions": {
+      "actor_faculty_acquisition_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "actor_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty": {
+        "type": "Ref:Faculties",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "acquired_tick": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revocable": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "revocation_condition": {
+        "type": "Ref:Condition_expressions",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Actor_faculty_entitlements": {
+      "actor_faculty_entitlement_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "actor_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty": {
+        "type": "Ref:Faculties",
+        "formula": "",
+        "isFormula": false
+      },
+      "possessed": {
+        "type": "Bool",
+        "formula": "bool(Actor_faculty_acquisitions.lookupRecords(actor_id=$actor_id, faculty=$faculty)) or any(i.instruction == \"confer\" for i in Build_faculty_instructions.lookupRecords(build=Fixture_builds.lookupOne(fixture_build_id=$actor_id), faculty=$faculty))",
+        "isFormula": true
+      },
+      "provenance_id": {
+        "type": "Text",
+        "formula": "'derived:fixture-acquisition-and-conference'",
+        "isFormula": true
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineages": {
+      "lineage_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "body_template": {
+        "type": "Ref:Body_templates",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_sizes": {
+      "lineage_size_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "size": {
+        "type": "Ref:Ref_sizes",
+        "formula": "",
+        "isFormula": false
+      },
+      "typical": {
+        "type": "Bool",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_stat_offsets": {
+      "lineage_stat_offset_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "stat": {
+        "type": "Ref:Ref_stats",
+        "formula": "",
+        "isFormula": false
+      },
+      "offset": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_physique_pairs": {
+      "lineage_physique_pair_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "size": {
+        "type": "Ref:Ref_sizes",
+        "formula": "",
+        "isFormula": false
+      },
+      "gain_stat": {
+        "type": "Ref:Ref_stats",
+        "formula": "",
+        "isFormula": false
+      },
+      "loss_stat": {
+        "type": "Ref:Ref_stats",
+        "formula": "",
+        "isFormula": false
+      },
+      "magnitude": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_node_profiles": {
+      "lineage_node_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "node": {
+        "type": "Ref:Body_node_archetypes",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_node_profile_entries": {
+      "lineage_node_profile_entry_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "profile": {
+        "type": "Ref:Lineage_node_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "pips": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_enemy_floor_profiles": {
+      "lineage_enemy_floor_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_m_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_f_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "floor_i_q": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_innate_grants": {
+      "lineage_innate_grant_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "grant_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "faculty": {
+        "type": "Ref:Faculties",
+        "formula": "",
+        "isFormula": false
+      },
+      "entitlement_mode": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_grant_technique_bindings": {
+      "lineage_grant_technique_binding_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "grant": {
+        "type": "Ref:Lineage_innate_grants",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_binding_source_nodes": {
+      "lineage_binding_source_node_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "binding": {
+        "type": "Ref:Lineage_grant_technique_bindings",
+        "formula": "",
+        "isFormula": false
+      },
+      "node": {
+        "type": "Ref:Body_node_archetypes",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_binding_payloads": {
+      "lineage_binding_payload_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "binding": {
+        "type": "Ref:Lineage_grant_technique_bindings",
+        "formula": "",
+        "isFormula": false
+      },
+      "payload": {
+        "type": "Ref:Payloads",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Lineage_binding_payload_support_nodes": {
+      "lineage_binding_payload_support_node_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "binding": {
+        "type": "Ref:Lineage_grant_technique_bindings",
+        "formula": "",
+        "isFormula": false
+      },
+      "payload": {
+        "type": "Ref:Payloads",
+        "formula": "",
+        "isFormula": false
+      },
+      "node": {
+        "type": "Ref:Body_node_archetypes",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_enemies": {
+      "fixture_enemy_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "fixture_set_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lineage": {
+        "type": "Ref:Lineages",
+        "formula": "",
+        "isFormula": false
+      },
+      "size": {
+        "type": "Ref:Ref_sizes",
+        "formula": "",
+        "isFormula": false
+      },
+      "tier": {
+        "type": "Ref:Ref_enemy_tiers",
+        "formula": "",
+        "isFormula": false
+      },
+      "body_template": {
+        "type": "Ref:Body_templates",
+        "formula": "",
+        "isFormula": false
+      },
+      "validation_state": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "blocking_reason": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_encounter_members": {
+      "fixture_encounter_member_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "encounter": {
+        "type": "Ref:Fixture_encounters",
+        "formula": "",
+        "isFormula": false
+      },
+      "enemy": {
+        "type": "Ref:Fixture_enemies",
+        "formula": "",
+        "isFormula": false
+      },
+      "quantity": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_enemy_tags": {
+      "fixture_enemy_tag_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "enemy": {
+        "type": "Ref:Fixture_enemies",
+        "formula": "",
+        "isFormula": false
+      },
+      "tag": {
+        "type": "Ref:Ref_tags",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Fixture_enemy_equipment": {
+      "fixture_enemy_equipment_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "enemy": {
+        "type": "Ref:Fixture_enemies",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "hook": {
+        "type": "Ref:Ref_hooks",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Affixes": {
+      "affix_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "group": {
+        "type": "Ref:Ref_affix_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "exclusivity_group": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_ilvl": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "weight_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "power_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Affix_effects": {
+      "affix_effect_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "affix": {
+        "type": "Ref:Affixes",
+        "formula": "",
+        "isFormula": false
+      },
+      "attribute_family": {
+        "type": "Ref:Ref_attribute_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_group": {
+        "type": "Ref:Ref_damage_groups",
+        "formula": "",
+        "isFormula": false
+      },
+      "damage_type": {
+        "type": "Ref:Ref_damage_types",
+        "formula": "",
+        "isFormula": false
+      },
+      "effect_family": {
+        "type": "Ref:Ref_effect_families",
+        "formula": "",
+        "isFormula": false
+      },
+      "operation": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "maximum_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "scope": {
+        "type": "Ref:Ref_defence_scopes",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Inscriptions": {
+      "inscription_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "rule_broken": {
+        "type": "Ref:Ref_rules",
+        "formula": "",
+        "isFormula": false
+      },
+      "drawback_expression": {
+        "type": "Ref:Condition_expressions",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Generation_policies": {
+      "generation_policy_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "category": {
+        "type": "Ref:Ref_categories",
+        "formula": "",
+        "isFormula": false
+      },
+      "weight_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "ilvl_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "seed_stream": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Loot_tables": {
+      "loot_table_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "generation_policy": {
+        "type": "Ref:Generation_policies",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Loot_entries": {
+      "loot_entry_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "loot_table": {
+        "type": "Ref:Loot_tables",
+        "formula": "",
+        "isFormula": false
+      },
+      "equipment": {
+        "type": "Ref:Equipment",
+        "formula": "",
+        "isFormula": false
+      },
+      "weight_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_ilvl": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "maximum_ilvl": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Substance_profiles": {
+      "substance_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "domain": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "carrier_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "pulse_interval_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "dissipation_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "capacity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Material_profiles": {
+      "material_profile_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "capacity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "response_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "construction_family": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Reaction_definitions": {
+      "reaction_definition_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "display_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "transition_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Reaction_inputs": {
+      "reaction_input_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "reaction": {
+        "type": "Ref:Reaction_definitions",
+        "formula": "",
+        "isFormula": false
+      },
+      "substance": {
+        "type": "Ref:Substance_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "quantity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Reaction_outputs": {
+      "reaction_output_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "reaction": {
+        "type": "Ref:Reaction_definitions",
+        "formula": "",
+        "isFormula": false
+      },
+      "substance": {
+        "type": "Ref:Substance_profiles",
+        "formula": "",
+        "isFormula": false
+      },
+      "quantity_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Timeline_node_kinds": {
+      "timeline_node_kind_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "event_class": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "same_tick_priority": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Action_timing": {
+      "action_timing_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "commit_offset": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "resolve_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "recovery_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Action_milestones": {
+      "action_milestone_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "timing": {
+        "type": "Ref:Action_timing",
+        "formula": "",
+        "isFormula": false
+      },
+      "node_kind": {
+        "type": "Ref:Timeline_node_kinds",
+        "formula": "",
+        "isFormula": false
+      },
+      "offset_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "consumes_at": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Tarot_cards": {
+      "tarot_card_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "card_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "tier": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "validation_state": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "blocking_reason": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Tarot_contribution_contracts": {
+      "tarot_contribution_contract_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "receiver": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "contributor": {
+        "type": "Ref:Tarot_cards",
+        "formula": "",
+        "isFormula": false
+      },
+      "receiver_tier": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "contribution_kind": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "capacity_cost": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Tarot_contribution_fields": {
+      "tarot_contribution_field_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "contract": {
+        "type": "Ref:Tarot_contribution_contracts",
+        "formula": "",
+        "isFormula": false
+      },
+      "field_name": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "operation": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "value_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "minimum_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "maximum_parameter": {
+        "type": "Ref:Design_parameters",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Combo_authorizations": {
+      "combo_authorization_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_number": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "revision_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "schema_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "content_version": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "lifecycle_status": {
+        "type": "Ref:Ref_lifecycle_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "design_status": {
+        "type": "Ref:Ref_design_status",
+        "formula": "",
+        "isFormula": false
+      },
+      "source_document_ref": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "component_a": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "tier_a": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "component_b": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      },
+      "tier_b": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      },
+      "combo_technique": {
+        "type": "Ref:Techniques",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Combo_transfer_fields": {
+      "combo_transfer_field_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "combo": {
+        "type": "Ref:Combo_authorizations",
+        "formula": "",
+        "isFormula": false
+      },
+      "component": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "input_field": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "output_field": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "operation": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    },
+    "Validation_findings": {
+      "validation_finding_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_table": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "owner_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "gate_id": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "result": {
+        "type": "Choice",
+        "formula": "",
+        "isFormula": false
+      },
+      "reason_code": {
+        "type": "Text",
+        "formula": "",
+        "isFormula": false
+      },
+      "sort_order": {
+        "type": "Int",
+        "formula": "",
+        "isFormula": false
+      }
+    }
+  },
+  "stable_id_columns": {
+    "Ref_damage_types": "damage_type_id",
+    "Ref_damage_groups": "damage_group_id",
+    "Ref_stats": "stat_id",
+    "Ref_regions": "region_id",
+    "Ref_hooks": "hook_id",
+    "Ref_triade_origins": "origin_id",
+    "Ref_effect_modes": "effect_mode_id",
+    "Ref_demand_tiers": "demand_tier_id",
+    "Ref_lifecycle_status": "lifecycle_status_id",
+    "Ref_design_status": "design_status_id",
+    "Ref_integrity_states": "integrity_state_id",
+    "Ref_affix_groups": "affix_group_id",
+    "Ref_categories": "category_id",
+    "Ref_slots": "slot_id",
+    "Ref_rules": "rule_id",
+    "Ref_tags": "tag_id",
+    "Design_parameters": "parameter_id",
+    "Provenance": "provenance_id",
+    "Equipment": "equipment_revision_id",
+    "Equipment_text": "equipment_text_id",
+    "Equipment_tags": "equipment_tag_id",
+    "Chassis_profiles": "chassis_profile_id",
+    "Integrity_profiles": "integrity_profile_id",
+    "Construction_profiles": "construction_profile_id",
+    "Slot_occupancy": "occupancy_id",
+    "Damage_profile_entries": "damage_profile_entry_id",
+    "Defence_profile_entries": "defence_profile_entry_id",
+    "Integrity_states": "integrity_state_row_id",
+    "Triade_effects": "effect_id",
+    "Vocabulary_links": "vocabulary_link_id",
+    "Stat_modifiers": "stat_modifier_id",
+    "Faculties": "faculty_revision_id",
+    "Ref_faculty_families": "faculty_family_id",
+    "Faculty_profiles": "revision_id",
+    "Fixture_builds": "fixture_build_id",
+    "Fixture_stat_weights": "fixture_stat_weight_id",
+    "Fixture_loadouts": "fixture_loadout_id",
+    "Fixture_encounters": "fixture_encounter_id",
+    "Fixture_coverage": "fixture_coverage_id",
+    "Ref_sizes": "size_id",
+    "Ref_enemy_tiers": "enemy_tier_id",
+    "Ref_defence_scopes": "defence_scope_id",
+    "Ref_attribute_families": "attribute_family_id",
+    "Ref_effect_families": "effect_family_id",
+    "Ref_ward_states": "ward_state_id",
+    "Protection_profiles": "revision_id",
+    "Protection_contributions": "protection_contribution_id",
+    "Active_defence_profiles": "revision_id",
+    "Active_defence_compatibility": "active_defence_compatibility_id",
+    "Ward_profiles": "revision_id",
+    "Ward_transformations": "ward_transformation_id",
+    "Integrity_thresholds": "integrity_threshold_id",
+    "Combat_equations": "revision_id",
+    "Combat_equation_parameters": "combat_equation_parameter_id",
+    "Fixture_parameters": "fixture_parameter_id",
+    "Body_templates": "revision_id",
+    "Body_node_archetypes": "revision_id",
+    "Body_template_nodes": "body_template_node_id",
+    "Body_node_functions": "body_node_function_id",
+    "Techniques": "revision_id",
+    "Technique_levels": "technique_level_id",
+    "Technique_sources": "technique_source_id",
+    "Payloads": "revision_id",
+    "Technique_payloads": "technique_payload_id",
+    "Condition_expressions": "revision_id",
+    "Faculty_profile_members": "faculty_profile_member_id",
+    "Faculty_profile_damage_entries": "faculty_profile_damage_entry_id",
+    "Faculty_profile_hook_requirements": "faculty_profile_hook_requirement_id",
+    "Faculty_technique_authorizations": "faculty_technique_authorization_id",
+    "Build_faculty_instructions": "build_faculty_instruction_id",
+    "Actor_faculty_acquisitions": "actor_faculty_acquisition_id",
+    "Actor_faculty_entitlements": "actor_faculty_entitlement_id",
+    "Lineages": "revision_id",
+    "Lineage_sizes": "lineage_size_id",
+    "Lineage_stat_offsets": "lineage_stat_offset_id",
+    "Lineage_physique_pairs": "lineage_physique_pair_id",
+    "Lineage_node_profiles": "lineage_node_profile_id",
+    "Lineage_node_profile_entries": "lineage_node_profile_entry_id",
+    "Lineage_enemy_floor_profiles": "lineage_enemy_floor_profile_id",
+    "Lineage_innate_grants": "lineage_innate_grant_id",
+    "Lineage_grant_technique_bindings": "lineage_grant_technique_binding_id",
+    "Lineage_binding_source_nodes": "lineage_binding_source_node_id",
+    "Lineage_binding_payloads": "lineage_binding_payload_id",
+    "Lineage_binding_payload_support_nodes": "lineage_binding_payload_support_node_id",
+    "Fixture_enemies": "revision_id",
+    "Fixture_encounter_members": "fixture_encounter_member_id",
+    "Fixture_enemy_tags": "fixture_enemy_tag_id",
+    "Fixture_enemy_equipment": "fixture_enemy_equipment_id",
+    "Affixes": "revision_id",
+    "Affix_effects": "affix_effect_id",
+    "Inscriptions": "revision_id",
+    "Generation_policies": "revision_id",
+    "Loot_tables": "revision_id",
+    "Loot_entries": "loot_entry_id",
+    "Substance_profiles": "revision_id",
+    "Material_profiles": "revision_id",
+    "Reaction_definitions": "revision_id",
+    "Reaction_inputs": "reaction_input_id",
+    "Reaction_outputs": "reaction_output_id",
+    "Timeline_node_kinds": "revision_id",
+    "Action_timing": "revision_id",
+    "Action_milestones": "action_milestone_id",
+    "Tarot_cards": "revision_id",
+    "Tarot_contribution_contracts": "revision_id",
+    "Tarot_contribution_fields": "tarot_contribution_field_id",
+    "Combo_authorizations": "revision_id",
+    "Combo_transfer_fields": "combo_transfer_field_id",
+    "Validation_findings": "validation_finding_id"
+  },
+  "generated_read_only": [
+    "Actor_faculty_entitlements",
+    "Validation_findings"
+  ],
+  "canonical_excluded_columns": {
+    "Fixture_builds": [
+      "floor_m",
+      "floor_f",
+      "floor_i",
+      "floor_sum",
+      "floor_valid"
+    ],
+    "Faculties": [
+      "faculty_origin",
+      "base_damage_profile_id",
+      "gate_node_group_id"
+    ],
+    "Faculty_profiles": [
+      "faculty_profile_entry_id",
+      "faculty_revision",
+      "entry_kind",
+      "profile_id",
+      "damage_type",
+      "base_pips",
+      "skill_revision_id",
+      "scope_kind",
+      "region",
+      "grant_mode",
+      "source_hook",
+      "gate_node_group_id",
+      "requirement_eligible",
+      "condition_expression_id",
+      "authoring_notes"
+    ],
+    "Defence_profile_entries": [
+      "scope_kind"
+    ]
+  }
+}

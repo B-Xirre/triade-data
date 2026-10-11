@@ -1,0 +1,6909 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Triade authoring contracts 1.0.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "design_version",
+    "tables"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "design_version": {
+      "const": "0.46.0"
+    },
+    "tables": {
+      "type": "object",
+      "properties": {
+        "Ref_damage_types": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "damage_type_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_damage_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "damage_group_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_stats": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stat_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "corner": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "role": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "region_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parent_corner_a": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parent_corner_b": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_hooks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "hook_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_triade_origins": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "origin_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_effect_modes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "effect_mode_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_demand_tiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "demand_tier_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_lifecycle_status": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lifecycle_status_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_design_status": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "design_status_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_integrity_states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "integrity_state_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_affix_groups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "affix_group_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_slots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "slot_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rule_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "severity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_tags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tag_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tag_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Design_parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "parameter_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "basis": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "validation_gate": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "failure_path": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "value_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_int": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "blocking_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Provenance": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "provenance_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "subject_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "subject_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "agent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "charter_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "model": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "prompt_hash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "input_schema_hash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "seed": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "validation_results": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "human_verdict": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Equipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "equipment_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "equipment_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "category": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "demand_tier": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "short_name_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "flavour_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "accessibility_description_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "is_doctrinal": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "is_transgressive": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "is_unique": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "is_secret": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "is_relic": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "introduced_in_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "deprecated_in_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "decision_origin": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_hash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "approved_by": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "approved_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "chassis_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "construction_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "integrity_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Equipment_text": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "equipment_text_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "locale": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "text_value": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Equipment_tags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "equipment_tag_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tag": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Chassis_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "chassis_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "chassis_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "handedness": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "weight_class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reach_class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "base_martial_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Integrity_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "integrity_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Construction_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "construction_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "construction_family_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "material_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rigidity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "coverage_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "brittleness_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "defence_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "type_exception_budget": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "integrity_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ward_source_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "bridge2_mechanism": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "encumbrance_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "visual_mesh_family_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "integrity_render_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Slot_occupancy": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "occupancy_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "slot": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "occupancy_role": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hand_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "occupancy_units": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "delivery_hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "supports_combo_source": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Damage_profile_entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "damage_profile_entry_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "base_pips": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "pip_budget_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "primary_status_hook_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "secondary_status_hook_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requirement_eligible": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "source_layer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Defence_profile_entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "defence_profile_entry_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "defence_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rating_value": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "rating_unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "exception_polarity": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "condition_expression_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "narration_fragment_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "entry_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "protection_scope": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "protection_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rating_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "affinity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "contribution_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "consuming_stage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Integrity_states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "integrity_state_row_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "integrity_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ordinal": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "entry_condition_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "opening_delta_modifier_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "opening_decay_modifier_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "discipline_creation_enabled": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "finisher_gate_eligible": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "render_state_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "repair_policy_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Triade_effects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "effect_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "origin": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "mode": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dm_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "df_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "di_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "vector_sum_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "vector_valid": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "vector_scale_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "duration_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "duration_value": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "dynamics_value_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "condition_expression_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "region": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "threshold_delta_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "dwell_modifier_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "efficiency_modifier_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "volatility_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "recovery_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Vocabulary_links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "vocabulary_link_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "skill_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "scope_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "region": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "grant_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_integrity_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "requires_free_hand": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "minimum_skill_level": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "condition_expression_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Stat_modifiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "stat_modifier_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stat": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stat_bucket": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "operation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_min_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "value_max_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "value_curve_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stacking_rule_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stacking_group_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rounding_rule_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "condition_expression_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "permanence_tier": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_format_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "faculty_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description_key": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "delivery_hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "decision_origin": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_hash": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "approved_by": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "approved_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hook_contract": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "deprecated": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_faculty_families": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_family_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculty_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "faculty_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pull_dm": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "pull_df": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "pull_di": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "has_pull": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_builds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_build_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "home_region": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "intended_fantasy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "floor_m_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "floor_f_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "floor_i_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "validation_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "blocking_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_stat_weights": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_stat_weight_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "build": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stat": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "relative_weight": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "normalisation_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_loadouts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_loadout_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "build": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment_revision": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "slot": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "quantity": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "hand_assignment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "authoring_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "base_pip_total": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "m_c11_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effective_pip_total": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "effective_damage_preview": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_encounters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_encounter_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "zone_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "environment_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "proof_purpose": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_coverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_coverage_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rule_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "system_feature": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expected_assertion": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "coverage_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "gap_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_sizes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "size_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_enemy_tiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "enemy_tier_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_defence_scopes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "defence_scope_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_attribute_families": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "attribute_family_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_effect_families": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "effect_family_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ref_ward_states": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ward_state_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "description": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Protection_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "protection_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "owner_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "protection_scope": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "recipient_domain": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "allocation_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "allocation_steps": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "functional_state_required": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Protection_contributions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "protection_contribution_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "attribute_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_field": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "operation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stacking_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "consuming_stage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sample_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Active_defence_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "active_defence_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "response_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "cap_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "calibration_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "posture_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "margin_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expires_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reaction_cost": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "maintenance_permitted": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Active_defence_compatibility": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "active_defence_compatibility_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "delivery_route": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "recipient_domain": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ward_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ward_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "owner_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "recipient_domain": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stability_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Ward_transformations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ward_transformation_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "input_effect_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "output_effect_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "output_technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Integrity_thresholds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "integrity_threshold_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "integrity_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "base_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reinforcement_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "susceptibility_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "transmission_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Combat_equations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "combat_equation_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "owner_document": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equation_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expression": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rounding": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Combat_equation_parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "combat_equation_parameter_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "symbol": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_parameter_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "value_int": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "source_reference": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Body_templates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_template_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "anatomy_depth": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Body_node_archetypes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_node_archetype_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "capacity_class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "coverage_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hp_transfer_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "systemic_weight_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Body_template_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_template_node_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "template": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "archetype": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "parent_node_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "instance_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "pair_weight": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Body_node_functions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "body_node_function_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "archetype": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "function_tag": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Techniques": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "technique_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "anchor_region": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "anchor_ring": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "check_equation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_equation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "aim_capability": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "selection_origin": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "selection_shape": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reach_source": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "visibility_requirement": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "delivery_route": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "plannable": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "requires_advantage": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "base_cost_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "adverse_tax_cap_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "aim_cost_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_pips": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "redistribution_target": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Technique_levels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "technique_level_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tier": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "reach_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "level_requirement_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Technique_sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "technique_source_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty_profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "weapon_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_pips": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "condition_expression": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Payloads": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "payload_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "carrier_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required_layer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_equation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "susceptibility_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Technique_payloads": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "technique_payload_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "payload": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "exceptional_multi": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "carrier_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "required_route": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Condition_expressions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "condition_expression_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "expression": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "expression_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculty_profile_members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_profile_member_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "occurrence": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculty_profile_damage_entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_profile_damage_entry_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pips": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculty_profile_hook_requirements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_profile_hook_requirement_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "occurrence": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "requires_distinct_hand": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "gate_function": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Faculty_technique_authorizations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "faculty_technique_authorization_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Build_faculty_instructions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "build_faculty_instruction_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "build": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "instruction": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "condition_expression": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Actor_faculty_acquisitions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "actor_faculty_acquisition_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "actor_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "acquired_tick": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revocable": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "revocation_condition": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Actor_faculty_entitlements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "actor_faculty_entitlement_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "actor_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "possessed": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "provenance_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "body_template": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_sizes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_size_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "size": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "typical": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_stat_offsets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_stat_offset_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "stat": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "offset": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_physique_pairs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_physique_pair_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "size": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "gain_stat": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "loss_stat": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "magnitude": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_node_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_node_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "node": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_node_profile_entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_node_profile_entry_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "profile": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pips": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_enemy_floor_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_enemy_floor_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "floor_m_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "floor_f_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "floor_i_q": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_innate_grants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_innate_grant_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "grant_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "faculty": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "entitlement_mode": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_grant_technique_bindings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_grant_technique_binding_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "grant": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_binding_source_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_binding_source_node_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "binding": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "node": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_binding_payloads": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_binding_payload_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "binding": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "payload": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Lineage_binding_payload_support_nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lineage_binding_payload_support_node_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "binding": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "payload": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "node": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_enemies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_enemy_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "fixture_set_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lineage": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "size": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tier": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "body_template": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "validation_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "blocking_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_encounter_members": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_encounter_member_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "encounter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "enemy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "quantity": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_enemy_tags": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_enemy_tag_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "enemy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tag": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Fixture_enemy_equipment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "fixture_enemy_equipment_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "enemy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "hook": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Affixes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "affix_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "exclusivity_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_ilvl": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "weight_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "power_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Affix_effects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "affix_effect_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "affix": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "attribute_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_group": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "damage_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "effect_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "operation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "maximum_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "scope": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Inscriptions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "inscription_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "rule_broken": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "drawback_expression": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Generation_policies": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "generation_policy_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "category": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "weight_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ilvl_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "seed_stream": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Loot_tables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "loot_table_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "generation_policy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Loot_entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "loot_entry_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "loot_table": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "equipment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "weight_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_ilvl": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "maximum_ilvl": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Substance_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "substance_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "domain": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "carrier_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "pulse_interval_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "dissipation_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "capacity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Material_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "material_profile_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "capacity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "response_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "construction_family": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Reaction_definitions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reaction_definition_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "display_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "transition_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Reaction_inputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reaction_input_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reaction": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "substance": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "quantity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Reaction_outputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reaction_output_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reaction": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "substance": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "quantity_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Timeline_node_kinds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "timeline_node_kind_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "event_class": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "same_tick_priority": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Action_timing": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "action_timing_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "commit_offset": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "resolve_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "recovery_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Action_milestones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "action_milestone_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "timing": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "node_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "offset_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "consumes_at": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Tarot_cards": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tarot_card_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "card_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tier": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "validation_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "blocking_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Tarot_contribution_contracts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tarot_contribution_contract_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "receiver": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "contributor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "receiver_tier": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "contribution_kind": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "capacity_cost": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Tarot_contribution_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "tarot_contribution_field_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "contract": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "field_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "operation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "value_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "minimum_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "maximum_parameter": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Combo_authorizations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "combo_authorization_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision_number": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "revision_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "schema_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "content_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "lifecycle_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "design_status": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_document_ref": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "component_a": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tier_a": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "component_b": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "tier_b": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              },
+              "combo_technique": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Combo_transfer_fields": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "combo_transfer_field_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "combo": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "component": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "input_field": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "output_field": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "operation": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "Validation_findings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "validation_finding_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_table": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "owner_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "gate_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "result": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reason_code": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sort_order": {
+                "type": [
+                  "integer",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "Action_milestones",
+        "Action_timing",
+        "Active_defence_compatibility",
+        "Active_defence_profiles",
+        "Actor_faculty_acquisitions",
+        "Actor_faculty_entitlements",
+        "Affix_effects",
+        "Affixes",
+        "Body_node_archetypes",
+        "Body_node_functions",
+        "Body_template_nodes",
+        "Body_templates",
+        "Build_faculty_instructions",
+        "Chassis_profiles",
+        "Combat_equation_parameters",
+        "Combat_equations",
+        "Combo_authorizations",
+        "Combo_transfer_fields",
+        "Condition_expressions",
+        "Construction_profiles",
+        "Damage_profile_entries",
+        "Defence_profile_entries",
+        "Design_parameters",
+        "Equipment",
+        "Equipment_tags",
+        "Equipment_text",
+        "Faculties",
+        "Faculty_profile_damage_entries",
+        "Faculty_profile_hook_requirements",
+        "Faculty_profile_members",
+        "Faculty_profiles",
+        "Faculty_technique_authorizations",
+        "Fixture_builds",
+        "Fixture_coverage",
+        "Fixture_encounter_members",
+        "Fixture_encounters",
+        "Fixture_enemies",
+        "Fixture_enemy_equipment",
+        "Fixture_enemy_tags",
+        "Fixture_loadouts",
+        "Fixture_parameters",
+        "Fixture_stat_weights",
+        "Generation_policies",
+        "Inscriptions",
+        "Integrity_profiles",
+        "Integrity_states",
+        "Integrity_thresholds",
+        "Lineage_binding_payload_support_nodes",
+        "Lineage_binding_payloads",
+        "Lineage_binding_source_nodes",
+        "Lineage_enemy_floor_profiles",
+        "Lineage_grant_technique_bindings",
+        "Lineage_innate_grants",
+        "Lineage_node_profile_entries",
+        "Lineage_node_profiles",
+        "Lineage_physique_pairs",
+        "Lineage_sizes",
+        "Lineage_stat_offsets",
+        "Lineages",
+        "Loot_entries",
+        "Loot_tables",
+        "Material_profiles",
+        "Payloads",
+        "Protection_contributions",
+        "Protection_profiles",
+        "Provenance",
+        "Reaction_definitions",
+        "Reaction_inputs",
+        "Reaction_outputs",
+        "Ref_affix_groups",
+        "Ref_attribute_families",
+        "Ref_categories",
+        "Ref_damage_groups",
+        "Ref_damage_types",
+        "Ref_defence_scopes",
+        "Ref_demand_tiers",
+        "Ref_design_status",
+        "Ref_effect_families",
+        "Ref_effect_modes",
+        "Ref_enemy_tiers",
+        "Ref_faculty_families",
+        "Ref_hooks",
+        "Ref_integrity_states",
+        "Ref_lifecycle_status",
+        "Ref_regions",
+        "Ref_rules",
+        "Ref_sizes",
+        "Ref_slots",
+        "Ref_stats",
+        "Ref_tags",
+        "Ref_triade_origins",
+        "Ref_ward_states",
+        "Slot_occupancy",
+        "Stat_modifiers",
+        "Substance_profiles",
+        "Tarot_cards",
+        "Tarot_contribution_contracts",
+        "Tarot_contribution_fields",
+        "Technique_levels",
+        "Technique_payloads",
+        "Technique_sources",
+        "Techniques",
+        "Timeline_node_kinds",
+        "Triade_effects",
+        "Validation_findings",
+        "Vocabulary_links",
+        "Ward_profiles",
+        "Ward_transformations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
